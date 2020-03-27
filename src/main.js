@@ -28,13 +28,13 @@ export default function(Vue, { appOptions, head }) {
 			themes: {
 				light: {
 					// primary: colors.teal.darken2,
-					primary: '#ff4137',
-					secondary: '#424242',
-					accent: '#82B1FF',
-					error: '#FF5252',
-					info: '#2196F3',
-					success: '#4CAF50',
-					warning: '#FFC107'
+					// primary: '#ff4137',
+					// secondary: '#424242',
+					// accent: '#82B1FF',
+					// error: '#FF5252',
+					// info: '#2196F3',
+					// success: '#4CAF50',
+					// warning: '#FFC107'
 				}
 			}
 		}
