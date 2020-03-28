@@ -1,5 +1,5 @@
 <template>
-	<v-footer color="primary lighten-1" height="75">
+	<v-footer height="75">
 		<div class="mx-auto">
 			<v-btn v-for="link in links" :key="link.name" text class="mr-4">
 				<a :href="link.url" target="_blank">

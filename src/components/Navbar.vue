@@ -20,7 +20,7 @@ export default {
 			drawer: false,
 			links: [
 				{ text: 'Home', url: '/' },
-				{ text: 'Colors', url: '/colors/' }
+				{ text: 'Colours', url: '/colors/' }
 			]
 		}
 	}
