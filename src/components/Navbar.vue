@@ -7,7 +7,7 @@
 			<v-spacer></v-spacer>
 
 			<v-btn v-for="link in links" :key="link.text" text>
-				{{ link.text }}
+				<g-link :to="link.url">{{ link.text }}</g-link>
 			</v-btn>
 		</v-toolbar>
 	</v-card>
@@ -19,9 +19,8 @@ export default {
 		return {
 			drawer: false,
 			links: [
-				{ icon: 'dashboard', text: 'Dashboard', route: '/' },
-				{ icon: 'folder', text: 'My Projects', route: '/projects' },
-				{ icon: 'person', text: 'Team', route: '/team' }
+				{ text: 'Home', url: '/' },
+				{ text: 'Colors', url: '/colors/' }
 			]
 		}
 	}
