@@ -23,7 +23,7 @@ export default function(Vue, { appOptions, head }) {
 
 	const opts = {
 		icons: {
-			iconfont: 'fa' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
+			iconfont: 'mdiSvg' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
 		},
 		// adjust the theme if you would like to
 		theme: {
