@@ -11,8 +11,7 @@ import colors from 'vuetify/lib/util/colors'
 export default function(Vue, { appOptions, head }) {
 	head.link.push({
 		rel: 'stylesheet',
-		href:
-			'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css'
+		href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
 	})
 
 	head.link.push({

@@ -28,6 +28,10 @@ export default {
 				{
 					name: 'Vue docs',
 					url: 'https://vuejs.org/v2/guide/index.html'
+				},
+				{
+					name: 'MD icons',
+					url: 'https://material.io/resources/icons/?style=baseline'
 				}
 			]
 		}

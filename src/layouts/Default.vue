@@ -22,11 +22,6 @@ export default {
 	components: {
 		Navbar,
 		Footer
-	},
-	data() {
-		return {
-			title: 'I am a dynamic slot title'
-		}
 	}
 }
 </script>
