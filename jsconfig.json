@@ -1,0 +1,11 @@
+// NW added this from https://gridsome.org/docs/dev-tools/ but I don't undersatnd the rest of the instructions there. Something to do with path mapping but instructions unclear
+
+{
+	"include": ["./src/**/*"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	}
+}

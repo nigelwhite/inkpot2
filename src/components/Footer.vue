@@ -17,18 +17,17 @@ export default {
 			links: [
 				{
 					name: 'Vuetify docs',
-					url: 'https://vuetifyjs.com/en/getting-started/quick-start/'
+					url: 'https://vuetifyjs.com/en/components/grids/#grid-system'
 				},
 
 				{
-					name: 'YouTube tutorial',
-					url:
-						'https://www.youtube.com/playlist?list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5'
+					name: 'Gridsome docs',
+					url: 'https://gridsome.org/docs/'
 				},
 
 				{
-					name: 'Course files',
-					url: 'https://github.com/iamshaunjp/vuetify-playlist'
+					name: 'Vue docs',
+					url: 'https://vuejs.org/v2/guide/index.html'
 				}
 			]
 		}
