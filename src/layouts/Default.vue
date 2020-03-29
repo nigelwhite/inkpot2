@@ -3,7 +3,7 @@
 		<Navbar />
 		<v-content>
 			<v-container>
-				<h1 class="page-title">
+				<h1 class="page-title primary--text">
 					<slot name="title" />
 				</h1>
 				<slot />
@@ -33,6 +33,5 @@ export default {
 
 <style lang="sass">
 .page-title
-	color: primary
 	margin: 20px 0
 </style>
