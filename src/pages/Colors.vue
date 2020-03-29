@@ -1,7 +1,6 @@
 <template>
 	<Layout>
-		<h1>Colours</h1>
-
+		<template slot="title">{{ title }}</template>
 		<v-layout column>
 			<p>These are the defaults. Change them in main.js</p>
 			<v-btn class="primary btn">Primary</v-btn>
@@ -16,7 +15,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+	data() {
+		return {
+			title: 'Colours'
+		}
+	}
+}
 </script>
 
 <style lang="sass" scoped>

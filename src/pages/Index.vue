@@ -1,15 +1,16 @@
 <template>
 	<Layout>
-		<h1>Home page</h1>
-
+		<template slot="title">{{ title }}</template>
 		<p>content goes here</p>
 	</Layout>
 </template>
 
 <script>
 export default {
-	metaInfo: {
-		title: 'home'
+	data() {
+		return {
+			title: 'Home page'
+		}
 	}
 }
 </script>

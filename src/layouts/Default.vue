@@ -3,7 +3,9 @@
 		<Navbar />
 		<v-content>
 			<v-container>
-				<Title />
+				<h1 class="page-title">
+					<slot name="title" />
+				</h1>
 				<slot />
 			</v-container>
 		</v-content>
@@ -13,14 +15,24 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import Title from '@/components/Title.vue'
+
 import Footer from '@/components/Footer.vue'
 
 export default {
 	components: {
 		Navbar,
-		Title,
 		Footer
+	},
+	data() {
+		return {
+			title: 'I am a dynamic slot title'
+		}
 	}
 }
 </script>
+
+<style lang="sass">
+.page-title
+	color: primary
+	margin: 20px 0
+</style>
