@@ -22,8 +22,10 @@
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title v-for="link in links" :key="link.text">
-						<v-icon>adb</v-icon>
-						<g-link :to="link.url">{{ link.text }}</g-link>
+						<g-link class="white--text" :to="link.url">
+							<v-icon class="white--text">{{ link.icon }}</v-icon>
+							{{ link.text }}</g-link
+						>
 					</v-list-item-title>
 				</v-list-item-content>
 			</v-list-item>
@@ -37,9 +39,9 @@ export default {
 		return {
 			drawer: false,
 			links: [
-				{ text: 'Home', url: '/' },
-				{ text: 'About', url: '/about/' },
-				{ text: 'Colours', url: '/colors/' }
+				{ icon: 'adb', text: 'Home', url: '/' },
+				{ icon: 'backup', text: 'About', url: '/about/' },
+				{ icon: 'explore', text: 'Colours', url: '/colors/' }
 			]
 		}
 	}
