@@ -12,7 +12,7 @@
 				>
 				<v-spacer></v-spacer>
 
-				<div class="hidden-sm-and-down">
+				<div class="nav-horizontal hidden-sm-and-down">
 					<v-btn v-for="link in links" :key="link.text" text>
 						<g-link :to="link.url">{{ link.text }}</g-link>
 					</v-btn>
@@ -32,9 +32,26 @@
 			</div>
 
 			<v-divider class="white"></v-divider>
-			<v-btn v-for="link in links" :key="link.text" text>
-				<g-link :to="link.url">{{ link.text }}</g-link>
-			</v-btn>
+			<div class="ml-4">
+				<v-list nav>
+					<v-list-item>
+						<v-list-item-content>
+							<v-list-item-title
+								v-for="link in links"
+								:key="link.text"
+								class="mt-4 drawer-link"
+							>
+								<g-link class="white--text" :to="link.url">
+									<v-icon class="white--text mr-4 drawer-icon md-icon">{{
+										link.icon
+									}}</v-icon>
+									{{ link.text }}</g-link
+								>
+							</v-list-item-title>
+						</v-list-item-content>
+					</v-list-item>
+				</v-list>
+			</div>
 		</v-navigation-drawer>
 	</nav>
 </template>
@@ -47,7 +64,6 @@ export default {
 			links: [
 				{ icon: 'adb', text: 'Home', url: '/' },
 				{ icon: 'backup', text: 'About', url: '/about/' },
-				{ icon: 'backup', text: 'Grid', url: '/grid/' },
 				{ icon: 'explore', text: 'Colours', url: '/colors/' }
 			]
 		}
