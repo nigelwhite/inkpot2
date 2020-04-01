@@ -4,7 +4,7 @@
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
 			<v-container class="my-5">
-				<h1 class="page-title primary--text">
+				<h1 class="page-title primary--text mb-8">
 					<slot name="title" />
 				</h1>
 				<div class="mx-8">

@@ -21,18 +21,31 @@
 		</v-card>
 
 		<v-navigation-drawer v-model="drawer" app class="indigo">
-			<div class="ml-4">
-				<p class="headline white--text">
-					NW Starter
-				</p>
-			</div>
+			<v-list-item>
+				<v-list-item-content>
+					<v-list-item-title class="headline white--text">
+						NW Starter
+					</v-list-item-title>
+				</v-list-item-content>
+			</v-list-item>
 
-			<v-divider class="white"></v-divider>
-			<div class="d-flex flex-column">
-				<v-btn v-for="link in links" :key="link.text" text>
-					<g-link :to="link.url">{{ link.text }}</g-link>
-				</v-btn>
-			</div>
+			<v-divider></v-divider>
+
+			<v-list dense nav>
+				<v-list-item v-for="link in links" :key="link.text" link>
+					<v-list-item-icon>
+						<v-icon class="white--text">{{ link.icon }}</v-icon>
+					</v-list-item-icon>
+
+					<v-list-item-content>
+						<v-list-item-title class="white--text">
+							<g-link :to="link.url" class="white--text">{{
+								link.text
+							}}</g-link>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+			</v-list>
 		</v-navigation-drawer>
 	</nav>
 </template>
