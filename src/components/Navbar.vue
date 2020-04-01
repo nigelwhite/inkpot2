@@ -22,19 +22,17 @@
 
 		<v-navigation-drawer v-model="drawer" app class="indigo">
 			<div class="ml-4">
-				<v-list-item>
-					<v-list-item-content>
-						<v-list-item-title class="headline white--text">
-							NW Starter
-						</v-list-item-title>
-					</v-list-item-content>
-				</v-list-item>
+				<p class="headline white--text">
+					NW Starter
+				</p>
 			</div>
 
 			<v-divider class="white"></v-divider>
-			<v-btn v-for="link in links" :key="link.text" text>
-				<g-link :to="link.url">{{ link.text }}</g-link>
-			</v-btn>
+			<div class="d-flex flex-column">
+				<v-btn v-for="link in links" :key="link.text" text>
+					<g-link :to="link.url">{{ link.text }}</g-link>
+				</v-btn>
+			</div>
 		</v-navigation-drawer>
 	</nav>
 </template>
@@ -48,6 +46,10 @@ export default {
 				{ icon: 'adb', text: 'Home', url: '/' },
 				{ icon: 'backup', text: 'About', url: '/about/' },
 				{ icon: 'backup', text: 'Grid', url: '/grid/' },
+				{ icon: 'compare_arrows', text: 'Buttons', url: '/buttons/' },
+				{ icon: 'compare_arrows', text: 'Typography', url: '/typography/' },
+				{ icon: 'compare_arrows', text: 'Flex', url: '/flex/' },
+				{ icon: 'compare_arrows', text: 'Breakpoints', url: '/breakpoints/' },
 				{ icon: 'explore', text: 'Colours', url: '/colors/' }
 			]
 		}

@@ -1,7 +1,8 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
-		<p>content goes here</p>
+		<!-- content of page goes here -->
+		<p>Content of page</p>
 	</Layout>
 </template>
 
@@ -9,7 +10,7 @@
 export default {
 	data() {
 		return {
-			title: 'About'
+			title: 'Blank'
 		}
 	}
 }

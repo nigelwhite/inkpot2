@@ -1,16 +1,16 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
-		<v-layout column>
+		<div class="d-flex flex-column">
 			<p>These are the defaults. Change them in main.js</p>
-			<v-btn class="primary btn">Primary</v-btn>
-			<v-btn class="secondary btn">Secondary</v-btn>
-			<v-btn class="accent btn">Accent</v-btn>
-			<v-btn class="error btn">Error</v-btn>
-			<v-btn class="info btn">Info</v-btn>
-			<v-btn class="success btn">Success</v-btn>
-			<v-btn class="warning btn">Warning</v-btn>
-		</v-layout>
+			<v-btn x-large color="primary" class="btn">Primary</v-btn>
+			<v-btn x-large color="secondary" class="btn">Secondary</v-btn>
+			<v-btn x-large color="accent" class="btn">Accent</v-btn>
+			<v-btn x-large color="error" class="btn">Error</v-btn>
+			<v-btn x-large color="info" class="btn">Info</v-btn>
+			<v-btn x-large color="success" class="btn">Success</v-btn>
+			<v-btn x-large color="warning" class="btn">Warning</v-btn>
+		</div>
 	</Layout>
 </template>
 
