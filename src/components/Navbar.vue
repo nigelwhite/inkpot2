@@ -29,7 +29,7 @@
 				</v-list-item-content>
 			</v-list-item>
 
-			<v-divider></v-divider>
+			<v-divider class="white"></v-divider>
 
 			<v-list dense nav>
 				<v-list-item v-for="link in links" :key="link.text" link>
@@ -70,7 +70,4 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
-.drawer-link, .drawer-icon
-	font-size: 1.25rem
-</style>
+<style scoped lang="sass"></style>

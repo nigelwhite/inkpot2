@@ -2,6 +2,13 @@
 	<Layout>
 		<template slot="title">{{ title }}</template>
 		<!-- content of page goes here -->
+		<p>
+			<a
+				href="https://vuetifyjs.com/en/components/buttons/#buttons"
+				target="_blank"
+				>Buttons docs</a
+			>
+		</p>
 		<v-btn>Click me</v-btn>
 		<v-btn depressed>Click me</v-btn>
 		<v-btn color="pink">Click me</v-btn>

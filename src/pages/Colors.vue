@@ -1,6 +1,11 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
+		<p>
+			<a href="https://vuetifyjs.com/en/styles/colors/#colors" target="_blank"
+				>Colours docs</a
+			>
+		</p>
 		<div class="d-flex flex-column">
 			<p>These are the defaults. Change them in main.js</p>
 			<v-btn x-large color="primary" class="btn">Primary</v-btn>

@@ -1,6 +1,13 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
+		<p>
+			<a
+				href="https://vuetifyjs.com/en/components/grids/#grid-system"
+				target="_blank"
+				>Grid docs</a
+			>
+		</p>
 		<p>Use for layout of whole pages</p>
 		<p>v-container not needed here as it is already in default layout</p>
 

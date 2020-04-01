@@ -3,11 +3,11 @@
 		<template slot="title">{{ title }}</template>
 		<!-- content of page goes here -->
 		<p>
-			Typography docs at
 			<a
 				href="https://vuetifyjs.com/en/styles/typography/#typography"
 				target="_blank"
-			></a>
+				>Typography docs</a
+			>
 		</p>
 		<p class="red white--text">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam
