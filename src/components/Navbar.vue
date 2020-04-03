@@ -7,7 +7,7 @@
 					@click="drawer = !drawer"
 				></v-app-bar-nav-icon>
 
-				<v-toolbar-title class="primary--text font-weight-bold"
+				<v-toolbar-title class="primary--text headline font-weight-bold"
 					>NW Gridsome Starter</v-toolbar-title
 				>
 				<v-spacer></v-spacer>
@@ -20,10 +20,10 @@
 			</v-toolbar>
 		</v-card>
 
-		<v-navigation-drawer v-model="drawer" app class="indigo">
+		<v-navigation-drawer v-model="drawer" app class="primary">
 			<v-list-item>
 				<v-list-item-content>
-					<v-list-item-title class="headline white--text">
+					<v-list-item-title class="headline font-weight-bold white--text">
 						NW Starter
 					</v-list-item-title>
 				</v-list-item-content>
@@ -38,7 +38,7 @@
 					</v-list-item-icon>
 
 					<v-list-item-content>
-						<v-list-item-title class="white--text">
+						<v-list-item-title class="white--text subtitle-1">
 							<g-link :to="link.url" class="white--text">{{
 								link.text
 							}}</g-link>
