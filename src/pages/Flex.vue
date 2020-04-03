@@ -11,7 +11,7 @@
 			<a href="https://vuetifyjs.com/en/styles/flex/">Flex docs</a> with
 			responsive classes
 		</p>
-		<h1>Default behaviour = row</h1>
+		<h1>.d-flex Default = row</h1>
 		<p>
 			By default, d-flex applies flex-direction: row and can generally be
 			omitted.
@@ -27,7 +27,7 @@
 				<div>I'm a flexbox container!</div>
 			</v-card>
 		</div>
-		<h1>Column</h1>
+		<h1>Column .d-flex .flex-column</h1>
 		<p>
 			Use d-flex flex-column for vertical
 		</p>
@@ -42,7 +42,13 @@
 				<div>I'm a flexbox container!</div>
 			</v-card>
 		</div>
-		<h1>Flex justify</h1>
+		<h1>
+			Justify .d-flex .justify-end
+		</h1>
+		<p>
+			.justify-start (default) .justify-center .justify-space-between
+			.justify-space-around etc
+		</p>
 		<p>
 			The justify-content flex setting can be changed using the flex justify
 			classes. This by default will modify the flexbox items on the x-axis but
@@ -60,7 +66,8 @@
 				<div>I'm a justify-end container!</div>
 			</v-card>
 		</div>
-		<h1>Flex align</h1>
+		<h1>Align .d-flex .align-center</h1>
+		<p>.align-start (default) .align-end etc</p>
 		<p>
 			The align-items flex setting can be changed using the flex align classes.
 			This by default will modify the flexbox items on the y-axis but is
@@ -78,7 +85,7 @@
 				<div>I'm a align-center container!</div>
 			</v-card>
 		</div>
-		<h1>Center on both axis</h1>
+		<h1>Center .d-flex .justify-center .align-center</h1>
 		<p>
 			Using justify-center and align-center
 		</p>
@@ -93,7 +100,8 @@
 				<div>I'm a fully centered container!</div>
 			</v-card>
 		</div>
-		<h1>Flex wrap</h1>
+		<h1>Wrap .d-flex .flex-wrap</h1>
+		<p>.flex-nowrap (default) .flex-wrap-reverse</p>
 		<p>
 			By default .d-flex does not provide any wrapping (behaves similarly to
 			flex-wrap: nowrap). This can be modified by applying flex-wrap helper
@@ -121,4 +129,6 @@ export default {
 <style lang="sass" scoped>
 .align-demo
   height: 200px
+h1
+	margin-top: 40px
 </style>

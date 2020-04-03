@@ -1,12 +1,14 @@
 <template>
 	<v-footer height="75">
-		<div class="mx-auto">
-			<v-btn v-for="link in links" :key="link.name" text class="mr-4">
-				<a :href="link.url" target="_blank">
-					{{ link.name }}
-				</a>
-			</v-btn>
-		</div>
+		<v-row justify="center" align="center">
+			<div class="d-flex flex-column flex-md-row">
+				<v-btn v-for="link in links" :key="link.name" text rounded class="mr-4">
+					<a :href="link.url" target="_blank">
+						{{ link.name }}
+					</a>
+				</v-btn>
+			</div>
+		</v-row>
 	</v-footer>
 </template>
 

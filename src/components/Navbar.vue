@@ -13,7 +13,7 @@
 				<v-spacer></v-spacer>
 
 				<div class="hidden-sm-and-down">
-					<v-btn v-for="link in links" :key="link.text" text>
+					<v-btn v-for="link in links" :key="link.text" text rounded>
 						<g-link :to="link.url">{{ link.text }}</g-link>
 					</v-btn>
 				</div>

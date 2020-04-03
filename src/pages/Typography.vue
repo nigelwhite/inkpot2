@@ -9,6 +9,12 @@
 				>Typography docs</a
 			>
 		</p>
+		<p><a href="https://vuetifyjs.com/en/styles/text/">Text docs</a></p>
+		<p>
+			<a href="https://vuetifyjs.com/en/styles/text/#text-alignment"
+				>Text align docs</a
+			>
+		</p>
 		<p class="red white--text">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam
 			cupiditate in et libero blanditiis nam fuga beatae eum impedit officia

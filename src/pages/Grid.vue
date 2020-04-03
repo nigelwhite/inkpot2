@@ -8,10 +8,10 @@
 				>Grid docs</a
 			>
 		</p>
-		<p>Use for layout of whole pages</p>
+		<p>Use for layout of whole rows</p>
 		<p>v-container not needed here as it is already in default layout</p>
 
-		<h1>Horizontal</h1>
+		<h1 class="mt-10">Horizontal</h1>
 		<p>Cols inside one row</p>
 		<v-row>
 			<v-col>
@@ -57,6 +57,22 @@
 					stuff and nonsense
 				</v-card>
 			</v-col>
+		</v-row>
+
+		<h1 class="mt-10">Centering flexbox items</h1>
+		<p>Contain the d-flex inside a v-row. As in this site's footer</p>
+		<v-row justify="center" align="center">
+			<div class="d-flex flex-column flex-md-row">
+				<v-btn text rounded class="mr-4">
+					<a href="#">Example</a>
+				</v-btn>
+				<v-btn text rounded class="mr-4">
+					<a href="#">Example</a>
+				</v-btn>
+				<v-btn text rounded class="mr-4">
+					<a href="#">Example</a>
+				</v-btn>
+			</div>
 		</v-row>
 	</Layout>
 </template>
