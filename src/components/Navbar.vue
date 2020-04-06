@@ -13,9 +13,12 @@
 					</v-btn>
 				</div>
 				<v-app-bar-nav-icon
-					class="primary--text"
+					class="primary--text hidden-md-and-up"
 					@click="drawer = !drawer"
-				></v-app-bar-nav-icon>
+				>
+					<v-icon large v-show="!drawer">menu</v-icon>
+					<v-icon large v-show="drawer">close</v-icon>
+				</v-app-bar-nav-icon>
 			</v-toolbar>
 		</v-card>
 
