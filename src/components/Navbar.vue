@@ -2,11 +2,6 @@
 	<nav>
 		<v-card color="grey lighten-4" text tile>
 			<v-toolbar dense>
-				<v-app-bar-nav-icon
-					class="primary--text"
-					@click="drawer = !drawer"
-				></v-app-bar-nav-icon>
-
 				<v-toolbar-title class="primary--text headline font-weight-bold"
 					>NW Gridsome Starter</v-toolbar-title
 				>
@@ -17,6 +12,10 @@
 						<g-link :to="link.url">{{ link.text }}</g-link>
 					</v-btn>
 				</div>
+				<v-app-bar-nav-icon
+					class="primary--text"
+					@click="drawer = !drawer"
+				></v-app-bar-nav-icon>
 			</v-toolbar>
 		</v-card>
 
@@ -63,11 +62,11 @@ export default {
 				{ icon: 'compare_arrows', text: 'Typography', url: '/typography/' },
 				{ icon: 'compare_arrows', text: 'Flex', url: '/flex/' },
 				{ icon: 'compare_arrows', text: 'Breakpoints', url: '/breakpoints/' },
-				{ icon: 'explore', text: 'Colours', url: '/colors/' }
-			]
-		}
-	}
-}
+				{ icon: 'explore', text: 'Colours', url: '/colors/' },
+			],
+		};
+	},
+};
 </script>
 
 <style scoped lang="sass"></style>

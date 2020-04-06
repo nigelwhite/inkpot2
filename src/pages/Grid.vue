@@ -78,13 +78,14 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			title: 'Grid'
-		}
-	}
-}
+  export default {
+    data () {
+      return {
+				title: 'Grid',
+      }
+    }
+  }
+</script>
 </script>
 
 <style lang="scss" scoped></style>
