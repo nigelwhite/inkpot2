@@ -3,7 +3,7 @@
 		<v-card color="grey lighten-4" text tile>
 			<v-toolbar dense>
 				<v-toolbar-title class="primary--text headline font-weight-bold"
-					>NW Gridsome Starter</v-toolbar-title
+					>The Inkpot</v-toolbar-title
 				>
 				<v-spacer></v-spacer>
 
@@ -16,8 +16,8 @@
 					class="primary--text hidden-md-and-up"
 					@click="drawer = !drawer"
 				>
-					<v-icon large v-show="!drawer">menu</v-icon>
-					<v-icon large v-show="drawer">close</v-icon>
+					<v-icon v-show="!drawer">menu</v-icon>
+					<v-icon v-show="drawer">close</v-icon>
 				</v-app-bar-nav-icon>
 			</v-toolbar>
 		</v-card>
