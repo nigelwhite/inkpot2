@@ -32,18 +32,20 @@
 					kitchen which can be used to feed that many as well.
 				</p>
 			</v-col>
-			<v-col class="text-center">
+			<v-col class="px-12 text-center">
 				<g-image src="~/assets/images/hannah.jpg" width="250" />
-				<div class="video-container mt-8">
-					<div class="youtube-responsive-container">
-						<iframe
-							width="444"
-							height="250"
-							src="https://www.youtube.com/embed/viGvddHenA8"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+				<div text-center class="outer-video-container">
+					<div class="video-container mt-4">
+						<div class="youtube-responsive-container">
+							<iframe
+								width="444"
+								height="250"
+								src="https://www.youtube.com/embed/viGvddHenA8"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
 					</div>
 				</div>
 			</v-col>
@@ -62,8 +64,12 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.outer-video-container
+	padding: 5%
+
 .video-container
-  max-width: 444px
+	min-width: 250px
+//   max-width: 444px
 
 .youtube-responsive-container
   position: relative
