@@ -32,7 +32,7 @@
 					kitchen which can be used to feed that many as well.
 				</p>
 			</v-col>
-			<v-col class="px-12 text-center">
+			<v-col class="px-lg-12 text-center">
 				<g-image src="~/assets/images/hannah.jpg" width="250" />
 				<div text-center class="outer-video-container">
 					<div class="video-container mt-4">
@@ -68,7 +68,7 @@ export default {
 	padding: 5%
 
 .video-container
-	min-width: 250px
+// min-width: 250px
 //   max-width: 444px
 
 .youtube-responsive-container
