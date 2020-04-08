@@ -1,0 +1,41 @@
+---
+- title: Beef
+  content: from our pedigree Lincoln Reds
+  link: beef
+  show: true
+  image: cow-mother-child-250x150.jpg
+  badge: url
+  order: 1
+  action: order now
+- title: Hogget
+  content: great flavour and fantastic quality
+  link: hogget
+  show: true
+  image: sheep-250x150.jpg
+  badge: url
+  order: 1
+  action: order now
+- title: Eggs
+  content: hopeful
+  link: #
+  show: true
+  image: hen-250x150.jpg
+  badge: url
+  order: 1
+  action: order now
+- title: Open Farm Sunday
+  content: hopeful
+  link: https://farmsunday.org
+  show: true
+  image: open-farm-sunday.png
+  badge: url
+  order: 1
+  action:
+- title: Wool
+  content: hopeful
+  link: #
+  show: true
+  image: cow-mother-child-250x150.jpg
+  badge: url
+  order: 1
+  action: order now

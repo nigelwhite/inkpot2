@@ -22,7 +22,7 @@
 			</v-toolbar>
 		</v-card>
 
-		<v-navigation-drawer v-model="drawer" app class="primary">
+		<v-navigation-drawer v-model="drawer" app class="primary hidden-md-and-up">
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title class="headline font-weight-bold white--text">
