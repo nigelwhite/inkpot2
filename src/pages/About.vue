@@ -33,7 +33,10 @@
 				</p>
 			</v-col>
 			<v-col class="px-lg-12 text-center">
-				<g-image src="~/assets/images/hannah.jpg" width="250" />
+				<v-img
+					:src="require('~/assets/images/hannah.jpg')"
+					max-width="250"
+				></v-img>
 				<div text-center class="outer-video-container">
 					<div class="video-container mt-4">
 						<div class="youtube-responsive-container">
