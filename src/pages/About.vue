@@ -39,7 +39,7 @@
 					class="mx-auto"
 				></v-img>
 				<div text-center class="outer-video-container">
-					<div class="video-container mt-4">
+					<div class="video-container mt-12">
 						<div class="youtube-responsive-container">
 							<iframe
 								width="444"
