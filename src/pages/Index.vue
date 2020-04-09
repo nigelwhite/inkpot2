@@ -7,10 +7,10 @@
 					<v-card
 						v-for="(card, index) in cards"
 						:key="index"
-						class="mx-12"
+						class="mx-12 mb-12"
 						width="250"
 					>
-						<g-image :src="require('~/assets/images/' + card.image)" />
+						<v-img :src="require('~/assets/images/' + card.image)" /></v-img>
 						<v-card-title>{{ card.title }}</v-card-title>
 						<v-card-subtitle class="pb-0">{{ card.content }}</v-card-subtitle>
 						<v-card-actions>
