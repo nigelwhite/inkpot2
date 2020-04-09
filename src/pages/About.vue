@@ -36,6 +36,7 @@
 				<v-img
 					:src="require('~/assets/images/hannah.jpg')"
 					max-width="250"
+					class="mx-auto"
 				></v-img>
 				<div text-center class="outer-video-container">
 					<div class="video-container mt-4">
