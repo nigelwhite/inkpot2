@@ -1,15 +1,21 @@
 <template>
 	<Layout>
-		
-		<template slot="title">{{ title }}</template>
 		<v-row>
 			<v-col cols="12">
-				<div class="d-flex flex-wrap justify-center">
+<h1 class="display-2 font-weight-bold mb-3">The Inkpot</h1>
+<h1>A Permaculture Farm in Lincolnshire</h1>
+			</v-col>
+		</v-row>
+		
+		<v-row>
+			<v-col cols="12">
+				<div class="d-flex flex-wrap justify-center align-end ink-container">
 					<v-card
 						v-for="(card, index) in cards"
 						:key="index"
-						class="mx-12 mb-12"
-						width="250"
+						class="mx-12"
+						width="175"
+						height="250"
 					>
 						<v-img :src="require('~/assets/images/' + card.image)" /></v-img>
 						<v-card-title>{{ card.title }}</v-card-title>
@@ -48,4 +54,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.ink-container
+	height: 600px
 </style>
