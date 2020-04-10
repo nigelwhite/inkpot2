@@ -1,5 +1,6 @@
 <template>
 	<Layout>
+		
 		<template slot="title">{{ title }}</template>
 		<v-row>
 			<v-col cols="12">
@@ -22,13 +23,18 @@
 				</div>
 			</v-col>
 		</v-row>
+		
 	</Layout>
 </template>
 
 <script>
+import Layout from '~/layouts/Home.vue'
 import cards from '@/data/cards.yaml';
 
 export default {
+	components: {
+		Layout
+	},
 	metaInfo: {
 		title: 'Inkpot | home',
 	},
@@ -41,4 +47,5 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+</style>

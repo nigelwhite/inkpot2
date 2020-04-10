@@ -1,5 +1,5 @@
 <template>
-	<v-app :style="{ background: $vuetify.theme.themes[theme].background }">
+	<v-app class="ink-bg">
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
@@ -34,4 +34,11 @@ export default {
 };
 </script>
 
-<style lang="sass"></style>
+<style lang="sass" scoped>
+.ink-bg
+	background-image: url('~@/assets/images/cover_cows.jpg')
+	height: 100%
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+</style>
