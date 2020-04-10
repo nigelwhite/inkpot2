@@ -1,5 +1,5 @@
 <template>
-	<v-app class="grey lighten-4">
+	<v-app :style="{ background: $vuetify.theme.themes[theme].background }">
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
@@ -24,9 +24,21 @@ import Footer from '@/components/Footer.vue';
 export default {
 	components: {
 		Navbar,
-		Footer,
+		Footer
 	},
+	computed: {
+		theme() {
+			return this.$vuetify.theme.dark ? 'dark' : 'light';
+		}
+	}
 };
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.ink-bg
+	background-image: url('~@/assets/images/cover_cows.jpg')
+	height: 100%
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+</style>
