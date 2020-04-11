@@ -26,12 +26,28 @@
 - title: Open Farm Sunday
   content: hopeful
   link: https://farmsunday.org
-  show: true
+  show: false
   image: open-farm-sunday.png
   badge: url
   order: 1
   action:
 - title: Wool
+  content: hopeful
+  link: #
+  show: true
+  image: cow-mother-child-250x150.jpg
+  badge: url
+  order: 1
+  action: order now
+- title: Turkeys
+  content: hopeful
+  link: #
+  show: true
+  image: cow-mother-child-250x150.jpg
+  badge: url
+  order: 1
+  action: out of season
+- title: Fleeces
   content: hopeful
   link: #
   show: true
