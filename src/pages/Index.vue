@@ -14,9 +14,7 @@
 						v-for="(card, index) in cards"
 						v-show="card.show"
 						:key="index"
-						class="mx-12"
-						width="175"
-						height="250"
+						class="ink-cards mx-2 mb-12"
 					>
 						<v-img :src="require('~/assets/images/' + card.image)" /></v-img>
 						<v-card-title>{{ card.title }}</v-card-title>
@@ -57,4 +55,10 @@ export default {
 <style lang="sass" scoped>
 .ink-container
 	height: 600px
+
+@media only screen and (min-width: 600px)
+	.ink-card
+		width: 175px
+
+
 </style>

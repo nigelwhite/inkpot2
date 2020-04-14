@@ -3,8 +3,8 @@
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
-			<v-container class="my-12">
-				<div class="mx-8">
+			<v-container class="my-md-12">
+				<div>
 					<slot />
 				</div>
 			</v-container>
@@ -32,11 +32,12 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.ink-bg
-	// background-image: url('~@/assets/images/cover_cows.jpg')
-	background-image: url('~@/assets/images/cover_sheep.jpg')
-	height: 100%
-	background-position: center
-	background-repeat: no-repeat
-	background-size: cover
+@media only screen and (min-width: 600px)
+	.ink-bg
+		// background-image: url('~@/assets/images/cover_cows.jpg')
+		background-image: url('~@/assets/images/cover_sheep.jpg')
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
 </style>
