@@ -4,13 +4,13 @@
 		<v-row>
 			<v-col>
 				<p>
-					The Inkpot is an 18 acre field working farm which is a demonstration
-					site of permaculture design. It has been home to Hannah Thorogood and
-					family since September 2010 and since that time much observing and
-					designing has gone on. Some projects have been implemented such as the
-					planting of 3000 trees in shelter belts, long-term timber and coppice
-					areas, the vegetable beds, poultry and the holistic grazing of cows
-					and sheep.
+					The Inkpot is an 18 acre field - a working farm which is a
+					demonstration site of permaculture design. It has been home to Hannah
+					Thorogood and family since September 2010 and since that time much
+					observing and designing has gone on. Some projects have been
+					implemented such as the planting of 3000 trees in shelter belts,
+					long-term timber and coppice areas, the vegetable beds, poultry and
+					the holistic grazing of cows and sheep.
 				</p>
 				<p>
 					The classroom is a beautiful oak framed reciprocal roofed round house
@@ -61,9 +61,9 @@
 export default {
 	data() {
 		return {
-			title: 'About',
+			title: 'About'
 		};
-	},
+	}
 };
 </script>
 

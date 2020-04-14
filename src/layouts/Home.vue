@@ -3,7 +3,7 @@
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
-			<v-container class="my-md-12">
+			<v-container class="my-4 my-md-12">
 				<div>
 					<slot />
 				</div>

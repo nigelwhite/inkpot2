@@ -12,7 +12,7 @@
 			<v-col class="px-lg-12">
 				<div class="ordering text-center mb-6">
 					<a href="beefpricelist.doc" download>
-						<v-btn>Prices and order details</v-btn>
+						<v-btn>Prices and ordering<br />(download)</v-btn>
 					</a>
 				</div>
 				<p>

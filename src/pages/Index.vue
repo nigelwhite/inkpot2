@@ -2,8 +2,8 @@
 	<Layout>
 		<v-row>
 			<v-col cols="12">
-<h1 class="display-2 font-weight-bold mb-3">The Inkpot</h1>
-<h1>A Permaculture Farm in Lincolnshire</h1>
+<h1 class="ink-title font-weight-bold mb-3">The Inkpot</h1>
+<h2 class="ink-subtitle">A Permaculture Farm in Lincolnshire</h2>
 			</v-col>
 		</v-row>
 		
@@ -54,11 +54,15 @@ export default {
 
 <style lang="sass" scoped>
 .ink-container
-	height: 600px
+	min-height: 600px
 
 @media only screen and (min-width: 600px)
 	.ink-card
 		width: 175px
+	.ink-title
+		font-size: 2rem
+	.ink-subtitle
+		font-size: 1.5em
 
 
 </style>
