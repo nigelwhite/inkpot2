@@ -12,6 +12,7 @@
 				<div class="d-flex flex-wrap justify-center align-end ink-container">
 					<v-card
 						v-for="(card, index) in cards"
+						v-show="card.show"
 						:key="index"
 						class="mx-12"
 						width="175"

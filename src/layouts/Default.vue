@@ -3,11 +3,11 @@
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
-			<v-container class="my-12">
-				<h1 class="primary--text mb-4 mb-md-8 mx-8 mx-md-0">
+			<v-container class="my-2 my-md-12">
+				<h1 class="primary--text mb-2 mb-md-8">
 					<slot name="title" />
 				</h1>
-				<div class="mx-8">
+				<div class="mx-md-8">
 					<slot />
 				</div>
 			</v-container>
