@@ -11,9 +11,7 @@
 			</v-col>
 			<v-col class="px-lg-12">
 				<div class="ordering text-center mb-6">
-					<a href="beefpricelist.doc" download>
-						<v-btn>Prices and ordering<br />(download)</v-btn>
-					</a>
+					<Downloadbtn :prices="beefpricelist" :doc="linkedDoc"></Downloadbtn>
 				</div>
 				<p>
 					This is the first Inkpot beef, from our pedigree Lincoln Red herd.
@@ -39,16 +37,23 @@
 				</p>
 			</v-col>
 		</v-row>
+		<v-row> </v-row>
 	</Layout>
 </template>
 
 <script>
+import Downloadbtn from '@/components/Downloadbtn.vue';
 export default {
 	data() {
 		return {
-			title: 'Beef'
+			title: 'Beef',
+			beefpricelist: 'grand',
+			linkedDoc: 'beefpricelist.doc',
 		};
-	}
+	},
+	components: {
+		Downloadbtn,
+	},
 };
 </script>
 
