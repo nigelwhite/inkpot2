@@ -11,7 +11,7 @@
 			</v-col>
 			<v-col class="px-lg-12">
 				<div class="ordering text-center mb-6">
-					<DownloadBtn :prices="beefpricelist" :doc="linkedDoc"></DownloadBtn>
+					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>
 					This is the first Inkpot beef, from our pedigree Lincoln Red herd.
@@ -38,7 +38,11 @@
 			</v-col>
 		</v-row>
 		<v-row justify="center" align="center">
-			<Portraits3 />
+			<Portraits3
+				:img1="require('~/assets/images/cows1.png')"
+				:img2="require('~/assets/images/cows2.png')"
+				:img3="require('~/assets/images/cows3.png')"
+			></Portraits3>
 		</v-row>
 	</Layout>
 </template>
