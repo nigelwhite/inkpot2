@@ -11,7 +11,7 @@
 			</v-col>
 			<v-col class="px-lg-12">
 				<div class="ordering text-center mb-6">
-					<Downloadbtn :prices="beefpricelist" :doc="linkedDoc"></Downloadbtn>
+					<DownloadBtn :prices="beefpricelist" :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>
 					This is the first Inkpot beef, from our pedigree Lincoln Red herd.
@@ -37,12 +37,15 @@
 				</p>
 			</v-col>
 		</v-row>
-		<v-row> </v-row>
+		<v-row justify="center" align="center">
+			<Portraits3 />
+		</v-row>
 	</Layout>
 </template>
 
 <script>
-import Downloadbtn from '@/components/Downloadbtn.vue';
+import DownloadBtn from '@/components/DownloadBtn.vue';
+import Portraits3 from '@/components/Portraits3.vue';
 export default {
 	data() {
 		return {
@@ -52,7 +55,8 @@ export default {
 		};
 	},
 	components: {
-		Downloadbtn,
+		DownloadBtn,
+		Portraits3,
 	},
 };
 </script>
