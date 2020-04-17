@@ -11,12 +11,14 @@
 					></v-img>
 				</v-row>
 				<v-row>
-					<Portraits3
-						:class="wideOnly"
-						:img1="require('~/assets/images/' + pic1)"
-						:img2="require('~/assets/images/' + pic2)"
-						:img3="require('~/assets/images/' + pic3)"
-					></Portraits3>
+					<v-col>
+						<Portraits3
+							:class="wideOnly"
+							:img1="require('~/assets/images/' + pic1)"
+							:img2="require('~/assets/images/' + pic2)"
+							:img3="require('~/assets/images/' + pic3)"
+						></Portraits3>
+					</v-col>
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
@@ -48,12 +50,14 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<Portraits3
-				:class="narrowOnly"
-				:img1="require('~/assets/images/' + pic1)"
-				:img2="require('~/assets/images/' + pic2)"
-				:img3="require('~/assets/images/' + pic3)"
-			></Portraits3>
+			<v-col>
+				<Portraits3
+					:class="narrowOnly"
+					:img1="require('~/assets/images/' + pic1)"
+					:img2="require('~/assets/images/' + pic2)"
+					:img3="require('~/assets/images/' + pic3)"
+				></Portraits3>
+			</v-col>
 		</v-row>
 	</Layout>
 </template>
@@ -70,8 +74,9 @@ export default {
 			pic1: 'cows1.png',
 			pic2: 'cows2.png',
 			pic3: 'cows3.png',
-			narrowOnly: 'd-flex flex-column flex-sm-row flex-lg-row mt-4 d-xl-none',
-			wideOnly: 'd-none d-xl-flex justify-xl-space-around mt-10',
+			narrowOnly:
+				'd-flex flex-column flex-sm-row justify-sm-space-around mt-4 d-xl-none',
+			wideOnly: 'd-none d-xl-flex justify-space-between mt-10',
 		};
 	},
 	components: {
