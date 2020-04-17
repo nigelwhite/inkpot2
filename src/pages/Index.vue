@@ -12,9 +12,10 @@
 				<div class="d-flex flex-wrap justify-center align-end ink-container">
 					<v-hover v-slot:default="{hover}" v-for="(card, index) in cards"
 							v-show="card.show"
-							:key="index">
+							:key="index"
+							class="ink-grow">
 						<v-card
-							:elevation="hover ? 16 : 2"
+							:class="{ 'on-hover': hover }"
 							class="ink-cards mx-2 mb-12"
 							
 						>
@@ -59,13 +60,12 @@ export default {
 .ink-container
 	min-height: 600px
 
-// .grow
-//   -webkit-transition: all .2s ease-in-out
-//   transition: all .2s ease-in-out
-
-// .grow:hover
-//   -webkit-transform: scale(1.05)
-//           transform: scale(1.05)
+.on-hover
+  -webkit-transform: scale(1.05)
+          transform: scale(1.05)
+.ink-grow
+	-webkit-transition: all .2s ease-in-out
+  transition: all .2s ease-in-out
 
 @media only screen and (min-width: 600px)
 	.ink-card
