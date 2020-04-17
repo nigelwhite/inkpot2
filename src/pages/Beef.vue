@@ -3,11 +3,21 @@
 		<template slot="title">{{ title }}</template>
 		<v-row>
 			<v-col>
-				<v-img
-					:src="require('~/assets/images/cows-panoram.jpg')"
-					max-width="1004"
-					class="mx-auto"
-				></v-img>
+				<v-row>
+					<v-img
+						:src="require('~/assets/images/cows-panoram.jpg')"
+						max-width="1004"
+						class="mx-auto"
+					></v-img>
+				</v-row>
+				<v-row class="d-none d-xl-block mx-auto mt-10">
+					<p>show wide only</p>
+					<Portraits3
+						:img1="require('~/assets/images/cows1.png')"
+						:img2="require('~/assets/images/cows2.png')"
+						:img3="require('~/assets/images/cows3.png')"
+					></Portraits3>
+				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
 				<div class="ordering text-center mb-6">
@@ -37,12 +47,18 @@
 				</p>
 			</v-col>
 		</v-row>
-		<v-row justify="center" align="center">
-			<Portraits3
-				:img1="require('~/assets/images/cows1.png')"
-				:img2="require('~/assets/images/cows2.png')"
-				:img3="require('~/assets/images/cows3.png')"
-			></Portraits3>
+		<v-row class="d-xl-none">
+			<p>show narrow only</p>
+			<v-col>
+				<v-row>
+					<Portraits3
+						:img1="require('~/assets/images/cows1.png')"
+						:img2="require('~/assets/images/cows2.png')"
+						:img3="require('~/assets/images/cows3.png')"
+						class="mx-auto"
+					></Portraits3>
+				</v-row>
+			</v-col>
 		</v-row>
 	</Layout>
 </template>
