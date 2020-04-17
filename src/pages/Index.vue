@@ -10,9 +10,11 @@
 		<v-row>
 			<v-col cols="12">
 				<div class="d-flex flex-wrap justify-center align-end ink-container">
-					<v-hover v-slot:default="{hover}" v-for="(card, index) in cards"
+					<div v-for="(card, index) in cards"
 							v-show="card.show"
-							:key="index"
+							:key="index">
+						<g-link :to="card.link">
+					<v-hover v-slot:default="{hover}" 
 							class="ink-grow">
 						<v-card
 							:class="{ 'on-hover': hover }"
@@ -29,6 +31,8 @@
 							</v-card-actions>
 						</v-card>
 					</v-hover>
+					</g-link>
+					</div>
 				</div>
 			</v-col>
 		</v-row>
