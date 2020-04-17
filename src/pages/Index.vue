@@ -10,21 +10,24 @@
 		<v-row>
 			<v-col cols="12">
 				<div class="d-flex flex-wrap justify-center align-end ink-container">
-					<v-card
-						v-for="(card, index) in cards"
-						v-show="card.show"
-						:key="index"
-						class="ink-cards mx-2 mb-12"
-					>
-						<v-img :src="require('~/assets/images/' + card.image)" /></v-img>
-						<v-card-title>{{ card.title }}</v-card-title>
-						<v-card-subtitle class="pb-0">{{ card.content }}</v-card-subtitle>
-						<v-card-actions>
-							<v-btn color="orange" text>
-								{{ card.action }}
-							</v-btn>
-						</v-card-actions>
-					</v-card>
+					<v-hover v-slot:default="{hover}" v-for="(card, index) in cards"
+							v-show="card.show"
+							:key="index">
+						<v-card
+							:elevation="hover ? 16 : 2"
+							class="ink-cards mx-2 mb-12"
+							
+						>
+							<v-img :src="require('~/assets/images/' + card.image)" /></v-img>
+							<v-card-title>{{ card.title }}</v-card-title>
+							<v-card-subtitle class="pb-0">{{ card.content }}</v-card-subtitle>
+							<v-card-actions>
+								<v-btn color="orange" text>
+									{{ card.action }}
+								</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-hover>
 				</div>
 			</v-col>
 		</v-row>
@@ -55,6 +58,14 @@ export default {
 <style lang="sass" scoped>
 .ink-container
 	min-height: 600px
+
+// .grow
+//   -webkit-transition: all .2s ease-in-out
+//   transition: all .2s ease-in-out
+
+// .grow:hover
+//   -webkit-transform: scale(1.05)
+//           transform: scale(1.05)
 
 @media only screen and (min-width: 600px)
 	.ink-card
