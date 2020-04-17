@@ -13,9 +13,9 @@
 				<v-row class="d-none d-xl-block mx-auto mt-10">
 					<p>show wide only</p>
 					<Portraits3
-						:img1="require('~/assets/images/cows1.png')"
-						:img2="require('~/assets/images/cows2.png')"
-						:img3="require('~/assets/images/cows3.png')"
+						:img1="require('~/assets/images/' + pic1)"
+						:img2="require('~/assets/images/' + pic2)"
+						:img3="require('~/assets/images/' + pic3)"
 					></Portraits3>
 				</v-row>
 			</v-col>
@@ -52,9 +52,9 @@
 			<v-col>
 				<v-row>
 					<Portraits3
-						:img1="require('~/assets/images/cows1.png')"
-						:img2="require('~/assets/images/cows2.png')"
-						:img3="require('~/assets/images/cows3.png')"
+						:img1="require('~/assets/images/' + pic1)"
+						:img2="require('~/assets/images/' + pic2)"
+						:img3="require('~/assets/images/' + pic3)"
 						class="mx-auto"
 					></Portraits3>
 				</v-row>
@@ -72,6 +72,9 @@ export default {
 			title: 'Beef',
 			beefpricelist: 'grand',
 			linkedDoc: 'beefpricelist.doc',
+			pic1: 'cows1.png',
+			pic2: 'cows2.png',
+			pic3: 'cows3.png',
 		};
 	},
 	components: {

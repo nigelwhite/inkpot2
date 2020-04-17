@@ -18,17 +18,16 @@
 		<div class="mt-5">
 			<p>Class=....</p>
 			<p>
-				1
-				<v-btn class="hidden-md-and-down">hidden-md-and-down</v-btn>
+				.d-{value} for xs <br />.d-{breakpoint}-{value} for sm, md, lg and xl
 			</p>
 			<p>
-				2
-				<v-btn class="hidden-md-and-up">hidden-md-and-up</v-btn>
+				When setting a specific breakpoint for a display helper class, it will
+				apply to all screen widths from the designation and up. For example,
+				d-lg-flex will apply to lg and xl size screens.S
 			</p>
-			<p>
-				3
-				<v-btn class="hidden-sm-only">hidden-sm-only</v-btn>
-			</p>
+			<a href="https://vuetifyjs.com/en/styles/display/#display" targe="_blank"
+				>Display docs</a
+			>
 		</div>
 	</Layout>
 </template>
