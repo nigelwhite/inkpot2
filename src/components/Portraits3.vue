@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex flex-column flex-md-row mt-4">
+	<div>
 		<v-img :src="img1" max-width="250" class="mb-10 mx-6"></v-img>
 		<v-img :src="img2" max-width="250" class="mb-10 mx-6"></v-img>
 		<v-img :src="img3" max-width="250" class="mb-10 mx-6"></v-img>
@@ -8,7 +8,6 @@
 
 <script>
 export default {
-	// props: ['img1', 'img2', 'img3'],
 	props: {
 		img1: {
 			type: String,

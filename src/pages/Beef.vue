@@ -10,9 +10,9 @@
 						class="mx-auto"
 					></v-img>
 				</v-row>
-				<v-row class="d-none d-xl-block mx-auto mt-10">
-					<p>show wide only</p>
+				<v-row>
 					<Portraits3
+						:class="wideOnly"
 						:img1="require('~/assets/images/' + pic1)"
 						:img2="require('~/assets/images/' + pic2)"
 						:img3="require('~/assets/images/' + pic3)"
@@ -20,7 +20,7 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div class="ordering text-center mb-6">
+				<div class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>
@@ -47,18 +47,13 @@
 				</p>
 			</v-col>
 		</v-row>
-		<v-row class="d-xl-none">
-			<p>show narrow only</p>
-			<v-col>
-				<v-row>
-					<Portraits3
-						:img1="require('~/assets/images/' + pic1)"
-						:img2="require('~/assets/images/' + pic2)"
-						:img3="require('~/assets/images/' + pic3)"
-						class="mx-auto"
-					></Portraits3>
-				</v-row>
-			</v-col>
+		<v-row>
+			<Portraits3
+				:class="narrowOnly"
+				:img1="require('~/assets/images/' + pic1)"
+				:img2="require('~/assets/images/' + pic2)"
+				:img3="require('~/assets/images/' + pic3)"
+			></Portraits3>
 		</v-row>
 	</Layout>
 </template>
@@ -75,6 +70,8 @@ export default {
 			pic1: 'cows1.png',
 			pic2: 'cows2.png',
 			pic3: 'cows3.png',
+			narrowOnly: 'd-flex flex-column flex-sm-row flex-lg-row mt-4 d-xl-none',
+			wideOnly: 'd-none d-xl-flex justify-xl-space-around mt-10',
 		};
 	},
 	components: {
