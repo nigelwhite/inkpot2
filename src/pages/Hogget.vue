@@ -12,11 +12,7 @@
 				</v-row>
 				<v-row>
 					<v-col>
-						<Portraits3Wide
-							:img1="require('~/assets/images/' + pic1)"
-							:img2="require('~/assets/images/' + pic2)"
-							:img3="require('~/assets/images/' + pic3)"
-						></Portraits3Wide>
+						<Portraits3Wide></Portraits3Wide>
 					</v-col>
 				</v-row>
 			</v-col>
@@ -50,11 +46,7 @@
 		</v-row>
 		<v-row>
 			<v-col>
-				<Portraits3Narrow
-					:img1="require('~/assets/images/' + pic1)"
-					:img2="require('~/assets/images/' + pic2)"
-					:img3="require('~/assets/images/' + pic3)"
-				></Portraits3Narrow>
+				<Portraits3Narrow></Portraits3Narrow>
 			</v-col>
 		</v-row>
 	</Layout>
@@ -68,11 +60,11 @@ import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
 export default {
 	data() {
 		return {
-			title: 'Beef',
+			title: 'Hogget',
 			linkedDoc: 'beefpricelist.doc',
-			pic1: 'cows1.png',
-			pic2: 'cows2.png',
-			pic3: 'cows3.png',
+			pic1: '',
+			pic2: '',
+			pic3: '',
 		};
 	},
 	components: {
