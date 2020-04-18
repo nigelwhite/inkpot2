@@ -5,7 +5,7 @@
 			<v-col>
 				<v-row>
 					<v-img
-						:src="require('~/assets/images/cows-panoram.jpg')"
+						:src="require('~/assets/images/sheep-panoram.jpg')"
 						max-width="1004"
 						class="mx-auto"
 					></v-img>
