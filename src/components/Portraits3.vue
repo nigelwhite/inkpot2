@@ -22,12 +22,5 @@ export default {
 			default: 'https://via.placeholder.com/250x250.png?text=Cute+Pic+3',
 		},
 	},
-	// data: function() {
-	// 	return {
-	// 		narrowOnly:
-	// 			'd-flex flex-column flex-sm-row justify-sm-space-around mt-4 d-xl-none',
-	// 		wideOnly: 'd-none d-xl-flex justify-space-between mt-10',
-	// 	};
-	// },
 };
 </script>

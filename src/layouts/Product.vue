@@ -15,7 +15,9 @@
 							</v-row>
 							<v-row>
 								<v-col>
-									<Portraits3 :class="wideOnly"></Portraits3>
+									<Portraits3
+										class="d-none d-xl-flex justify-space-between mt-10"
+									></Portraits3>
 								</v-col>
 							</v-row>
 						</v-col>
@@ -28,7 +30,9 @@
 					</v-row>
 					<v-row>
 						<v-col>
-							<Portraits3 :class="narrowOnly"></Portraits3>
+							<Portraits3
+								class="d-flex flex-column flex-sm-row justify-sm-space-around mt-4 d-xl-none"
+							></Portraits3>
 						</v-col>
 					</v-row>
 				</div>
@@ -53,9 +57,6 @@ export default {
 			pic1: 'cows1.png',
 			pic2: 'cows2.png',
 			pic3: 'cows3.png',
-			narrowOnly:
-				'd-flex flex-column flex-sm-row justify-sm-space-around mt-4 d-xl-none',
-			wideOnly: 'd-none d-xl-flex justify-space-between mt-10',
 		};
 	},
 	components: {

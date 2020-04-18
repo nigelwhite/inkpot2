@@ -69,7 +69,7 @@ export default {
 	data() {
 		return {
 			title: 'Beef',
-			beefpricelist: 'grand',
+
 			linkedDoc: 'beefpricelist.doc',
 			pic1: 'cows1.png',
 			pic2: 'cows2.png',
