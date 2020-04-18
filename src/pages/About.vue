@@ -59,11 +59,14 @@
 
 <script>
 export default {
+	metaInfo: {
+		title: 'Inkpot | About',
+	},
 	data() {
 		return {
-			title: 'About'
+			title: 'About',
 		};
-	}
+	},
 };
 </script>
 
