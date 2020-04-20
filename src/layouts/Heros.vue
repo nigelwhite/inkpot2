@@ -1,13 +1,11 @@
-// used for old index page
 <template>
-	<v-app class="ink-bg">
+	<v-app>
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
+		<slot name="hero-img" />
 		<v-content>
 			<v-container class="my-4 my-md-12">
-				<div>
-					<slot />
-				</div>
+				<slot />
 			</v-container>
 		</v-content>
 		<Footer />
@@ -16,7 +14,6 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue';
-
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -32,13 +29,4 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-@media only screen and (min-width: 600px)
-	.ink-bg
-		// background-image: url('~@/assets/images/cover_cows.jpg')
-		background-image: url('~@/assets/images/cover_sheep.jpg')
-		height: 100%
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
-</style>
+<style lang="sass" scoped></style>
