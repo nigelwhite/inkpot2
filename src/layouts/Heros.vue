@@ -2,8 +2,10 @@
 	<v-app>
 		<Navbar />
 		<!-- v-content has to come first or footer is not held on bottom edge -->
-		<slot name="hero-img" />
 		<v-content>
+			<!-- this additional slot is needed to keep the hero image outside the container so it can display at 100% wide -->
+			<slot name="hero-img" />
+
 			<v-container class="my-4 my-md-12">
 				<slot />
 			</v-container>
