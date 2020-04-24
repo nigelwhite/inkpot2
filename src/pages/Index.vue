@@ -42,10 +42,7 @@
 			</v-img> -->
 			<!-- <g-image src="~/assets/images/hero/vista-mobile-768x161.jpg"> </g-image> -->
 
-			<g-image
-				src="~/assets/images/hero/vista-fullhd-2500x353.jpg"
-				width="2500"
-			/>
+			<g-image src="~/assets/images/hero/vista-fullhd-2500x353.jpg" />
 			<!-- works but always renders fullhd
 			<v-img
 				:src="require('~/assets/images/hero/vista-mobile-768x161.jpg')"
