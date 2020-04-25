@@ -1,5 +1,5 @@
 <template>
-	<div class="d-none d-xl-flex justify-space-between mt-10">
+	<div class="d-none d-xl-flex justify-space-between mt-12">
 		<v-img :src="img1" max-width="250" class="mb-10 mx-6"></v-img>
 		<v-img :src="img2" max-width="250" class="mb-10 mx-6"></v-img>
 		<v-img :src="img3" max-width="250" class="mb-10 mx-6"></v-img>

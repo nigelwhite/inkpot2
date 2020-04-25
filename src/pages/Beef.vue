@@ -6,7 +6,7 @@
 				<v-row>
 					<g-image
 						src="~/assets/images/cows-pan.png"
-						class="gimage mx-auto mt-lg-8"
+						class="gimage mx-auto mt-lg-8 mb-xl-8"
 						width="1200"
 					/>
 				</v-row>
