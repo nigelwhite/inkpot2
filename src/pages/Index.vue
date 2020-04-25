@@ -1,7 +1,20 @@
 <template>
 	<Layout>
 		<template slot="hero-img">
-			<g-image src="~/assets/images/vista-1.png" class="gimage" width="2560" />
+			<div class="hidden-md-and-down">
+				<g-image
+					src="~/assets/images/vista-1.png"
+					class="gimage"
+					width="2560"
+				/>
+			</div>
+			<div class="hidden-lg-and-up">
+				<g-image
+					src="~/assets/images/vista-2.png"
+					class="gimage"
+					width="1264"
+				/>
+			</div>
 		</template>
 		<template slot="title">{{ title }}</template>
 
