@@ -35,7 +35,7 @@
   content: hopeful
   link: #
   show: true
-  image: cow-mother-child-250x150.jpg
+  image: pic-needed-250x150.png
   badge: url
   order: 1
   action: order now
@@ -43,7 +43,7 @@
   content: hopeful
   link: #
   show: true
-  image: cow-mother-child-250x150.jpg
+  image: pic-needed-250x150.png
   badge: url
   order: 1
   action: out of season
@@ -51,7 +51,7 @@
   content: hopeful
   link: #
   show: true
-  image: cow-mother-child-250x150.jpg
+  image: pic-needed-250x150.png
   badge: url
   order: 1
   action: order now
@@ -59,7 +59,7 @@
   content: hopeful
   link: #
   show: true
-  image: cow-mother-child-250x150.jpg
+  image: pic-needed-250x150.png
   badge: url
   order: 1
   action: order now
