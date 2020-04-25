@@ -2,13 +2,13 @@
 	<Layout>
 		<template slot="title">{{ title }}</template>
 		<v-row>
-			<v-col class="col-12 col-xl-8">
+			<v-col>
 				<v-row>
-					<g-image
-						src="~/assets/images/sheep-pan.png"
-						class="gimage mx-auto mt-lg-8 mb-xl-8"
-						width="1200"
-					/>
+					<v-img
+						:src="require('~/assets/images/sheep-panoram.jpg')"
+						max-width="1004"
+						class="mx-auto"
+					></v-img>
 				</v-row>
 				<v-row>
 					<v-col>
@@ -17,7 +17,7 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div v-if="linkedDoc" class="ordering text-center mb-10">
+				<div class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>
@@ -61,7 +61,7 @@ export default {
 	data() {
 		return {
 			title: 'Hogget',
-			linkedDoc: '',
+			linkedDoc: 'beefpricelist.doc',
 			pic1: '',
 			pic2: '',
 			pic3: '',
