@@ -21,7 +21,7 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div class="ordering text-center mb-10">
+				<div v-if="linkedDoc" class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>

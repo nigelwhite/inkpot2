@@ -21,26 +21,36 @@
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<p>
-					This is the first Inkpot beef, from our pedigree Lincoln Red herd.
+					The Inkpot hogget has a great flavour and is of fantastic quality
+					because it is nutrient dense and is as close as possible to meats from
+					the wild as farmed meats can get. The Inkpot hogget is dry aged on the
+					bone for 2 weeks to intensify the flavours and tenderise the meat.
 				</p>
+
 				<p>
-					They live a healthy, high welfare, friendly life, only ever eat grass
-					and hay and are raised to organic standards so no sprays are used and
-					no routine medicines.
+					The Inkpot lambs were bought from Village Farm Organics in Summer 2017
+					and are rare breed Shetlands. Hogget is neither lamb nor mutton but is
+					a 'halfway' meat between one and two-year-old and is often referred to
+					as 'shearling.' The Inkpot hogget is fed entirely on pasture and is
+					raised to organic standards (the Inkpot is currently working towards
+					organic as well as 'Pasture for Life' certification.)
 				</p>
+
 				<p>
-					The herd, along with the sheep, are moved on to fresh pastures every
-					day, all year round, leaving at least three months for the grass to
-					re-grow. This system is a regenerative grazing technique which builds
-					soil, creates habitat and sequesters more carbon from the atmosphere
-					and into the soil, than any tree-based system. It also creates the
-					perfect conditions for soil bacteria called methanotropes, which
-					breathe in more methane than the cows produce and poo it into the soil
-					as carbon.
+					The Inkpot hogget has a great flavour and is of fantastic quality
+					because it is nutrient dense and is as close as possible to meats from
+					the wild as farmed meats can get. The Inkpot hogget is dry aged on the
+					bone for 2 weeks to intensify the flavours and tenderise the meat.
 				</p>
+
 				<p>
-					By buying this beef, you are supporting a small family farm, a local
-					abattoir and helping to reverse climate change!
+					Whether you buy a whole or half you will get joints, chops and mince.
+				</p>
+
+				<p>
+					Packaging to keep the meat frozen is £7 and courier fees are £10 on
+					top of that. These P&P fees will be added when you checkout via
+					paypal.
 				</p>
 			</v-col>
 		</v-row>
