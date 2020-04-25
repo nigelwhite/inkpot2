@@ -18,7 +18,7 @@
 		</template>
 		<template slot="title">{{ title }}</template>
 
-		<v-row>
+		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-8 col-lg-9">
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in cards" v-show="card.show" :key="index">

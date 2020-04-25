@@ -2,13 +2,13 @@
 	<Layout>
 		<template slot="title">{{ title }}</template>
 		<v-row>
-			<v-col>
+			<v-col class="col-12 col-xl-8">
 				<v-row>
-					<v-img
-						:src="require('~/assets/images/cows-panoram.jpg')"
-						max-width="1004"
-						class="mx-auto"
-					></v-img>
+					<g-image
+						src="~/assets/images/cows-pan.png"
+						class="gimage mx-auto mt-lg-8"
+						width="1200"
+					/>
 				</v-row>
 				<v-row>
 					<v-col>

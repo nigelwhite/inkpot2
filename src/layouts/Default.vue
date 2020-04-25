@@ -5,10 +5,16 @@
 		<v-content>
 			<slot name="hero-img" />
 			<v-container class="my-2 my-md-4">
-				<h2 class="primary--text">
-					<slot name="title" />
-				</h2>
-
+				<div class="hidden-md-and-down">
+					<h1 class="primary--text mt-4">
+						<slot name="title" />
+					</h1>
+				</div>
+				<div class="hidden-lg-and-up">
+					<h2 class="primary--text">
+						<slot name="title" />
+					</h2>
+				</div>
 				<slot />
 			</v-container>
 		</v-content>

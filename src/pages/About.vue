@@ -1,6 +1,8 @@
 <template>
 	<Layout>
-		<template slot="title">{{ title }}</template>
+		<template slot="title">
+			<div class="my-4 mb-lg-8">{{ title }}</div>
+		</template>
 		<v-row>
 			<v-col>
 				<p>
