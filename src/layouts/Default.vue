@@ -4,13 +4,12 @@
 		<!-- v-content has to come first or footer is not held on bottom edge -->
 		<v-content>
 			<slot name="hero-img" />
-			<v-container class="my-2 my-md-12">
-				<h1 class="primary--text mb-2 mb-md-8">
+			<v-container class="my-2 my-md-4">
+				<h2 class="primary--text">
 					<slot name="title" />
-				</h1>
-				<div class="mx-md-8">
-					<slot />
-				</div>
+				</h2>
+
+				<slot />
 			</v-container>
 		</v-content>
 		<Footer />
