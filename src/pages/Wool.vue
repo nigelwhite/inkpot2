@@ -28,7 +28,21 @@
 					<PricesNeeded></PricesNeeded>
 				</div>
 				<p>
-					Text all about the wool
+					Inkpot home-grown, home shorn, Yorkshire spun, permaculture designed,
+					pasture fed, holistically managed, nonchemical, rare breed, British
+					native, slow grown wool.
+				</p>
+
+				<p>Available in 50g double knit balls.</p>
+
+				<p>
+					The wool will be posted out 2nd class unless you get in touch to tell
+					us that you want it sooner.
+				</p>
+
+				<p>
+					The postage price of £3.35 which is added on at the paypal checkout
+					includes posting 2nd class and the packaging materials.
 				</p>
 			</v-col>
 		</v-row>

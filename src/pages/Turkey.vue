@@ -14,6 +14,7 @@
 					<v-col>
 						<Portraits3Wide
 							:img2="require('~/assets/images/' + pic2)"
+							:img3="require('~/assets/images/' + pic3)"
 						></Portraits3Wide>
 					</v-col>
 				</v-row>
@@ -39,8 +40,9 @@
 						<p>
 							We usually have a range of sizes which are £4.95/lb. We now have
 							only family size turkeys remaining (6-8.5lb) and these are all
-							available at a fixed price of £45. Biodegradable and reusable
-							packaging and postage is £17.
+							available at a fixed price of £45. Packaging (biodegradable and
+							reusable) to keep the bird frozen is £7. Courier fees are £10 on
+							top of that. So, packaging and postage is £17.
 						</p>
 
 						<p>
@@ -99,6 +101,7 @@
 			<v-col class="px-lg-12">
 				<Portraits3Narrow
 					:img2="require('~/assets/images/' + pic2)"
+					:img3="require('~/assets/images/' + pic3)"
 				></Portraits3Narrow>
 				<v-row>
 					<v-col class="col-xl-9">
@@ -109,34 +112,40 @@
 							</p>
 
 							<p>
-								Here are some fantastic ideas from an Inkpot Turkey buyer "So
-								I've been toying with buying an Inkpot turkey on and off for the
-								past year since Hannah started selling them. Firstly, the cost
-								put me off - £40+ seemed like a lot to spend on one bird, until
-								I asked around and realised I was very much out of touch with
-								what intensively farmed shop/butchers turkeys cost. There's also
-								only two of us eating meat on Christmas Day in this house, and I
-								really didn’t want to have to think about making a thousand
-								meals with cooked turkey.
+								Here are some fantastic ideas from an Inkpot Turkey buyer
 							</p>
+							<div class="pl-4">
+								<p>
+									"So I've been toying with buying an Inkpot turkey on and off
+									for the past year since Hannah started selling them. Firstly,
+									the cost put me off - £40+ seemed like a lot to spend on one
+									bird, until I asked around and realised I was very much out of
+									touch with what intensively farmed shop/butchers turkeys cost.
+									There's also only two of us eating meat on Christmas Day in
+									this house, and I really didn’t want to have to think about
+									making a thousand meals with cooked turkey.
+								</p>
 
-							<p>
-								However, after reading another person's review about how they
-								cooked the whole bird and then portioned it up and re-freezing,
-								I thought I would give it a go. So I bought a bird, defrosted it
-								in the fridge for 48 hours (it defrosted enough for me to joint
-								it) and now I have a re-frozen turkey crown for Christmas day,
-								and enough portions for at least 10 meals (including soup and
-								stock from the bones yet to come.) Result!
-							</p>
+								<p>
+									However, after reading another person's review about how they
+									cooked the whole bird and then portioned it up and
+									re-freezing, I thought I would give it a go. So I bought a
+									bird, defrosted it in the fridge for 48 hours (it defrosted
+									enough for me to joint it) and now I have a re-frozen turkey
+									crown for Christmas day, and enough portions for at least 10
+									meals (including soup and stock from the bones yet to come.)
+									Result!
+								</p>
 
-							<p>
-								Be aware with re-freezing - as long as the defrosting is done in
-								a fridge, for a maximum of 72 hours, you can re-freeze the meat.
-								If you take off the drumsticks and wings first after 48 hours,
-								it will then allow more air to the rest of the bird, and it will
-								be easier to joint it. Below is a 9lb bird jointed."
-							</p>
+								<p>
+									Be aware with re-freezing - as long as the defrosting is done
+									in a fridge, for a maximum of 72 hours, you can re-freeze the
+									meat. If you take off the drumsticks and wings first after 48
+									hours, it will then allow more air to the rest of the bird,
+									and it will be easier to joint it. Below is a 9lb bird
+									jointed."
+								</p>
+							</div>
 						</div>
 					</v-col>
 					<v-col class="d-none d-xl-flex justify-end align-start">
@@ -161,7 +170,7 @@ export default {
 			linkedDoc: '',
 			pic1: 'turkeys1.jpg',
 			pic2: 'turkeys2.png',
-			pic3: 'turkeys3.png',
+			pic3: 'turkey3.png',
 		};
 	},
 	components: {

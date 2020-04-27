@@ -28,7 +28,13 @@
 					<PricesNeeded></PricesNeeded>
 				</div>
 				<p>
-					Text all about the fleece
+					The Inkpot fleeces are an ad-hoc that we have if and when we have
+					them!!
+				</p>
+				<p>
+					Please get in touch if this is something that you might be interested
+					in and Hannah will be able to tell you if and when one might be
+					available and what price is is likely to be.
 				</p>
 			</v-col>
 		</v-row>
@@ -53,7 +59,7 @@ import PricesNeeded from '@/components/PricesNeeded.vue';
 export default {
 	data() {
 		return {
-			title: 'Fleece',
+			title: 'Fleeces',
 			linkedDoc: '',
 			pic1: 'fleece1.png',
 			pic2: 'fleece2.png',

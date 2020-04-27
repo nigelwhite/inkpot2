@@ -12,7 +12,10 @@
 				</v-row>
 				<v-row>
 					<v-col>
-						<Portraits3Wide></Portraits3Wide>
+						<Portraits3Wide
+							:img1="require('~/assets/images/' + pic1)"
+							:img2="require('~/assets/images/' + pic2)"
+						></Portraits3Wide>
 					</v-col>
 				</v-row>
 			</v-col>
@@ -24,13 +27,27 @@
 					<PricesNeeded></PricesNeeded>
 				</div>
 				<p>
-					Text all about eggs
+					At the Inkpot we hold the welfare of our animals as a very high
+					priority. The hens have free range to fresh pasture and form an
+					integral part of our soil building programme following behind the cows
+					and sheep in their carbon sequestering grazing design. Our hens are
+					free roaming, outdoor, free from chemical input, happy hens.
+				</p>
+
+				<p>
+					You are welcome to come along on any Working Wednesday and see for
+					yourself. You can taste the welfare and health of our hens in the
+					eggs. Their bright yellow yolks and hard shells will show you what
+					real eggs are like.
 				</p>
 			</v-col>
 		</v-row>
 		<v-row>
 			<v-col class="px-lg-12">
-				<Portraits3Narrow></Portraits3Narrow>
+				<Portraits3Narrow
+					:img1="require('~/assets/images/' + pic1)"
+					:img2="require('~/assets/images/' + pic2)"
+				></Portraits3Narrow>
 			</v-col>
 		</v-row>
 	</Layout>
@@ -47,8 +64,8 @@ export default {
 		return {
 			title: 'Eggs',
 			linkedDoc: '',
-			pic1: '',
-			pic2: '',
+			pic1: 'eggs1.png',
+			pic2: 'eggs2.png',
 			pic3: '',
 		};
 	},
