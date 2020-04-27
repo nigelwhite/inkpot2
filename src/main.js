@@ -33,7 +33,7 @@ export default function(Vue, { appOptions, head }) {
 					primary: '#3e4618', // dark green. h text colour
 					secondary: '#67682c', // medium green. download buttons
 					accent: '#5c4831', // dark brown
-					error: '#9b8a72', // light brown
+					// error: '#9b8a72', // light brown
 					info: '#b8bac1', // medium blue
 					success: ' #d7dcdf', // medium blue
 					warning: '#777164', // medium brown. instagram container background

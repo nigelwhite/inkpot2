@@ -24,7 +24,7 @@
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
 				<div v-if="!linkedDoc" class="ordering text-center mb-10">
-					<PricesNeeded></PricesNeeded>
+					<ContactUsBtn></ContactUsBtn>
 				</div>
 				<p>
 					At the Inkpot we hold the welfare of our animals as a very high
@@ -57,7 +57,7 @@
 import DownloadBtn from '@/components/DownloadBtn.vue';
 import Portraits3Wide from '@/components/Portraits3Wide.vue';
 import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
-import PricesNeeded from '@/components/PricesNeeded.vue';
+import ContactUsBtn from '@/components/ContactUsBtn.vue';
 
 export default {
 	data() {
@@ -73,7 +73,7 @@ export default {
 		DownloadBtn,
 		Portraits3Wide,
 		Portraits3Narrow,
-		PricesNeeded,
+		ContactUsBtn,
 	},
 };
 </script>
