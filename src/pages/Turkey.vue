@@ -44,17 +44,35 @@
 						</p>
 
 						<p>
-							Fill in the form to book a turkey, pay the £25 deposit, and pay
-							the balance via paypal either at paypal.me/theInkpot when you have
-							received confirmation from Hannah that all is well with your
-							turkey size, etc. or as directed to the right of the page.
+							To book a turkey
+							<a
+								href="https://docs.google.com/forms/d/e/1FAIpQLSfFLnP1YzQsG4ZxuqZbF_76P3uyHbYo3jcP0Bd-X_QQd5j79g/viewform?c=0&w=1"
+								target="_blank"
+								><v-btn small class="secondary"> Fill in the form</v-btn></a
+							>
+							and
+							<a href="http://paypal.me/TheInkpot/25" target="_blank"
+								><v-btn small class="secondary">pay the £25 deposit</v-btn></a
+							><br />When you have received confirmation from Hannah that all is
+							well with your order
+							<a href="https://www.paypal.me/TheInkpot" target="_blank"
+								><v-btn small class="secondary"
+									>pay the balance via paypal</v-btn
+								></a
+							>
 						</p>
 
 						<p>
-							The Permaculture ethic of Fair Shares says that resources need to
-							be shared amongst everyone fairly. To this end, The Inkpot would
-							like to hear from anyone who feeds the homeless as we have some
-							birds reserved for them. Please get in touch to find out more.
+							The Permaculture ethic of
+							<a
+								href="https://knowledgebase.permaculture.org.uk/ethics"
+								target="_blank"
+								>Fair Shares</a
+							>
+							proposes that resources need to be shared amongst everyone fairly.
+							To this end, The Inkpot would like to hear from anyone who feeds
+							the homeless as we have some birds reserved for them. Please get
+							in touch to find out more.
 						</p>
 						<p>
 							"The Turkey last year was probably the best I have ever tasted. I
