@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<v-card color="grey lighten-4" text tile>
-			<v-toolbar dense>
+			<v-toolbar>
 				<v-toolbar-title class="primary--text headline font-weight-bold"
 					>The Inkpot</v-toolbar-title
 				>
@@ -26,7 +26,7 @@
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title class="headline font-weight-bold white--text">
-						NW Starter
+						The Inkpot
 					</v-list-item-title>
 				</v-list-item-content>
 			</v-list-item>

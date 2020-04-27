@@ -51,7 +51,11 @@
 					</div>
 				</div>
 			</v-col>
-			<v-col>second</v-col>
+			<v-col>
+				<div class="mt-lg-2 instagram-container warning">
+					<h1 class="text-center white--text">Instagram feed</h1>
+				</div>
+			</v-col>
 		</v-row>
 	</Layout>
 </template>
@@ -81,11 +85,9 @@ export default {
 	-webkit-transition: all .2s ease-in-out
   transition: all .2s ease-in-out
 
-// @media only screen and (min-width: 600px)
-// 	.ink-card
-// 		width: 175px
-// 	.ink-title
-// 		font-size: 2rem
-// 	.ink-subtitle
-// 		font-size: 1.5em
+.instagram-container
+	border: solid black 1px
+	border-radius: 4px
+	width: 100%
+	height: 500px
 </style>

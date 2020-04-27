@@ -11,35 +11,35 @@ import colors from 'vuetify/lib/util/colors';
 export default function(Vue, { appOptions, head }) {
 	head.link.push({
 		rel: 'stylesheet',
-		href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+		href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
 	});
 
 	head.link.push({
 		rel: 'stylesheet',
 		href:
-			'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'
+			'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
 	});
 
 	const opts = {
 		icons: {
-			iconfont: 'mdiSvg' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+			iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
 		},
 		// adjust the theme if you would like to
 		theme: {
 			themes: {
 				light: {
-					background: colors.teal.lighten5
+					background: colors.brown.lighten5,
 					// primary: colors.teal.darken2,
-					// primary: '#ff4137'
-					// secondary: '#424242',
-					// accent: '#82B1FF',
-					// error: '#FF5252',
-					// info: '#2196F3',
-					// success: '#4CAF50',
-					// warning: '#FFC107'
-				}
-			}
-		}
+					primary: '#3e4618', // dark green. h text colour
+					secondary: '#67682c', // medium green. download buttons
+					accent: '#5c4831', // dark brown
+					error: '#9b8a72', // light brown
+					info: '#b8bac1', // medium blue
+					success: ' #d7dcdf', // medium blue
+					warning: '#777164', // medium brown. instagram container background
+				},
+			},
+		},
 	};
 	Vue.use(Vuetify);
 
