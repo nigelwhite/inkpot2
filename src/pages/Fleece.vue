@@ -5,14 +5,17 @@
 			<v-col class="col-12 col-xl-8">
 				<v-row>
 					<g-image
-						src="~/assets/images/fleeces-pan.png"
+						src="~/assets/images/fleece-pan.png"
 						class="gimage mx-auto mt-lg-8 mb-xl-8"
 						width="1200"
 					/>
 				</v-row>
 				<v-row>
 					<v-col>
-						<Portraits3Wide></Portraits3Wide>
+						<Portraits3Wide
+							:img1="require('~/assets/images/' + pic1)"
+							:img2="require('~/assets/images/' + pic2)"
+						></Portraits3Wide>
 					</v-col>
 				</v-row>
 			</v-col>
@@ -24,13 +27,16 @@
 					<PricesNeeded></PricesNeeded>
 				</div>
 				<p>
-					Text all about the fleeces
+					Text all about the fleece
 				</p>
 			</v-col>
 		</v-row>
 		<v-row>
 			<v-col>
-				<Portraits3Narrow></Portraits3Narrow>
+				<Portraits3Narrow
+					:img1="require('~/assets/images/' + pic1)"
+					:img2="require('~/assets/images/' + pic2)"
+				></Portraits3Narrow>
 			</v-col>
 		</v-row>
 	</Layout>
@@ -45,10 +51,10 @@ import PricesNeeded from '@/components/PricesNeeded.vue';
 export default {
 	data() {
 		return {
-			title: 'Fleeces',
+			title: 'Fleece',
 			linkedDoc: '',
-			pic1: '',
-			pic2: '',
+			pic1: 'fleece1.png',
+			pic2: 'fleece2.png',
 			pic3: '',
 		};
 	},

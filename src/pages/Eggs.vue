@@ -5,7 +5,7 @@
 			<v-col class="col-12 col-xl-8">
 				<v-row>
 					<g-image
-						src="~/assets/images/hens-pan.png"
+						src="~/assets/images/eggs-pan.png"
 						class="gimage mx-auto mt-lg-8 mb-xl-8"
 						width="1200"
 					/>

@@ -65,7 +65,7 @@ export default {
 				{ icon: 'backup', text: 'Eggs', url: '/eggs/' },
 				{ icon: 'backup', text: 'Wool', url: '/wool/' },
 				{ icon: 'backup', text: 'Turkey', url: '/turkey/' },
-				{ icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
+				{ icon: 'backup', text: 'Fleece', url: '/fleece/' },
 				{ icon: 'backup', text: 'Honey', url: '/honey/' },
 			],
 		};

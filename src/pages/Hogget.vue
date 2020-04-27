@@ -12,7 +12,12 @@
 				</v-row>
 				<v-row>
 					<v-col>
-						<Portraits3Wide></Portraits3Wide>
+						<Portraits3Wide
+							:img1="require('~/assets/images/' + pic1)"
+							:img2="require('~/assets/images/' + pic2)"
+							:img3="require('~/assets/images/' + pic2)"
+						>
+						</Portraits3Wide>
 					</v-col>
 				</v-row>
 			</v-col>
@@ -59,7 +64,11 @@
 		</v-row>
 		<v-row>
 			<v-col>
-				<Portraits3Narrow></Portraits3Narrow>
+				<Portraits3Narrow
+					:img1="require('~/assets/images/' + pic1)"
+					:img2="require('~/assets/images/' + pic2)"
+					:img3="require('~/assets/images/' + pic3)"
+				></Portraits3Narrow>
 			</v-col>
 		</v-row>
 	</Layout>
@@ -76,9 +85,9 @@ export default {
 		return {
 			title: 'Hogget',
 			linkedDoc: '',
-			pic1: '',
-			pic2: '',
-			pic3: '',
+			pic1: 'sheep1.png',
+			pic2: 'sheep2.png',
+			pic3: 'sheep3.png',
 		};
 	},
 	components: {

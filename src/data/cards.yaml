@@ -17,7 +17,7 @@
   action: order now
 - title: Eggs
   content: hopeful
-  link: #
+  link: eggs
   show: true
   image: hen-250x150.jpg
   badge: url
@@ -33,31 +33,31 @@
   action:
 - title: Wool
   content: hopeful
-  link: #
+  link: wool
+  show: true
+  image: wool-250x150.png
+  badge: url
+  order: 1
+  action: order now
+- title: Turkey
+  content: hopeful
+  link: turkey
   show: true
   image: pic-needed-250x150.png
   badge: url
   order: 1
   action: order now
-- title: Turkeys
+- title: Fleece
   content: hopeful
-  link: #
+  link: fleece
   show: true
-  image: pic-needed-250x150.png
-  badge: url
-  order: 1
-  action: order now
-- title: Fleeces
-  content: hopeful
-  link: #
-  show: true
-  image: pic-needed-250x150.png
+  image: fleece-250x150.png
   badge: url
   order: 1
   action: order now
 - title: Honey
   content: hopeful
-  link: #
+  link: honey
   show: true
   image: pic-needed-250x150.png
   badge: url
