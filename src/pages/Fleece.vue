@@ -33,7 +33,7 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<v-col>
+			<v-col class="px-lg-12">
 				<Portraits3Narrow
 					:img1="require('~/assets/images/' + pic1)"
 					:img2="require('~/assets/images/' + pic2)"

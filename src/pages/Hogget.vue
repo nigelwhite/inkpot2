@@ -11,7 +11,7 @@
 					/>
 				</v-row>
 				<v-row>
-					<v-col>
+					<v-col class="px-lg-12">
 						<Portraits3Wide
 							:img1="require('~/assets/images/' + pic1)"
 							:img2="require('~/assets/images/' + pic2)"

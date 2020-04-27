@@ -29,7 +29,7 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<v-col>
+			<v-col class="px-lg-12">
 				<Portraits3Narrow></Portraits3Narrow>
 			</v-col>
 		</v-row>
