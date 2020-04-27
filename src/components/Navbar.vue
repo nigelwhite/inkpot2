@@ -2,9 +2,11 @@
 	<nav>
 		<v-card color="grey lighten-4" text tile>
 			<v-toolbar>
-				<v-toolbar-title class="primary--text headline font-weight-bold"
-					>The Inkpot</v-toolbar-title
-				>
+				<v-toolbar-title class="primary--text headline font-weight-bold">
+					<g-link to="/">
+						The Inkpot
+					</g-link>
+				</v-toolbar-title>
 				<v-spacer></v-spacer>
 
 				<div class="hidden-sm-and-down">

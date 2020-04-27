@@ -27,7 +27,7 @@
 					<ContactUsBtn></ContactUsBtn>
 				</div> -->
 				<v-row>
-					<v-col class="col-sm-7 col-md-8 col-xl-12">
+					<v-col class="col-sm-7 col-md-8 col-xl-12 pt-8">
 						<p>
 							We have Great Taste Award winning turkeys available to buy
 							directly from the farm. Our turkeys are a mixture of Norfolk

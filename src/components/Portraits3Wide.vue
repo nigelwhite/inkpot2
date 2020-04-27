@@ -11,15 +11,15 @@ export default {
 	props: {
 		img1: {
 			type: String,
-			default: 'https://via.placeholder.com/250x250.png?text=Cute+Pic+1',
+			default: 'https://via.placeholder.com/250x250.png?text=Closeup+1',
 		},
 		img2: {
 			type: String,
-			default: 'https://via.placeholder.com/250x250.png?text=Cute+Pic+2',
+			default: 'https://via.placeholder.com/250x250.png?text=Closeup+2',
 		},
 		img3: {
 			type: String,
-			default: 'https://via.placeholder.com/250x250.png?text=Cute+Pic+3',
+			default: 'https://via.placeholder.com/250x250.png?text=Closeup+3',
 		},
 	},
 };

@@ -15,7 +15,7 @@
 						<Portraits3Wide
 							:img1="require('~/assets/images/' + pic1)"
 							:img2="require('~/assets/images/' + pic2)"
-							:img3="require('~/assets/images/' + pic2)"
+							:img3="require('~/assets/images/' + pic3)"
 						>
 						</Portraits3Wide>
 					</v-col>
