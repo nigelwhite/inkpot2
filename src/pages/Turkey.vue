@@ -148,7 +148,7 @@
 							</div>
 						</div>
 					</v-col>
-					<v-col class="d-none d-xl-flex justify-end align-start">
+					<v-col class="d-none d-xl-flex justify-center align-start">
 						<g-image src="~/assets/images/turkey-order.png" width="256" />
 					</v-col>
 				</v-row>
