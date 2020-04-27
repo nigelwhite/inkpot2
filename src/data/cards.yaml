@@ -46,7 +46,7 @@
   image: pic-needed-250x150.png
   badge: url
   order: 1
-  action: out of season
+  action: order now
 - title: Fleeces
   content: hopeful
   link: #
