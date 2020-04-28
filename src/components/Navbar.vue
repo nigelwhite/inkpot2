@@ -10,9 +10,41 @@
 				<v-spacer></v-spacer>
 
 				<div class="hidden-sm-and-down">
-					<v-btn v-for="link in links" :key="link.text" text rounded>
-						<g-link :to="link.url">{{ link.text }}</g-link>
-					</v-btn>
+					<div>
+						<!-- <v-btn v-for="link in links" :key="link.text" text rounded>
+							<g-link :to="link.url">{{ link.text }}</g-link>
+						</v-btn> -->
+						<v-btn text rounded>
+							<g-link to="/">Home</g-link>
+						</v-btn>
+						<v-btn text rounded>
+							<g-link to="/about/">About</g-link>
+						</v-btn>
+						<v-menu bottom origin="center center" transition="scale-transition">
+							<template v-slot:activator="{ on }">
+								<v-btn v-on="on" text rounded>
+									Produce
+								</v-btn>
+							</template>
+							<v-list>
+								<v-list-item
+									v-for="(product, index) in products"
+									:key="index"
+									@click=""
+								>
+									<v-list-item-title>
+										<g-link :to="product.url"> {{ product.text }}</g-link>
+									</v-list-item-title>
+								</v-list-item>
+							</v-list>
+						</v-menu>
+						<v-btn text rounded>
+							<g-link to="/">Learn</g-link>
+						</v-btn>
+						<v-btn text rounded>
+							<g-link to="/">Contact</g-link>
+						</v-btn>
+					</div>
 				</div>
 				<v-app-bar-nav-icon
 					class="primary--text hidden-md-and-up"
@@ -60,18 +92,43 @@ export default {
 		return {
 			drawer: false,
 			links: [
-				{ icon: 'adb', text: 'Home', url: '/' },
-				{ icon: 'backup', text: 'About', url: '/about/' },
-				{ icon: 'backup', text: 'Produce', url: '/' },
-				{ icon: 'backup', text: 'Beef', url: '/beef/' },
-				{ icon: 'backup', text: 'Hogget', url: '/hogget/' },
-				{ icon: 'backup', text: 'Eggs', url: '/eggs/' },
-				{ icon: 'backup', text: 'Wool', url: '/wool/' },
-				{ icon: 'backup', text: 'Turkey', url: '/turkey/' },
-				{ icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
-				{ icon: 'backup', text: 'Honey', url: '/honey/' },
+				{ type: 'main', icon: 'adb', text: 'Home', url: '/' },
+				{ type: 'main', icon: 'backup', text: 'About', url: '/about/' },
+				{ type: 'main', icon: 'backup', text: 'Produce', url: '/' },
+				{ type: 'produce', icon: 'backup', text: 'Beef', url: '/beef/' },
+				{ type: 'produce', icon: 'backup', text: 'Hogget', url: '/hogget/' },
+				{ type: 'produce', icon: 'backup', text: 'Eggs', url: '/eggs/' },
+				{ type: 'produce', icon: 'backup', text: 'Wool', url: '/wool/' },
+				{ type: 'produce', icon: 'backup', text: 'Turkey', url: '/turkey/' },
+				{ type: 'produce', icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
+				{ type: 'produce', icon: 'backup', text: 'Honey', url: '/honey/' },
+				{ type: 'main', icon: 'backup', text: 'Learn', url: '/' },
+				{ type: 'main', icon: 'backup', text: 'Contact', url: '/' },
+			],
+			products: [
+				{ type: 'produce', icon: 'backup', text: 'Beef', url: '/beef/' },
+				{ type: 'produce', icon: 'backup', text: 'Hogget', url: '/hogget/' },
+				{ type: 'produce', icon: 'backup', text: 'Eggs', url: '/eggs/' },
+				{ type: 'produce', icon: 'backup', text: 'Wool', url: '/wool/' },
+				{ type: 'produce', icon: 'backup', text: 'Turkey', url: '/turkey/' },
+				{ type: 'produce', icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
+				{ type: 'produce', icon: 'backup', text: 'Honey', url: '/honey/' },
 			],
 		};
+	},
+	computed: {
+		produceList: function() {
+			// create a new empty array
+			const products = [];
+			// get links items. Look at each item
+			links.forEach((link) => {
+				// if the item is not already in the new array, push it in there
+				// if (!products.includes(links.item)) {
+				products.push(lnks.link);
+				// }
+			});
+			return products;
+		},
 	},
 };
 </script>

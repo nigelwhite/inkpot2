@@ -35,7 +35,7 @@ export default function(Vue, { appOptions, head }) {
 					accent: '#5c4831', // dark brown
 					error: '#f7d3c1', // light brown
 					info: '#b8bac1', // medium blue
-					success: ' #d7dcdf', // medium blue
+					success: '#d7dcdf', // medium blue
 					warning: '#cc9c84', // medium brown. instagram container background
 				},
 			},
