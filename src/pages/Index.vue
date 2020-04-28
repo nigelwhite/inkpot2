@@ -26,7 +26,7 @@
 							<v-hover v-slot:default="{ hover }" class="ink-grow">
 								<v-card
 									:class="{ 'on-hover': hover }"
-									class="ink-card mx-2 my-2"
+									class="ink-card mx-2 my-2 warning"
 									max-width="250px"
 								>
 									<v-responsive :aspect-ratio="25 / 15">
@@ -41,7 +41,7 @@
 									</v-responsive>
 
 									<v-card-actions>
-										<v-btn color="orange" text>
+										<v-btn class="primary--text" text>
 											{{ card.action }}
 										</v-btn>
 									</v-card-actions>

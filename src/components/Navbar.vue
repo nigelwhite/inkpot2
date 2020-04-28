@@ -62,6 +62,7 @@ export default {
 			links: [
 				{ icon: 'adb', text: 'Home', url: '/' },
 				{ icon: 'backup', text: 'About', url: '/about/' },
+				{ icon: 'backup', text: 'Produce', url: '/' },
 				{ icon: 'backup', text: 'Beef', url: '/beef/' },
 				{ icon: 'backup', text: 'Hogget', url: '/hogget/' },
 				{ icon: 'backup', text: 'Eggs', url: '/eggs/' },
