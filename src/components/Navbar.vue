@@ -69,11 +69,13 @@
 
 			<v-list dense nav>
 				<v-list-item v-for="link in links" :key="link.text" link>
-					<v-list-item-icon>
+					<v-list-item-icon :class="[link.type === 'produce' ? 'd-none' : '']">
 						<v-icon class="white--text">{{ link.icon }}</v-icon>
 					</v-list-item-icon>
 
-					<v-list-item-content>
+					<v-list-item-content
+						:class="[link.type === 'produce' ? 'produce' : '']"
+					>
 						<v-list-item-title class="white--text subtitle-1">
 							<g-link :to="link.url" class="white--text">{{
 								link.text
@@ -133,4 +135,7 @@ export default {
 };
 </script>
 
-<style scoped lang="sass"></style>
+<style scoped lang="sass">
+.produce
+	margin-left: 80px
+</style>
