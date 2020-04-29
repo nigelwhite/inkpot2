@@ -18,13 +18,22 @@ export default {
 		return {
 			links: [
 				{
-					name: 'About',
-					url: '/about/',
+					name: 'Vuetify docs',
+					url: 'https://vuetifyjs.com/en/components/grids/#grid-system',
 				},
 
 				{
-					name: 'Contact',
-					url: '/contact/',
+					name: 'Gridsome docs',
+					url: 'https://gridsome.org/docs/',
+				},
+
+				{
+					name: 'Vue docs',
+					url: 'https://vuejs.org/v2/guide/index.html',
+				},
+				{
+					name: 'MD icons',
+					url: 'https://material.io/resources/icons/?style=baseline',
 				},
 			],
 		};

@@ -39,7 +39,7 @@
 							</v-list>
 						</v-menu>
 						<v-btn text rounded>
-							<g-link to="/">Learn</g-link>
+							<g-link to="/learn/">Learn</g-link>
 						</v-btn>
 						<v-btn text rounded>
 							<g-link to="/">Contact</g-link>
@@ -104,7 +104,7 @@ export default {
 				{ type: 'produce', icon: 'backup', text: 'Turkey', url: '/turkey/' },
 				{ type: 'produce', icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
 				{ type: 'produce', icon: 'backup', text: 'Honey', url: '/honey/' },
-				{ type: 'main', icon: 'backup', text: 'Learn', url: '/' },
+				{ type: 'main', icon: 'backup', text: 'Learn', url: '/learn/' },
 				{ type: 'main', icon: 'backup', text: 'Contact', url: '/' },
 			],
 			products: [
