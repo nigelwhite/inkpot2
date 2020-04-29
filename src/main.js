@@ -1,12 +1,12 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import Vuetify from 'vuetify';
-import '~/assets/sass/styles.sass';
-import '~/assets/sass/variables.sass';
-
+import 'vuetify/dist/vuetify.min.css';
 import DefaultLayout from '~/layouts/Default.vue';
 
-import 'vuetify/dist/vuetify.min.css';
+import '~/sass/variables.sass';
+import '~/sass/styles.sass';
+
 import colors from 'vuetify/lib/util/colors';
 
 export default function(Vue, { appOptions, head }) {

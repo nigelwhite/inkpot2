@@ -11,12 +11,12 @@ function addStyleResource(rule) {
 		.use('style-resource')
 		.loader('style-resources-loader')
 		.options({
-			patterns: [path.resolve(__dirname, './src/assets/styles.sass')],
+			patterns: [path.resolve(__dirname, './src/sass/*.sass')],
 		});
 }
 
 module.exports = {
-	siteName: 'Inkpot 2',
+	siteName: 'The Inkpot',
 	chainWebpack(config) {
 		// Load variables for all vue-files
 		const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
