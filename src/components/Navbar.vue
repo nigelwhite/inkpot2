@@ -15,14 +15,14 @@
 							<g-link :to="link.url">{{ link.text }}</g-link>
 						</v-btn> -->
 						<v-btn text rounded>
-							<g-link to="/">Home</g-link>
+							<g-link to="/" class="title">Home</g-link>
 						</v-btn>
 						<v-btn text rounded>
-							<g-link to="/about/">About</g-link>
+							<g-link to="/about/" class="title">About</g-link>
 						</v-btn>
 						<v-menu bottom origin="center center" transition="scale-transition">
 							<template v-slot:activator="{ on }">
-								<v-btn v-on="on" text rounded>
+								<v-btn v-on="on" text rounded class="title">
 									Produce
 								</v-btn>
 							</template>
@@ -39,10 +39,10 @@
 							</v-list>
 						</v-menu>
 						<v-btn text rounded>
-							<g-link to="/learn/">Learn</g-link>
+							<g-link to="/learn/" class="title">Learn</g-link>
 						</v-btn>
 						<v-btn text rounded>
-							<g-link to="/contact/">Contact</g-link>
+							<g-link to="/contact/" class="title">Contact</g-link>
 						</v-btn>
 					</div>
 				</div>
@@ -118,24 +118,24 @@ export default {
 			],
 		};
 	},
-	computed: {
-		produceList: function() {
-			// create a new empty array
-			const products = [];
-			// get links items. Look at each item
-			links.forEach((link) => {
-				// if the item is not already in the new array, push it in there
-				// if (!products.includes(links.item)) {
-				products.push(lnks.link);
-				// }
-			});
-			return products;
-		},
-	},
+	// computed: {
+	// 	produceList: function() {
+	// 		// create a new empty array
+	// 		const products = [];
+	// 		// get links items. Look at each item
+	// 		links.forEach((link) => {
+	// 			// if the item is not already in the new array, push it in there
+	// 			// if (!products.includes(links.item)) {
+	// 			products.push(lnks.link);
+	// 			// }
+	// 		});
+	// 		return products;
+	// 	},
+	// },
 };
 </script>
 
 <style scoped lang="sass">
 .produce
-	margin-left: 80px
+	margin-left: 70px
 </style>

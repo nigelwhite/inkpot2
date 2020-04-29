@@ -3,9 +3,9 @@
 		<v-row justify="center" align="center">
 			<div class="d-flex flex-column flex-md-row">
 				<v-btn v-for="link in links" :key="link.name" text rounded class="mr-4">
-					<a :href="link.url" target="_blank">
+					<g-link :to="link.url" class="title">
 						{{ link.name }}
-					</a>
+					</g-link>
 				</v-btn>
 			</div>
 		</v-row>
