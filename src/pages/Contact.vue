@@ -10,6 +10,10 @@
 				</p>
 				<p>Travel directions</p>
 				<p>etc</p>
+			</v-col>
+		</v-row>
+		<v-row>
+			<v-col>
 				<v-img :src="img2" max-width="600"></v-img>
 			</v-col>
 			<v-col class="px-lg-12">

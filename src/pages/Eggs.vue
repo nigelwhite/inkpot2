@@ -15,6 +15,7 @@
 						<Portraits3Wide
 							:img1="require('~/assets/images/' + pic1)"
 							:img2="require('~/assets/images/' + pic2)"
+							:img3="require('~/assets/images/' + pic3)"
 						></Portraits3Wide>
 					</v-col>
 				</v-row>
@@ -47,6 +48,7 @@
 				<Portraits3Narrow
 					:img1="require('~/assets/images/' + pic1)"
 					:img2="require('~/assets/images/' + pic2)"
+					:img3="require('~/assets/images/' + pic3)"
 				></Portraits3Narrow>
 			</v-col>
 		</v-row>
@@ -66,7 +68,7 @@ export default {
 			linkedDoc: '',
 			pic1: 'eggs1.png',
 			pic2: 'eggs2.png',
-			pic3: '',
+			pic3: 'eggs3.png',
 		};
 	},
 	components: {

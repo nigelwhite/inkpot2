@@ -62,8 +62,8 @@ export default {
 			title: 'Fleeces',
 			linkedDoc: '',
 			pic1: 'fleece1.png',
-			pic2: 'fleece2.png',
-			pic3: 'fleece3.png',
+			pic2: 'fleece3.png',
+			pic3: 'fleece2.png',
 		};
 	},
 	components: {

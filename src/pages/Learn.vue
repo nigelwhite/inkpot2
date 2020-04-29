@@ -11,15 +11,15 @@
 				<p>Courses happen occasionally, etc</p>
 				<p>Working Wednesday, etc</p>
 			</v-col>
-			<v-col class="text-right">
+			<v-col>
 				<div>
-					<div class="video-player"></div>
-					<g-image
+					<v-img :src="img1"></v-img>
+					<!-- <g-image
 						src="~/assets/images/veg.png"
 						width="900"
 						class="gimage"
-					></g-image>
-					<p class="text-right caption">Photo: Carla Moss</p>
+					></g-image> -->
+					<p class="text-right caption">Film: Carla Moss</p>
 				</div>
 			</v-col>
 		</v-row>
@@ -35,6 +35,12 @@ export default {
 		return {
 			title: 'Learn Permaculture',
 		};
+	},
+	props: {
+		img1: {
+			type: String,
+			default: 'https://via.placeholder.com/400x250.png?text=Carla+movie',
+		},
 	},
 };
 </script>
