@@ -6,10 +6,14 @@
 		<v-row>
 			<v-col>
 				<p>
-					Learn text
+					All about learning Permaculture at The Inkpot
 				</p>
+				<p>Courses happen occasionally, etc</p>
+				<p>Working Wednesday, etc</p>
 			</v-col>
-			<v-col class="px-lg-12 text-center"> </v-col>
+			<v-col class="px-lg-12 text-center">
+				<v-img :src="img1" max-width="400" class="mx-auto"></v-img>
+			</v-col>
 		</v-row>
 	</Layout>
 </template>
@@ -23,6 +27,13 @@ export default {
 		return {
 			title: 'Learn Permaculture',
 		};
+	},
+	props: {
+		img1: {
+			type: String,
+			default:
+				'https://via.placeholder.com/400x400.png?text=At+least+one+image',
+		},
 	},
 };
 </script>
