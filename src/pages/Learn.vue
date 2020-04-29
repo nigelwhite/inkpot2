@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import Aplayer from 'vue-aplayer';
 export default {
 	metaInfo: {
 		title: 'Inkpot | Learn',
