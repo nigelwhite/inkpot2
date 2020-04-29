@@ -49,12 +49,12 @@
   action: order now for 2020
 - title: Fleece
   content: hopeful
-  link: fleece
+  link: fleeces
   show: true
   image: fleece-250x150.png
   badge: url
   order: 1
-  action: order now
+  action: occasionally available
 - title: Honey
   content: hopeful
   link: honey
@@ -62,4 +62,4 @@
   image: pic-needed-250x150.png
   badge: url
   order: 1
-  action: order now
+  action: sold out
