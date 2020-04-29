@@ -42,7 +42,7 @@
 							<g-link to="/learn/">Learn</g-link>
 						</v-btn>
 						<v-btn text rounded>
-							<g-link to="/">Contact</g-link>
+							<g-link to="/contact/">Contact</g-link>
 						</v-btn>
 					</div>
 				</div>
@@ -105,7 +105,7 @@ export default {
 				{ type: 'produce', icon: 'backup', text: 'Fleeces', url: '/fleeces/' },
 				{ type: 'produce', icon: 'backup', text: 'Honey', url: '/honey/' },
 				{ type: 'main', icon: 'backup', text: 'Learn', url: '/learn/' },
-				{ type: 'main', icon: 'backup', text: 'Contact', url: '/' },
+				{ type: 'main', icon: 'backup', text: 'Contact', url: '/contact/' },
 			],
 			products: [
 				{ type: 'produce', icon: 'backup', text: 'Beef', url: '/beef/' },
