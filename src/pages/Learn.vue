@@ -13,6 +13,7 @@
 			</v-col>
 			<v-col class="text-right">
 				<div>
+					<div class="video-player"></div>
 					<g-image
 						src="~/assets/images/veg.png"
 						width="900"

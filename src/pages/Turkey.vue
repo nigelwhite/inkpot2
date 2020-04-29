@@ -13,6 +13,7 @@
 				<v-row>
 					<v-col>
 						<Portraits3Wide
+							:img1="require('~/assets/images/' + pic1)"
 							:img2="require('~/assets/images/' + pic2)"
 							:img3="require('~/assets/images/' + pic3)"
 						></Portraits3Wide>
@@ -100,6 +101,7 @@
 		<v-row>
 			<v-col class="px-lg-12">
 				<Portraits3Narrow
+					:img1="require('~/assets/images/' + pic1)"
 					:img2="require('~/assets/images/' + pic2)"
 					:img3="require('~/assets/images/' + pic3)"
 				></Portraits3Narrow>
@@ -168,7 +170,7 @@ export default {
 		return {
 			title: 'Turkey',
 			linkedDoc: '',
-			pic1: 'turkeys1.jpg',
+			pic1: 'turkeys1.png',
 			pic2: 'turkeys2.png',
 			pic3: 'turkey3.png',
 		};
