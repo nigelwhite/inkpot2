@@ -23,6 +23,14 @@
   badge: url
   order: 4
   action: order now
+- title: Open Farm Sunday
+  content: hopeful
+  link: https://farmsunday.org
+  show: Off
+  image: open-farm-sunday.png
+  badge: url
+  order: 10
+  action:
 - title: Wool
   content: hopeful
   link: wool

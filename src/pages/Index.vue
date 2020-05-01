@@ -75,13 +75,7 @@ export default {
 	},
 	computed: {
 		sortedCards: function() {
-			// first ok - cards.sort((a, b) => (a.order > b.order ? 1 : -1));
-
-			// second sort ok - const sortedArray = [...cards].sort((a, b) =>
-			// 	a.order > b.order ? 1 : -1
-			// );
-			// return sortedArray;
-
+			// ordering works, filtering does not. Removed Open Farm Sunday from cards.yaml
 			let filteredCards = cards.filter((card) => {
 				return card.show;
 			});
