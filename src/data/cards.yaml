@@ -2,47 +2,47 @@
 - title: Beef
   content: from our pedigree Lincoln Reds
   link: beef
-  show: true
+  show: On
   image: cow-mother-child-250x150.jpg
   badge: url
-  order: 1
+  order: 2
   action: order now
 - title: Hogget
   content: great flavour and fantastic quality
   link: hogget
-  show: true
+  show: On
   image: sheep-250x150.jpg
   badge: url
-  order: 1
+  order: 3
   action: order now
 - title: Eggs
   content: hopeful
   link: eggs
-  show: true
+  show: On
   image: hen-250x150.jpg
   badge: url
-  order: 1
+  order: 4
   action: order now
 - title: Open Farm Sunday
   content: hopeful
   link: https://farmsunday.org
-  show: false
+  show: Off
   image: open-farm-sunday.png
   badge: url
-  order: 1
+  order: 10
   action:
 - title: Wool
   content: hopeful
   link: wool
-  show: true
+  show: On
   image: wool-250x150.png
   badge: url
-  order: 1
+  order: 5
   action: order now
 - title: Turkey
   content: hopeful
   link: turkey
-  show: true
+  show: On
   image: pic-needed-250x150.png
   badge: url
   order: 1
@@ -50,16 +50,16 @@
 - title: Fleeces
   content: hopeful
   link: fleeces
-  show: true
+  show: On
   image: fleece-250x150.png
   badge: url
-  order: 1
+  order: 6
   action: occasionally available
 - title: Honey
   content: hopeful
   link: honey
-  show: true
+  show: On
   image: pic-needed-250x150.png
   badge: url
-  order: 1
+  order: 7
   action: sold out
