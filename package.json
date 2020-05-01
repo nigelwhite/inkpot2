@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "gridsome-source-google-sheets": "^0.4.1",
     "vuetify": "^2.2.19"
   },
   "devDependencies": {

@@ -25,14 +25,5 @@ module.exports = {
 			addStyleResource(config.module.rule('sass').oneOf(type));
 		});
 	},
-	plugins: [
-		{
-			use: 'gridsome-source-google-sheets',
-			options: {
-				sheetId: 'GOOGLE_SHEET_ID',
-				apiKey: 'GOOGLE_API_KEY',
-				// type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
-			},
-		},
-	],
+	plugins: [],
 };
