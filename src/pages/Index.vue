@@ -17,16 +17,11 @@
 			</div>
 		</template>
 		<template slot="title">{{ title }}</template>
-		<p>{{ sortedCards }}</p>
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-8 col-lg-9">
 				<div class="d-flex flex-wrap justify-center">
-					<div
-						v-for="(card, index) in sortedCards"
-						:key="index"
-						v-if="card.show"
-					>
+					<div v-for="(card, index) in sortedCards" :key="index">
 						<g-link :to="card.link">
 							<v-hover v-slot:default="{ hover }" class="ink-grow">
 								<v-card
@@ -80,11 +75,20 @@ export default {
 	},
 	computed: {
 		sortedCards: function() {
-			// cards.sort((a, b) => (a.order > b.order ? 1 : -1));
-			const sortedArray = [...cards].sort((a, b) =>
+			// first ok - cards.sort((a, b) => (a.order > b.order ? 1 : -1));
+
+			// second sort ok - const sortedArray = [...cards].sort((a, b) =>
+			// 	a.order > b.order ? 1 : -1
+			// );
+			// return sortedArray;
+
+			let filteredCards = cards.filter((card) => {
+				return card.show;
+			});
+			let orderedCards = filteredCards.sort((a, b) =>
 				a.order > b.order ? 1 : -1
 			);
-			return sortedArray;
+			return orderedCards;
 		},
 	},
 };
