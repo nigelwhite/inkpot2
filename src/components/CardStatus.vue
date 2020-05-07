@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<h2>{{ doThisThing }}</h2>
+		<h2>{{ currentCard }}</h2>
 		<!-- <h2>{{ currentCard.status }}</h2> -->
 	</div>
 </template>
