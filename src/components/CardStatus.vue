@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2>{{ doThisThing }}</h2>
-		<h2>{{ currentCard }}</h2>
+
 		<h2>{{ pageTitle }}</h2>
 		<h2>{{ currentCard }}</h2>
 		<!-- <h2>{{ currentCard.status }}</h2> -->
@@ -18,12 +18,7 @@ export default {
 			// currentCard: 'Beef',
 		};
 	},
-	props: {
-		pageTitle: {
-			type: String,
-			default: 'Hello',
-		},
-	},
+	props: ['pageTitle'],
 	computed: {
 		currentCard: function() {
 			let thisCard = cards.filter(function(e) {
