@@ -22,7 +22,7 @@ export default {
 			let thisCard = cards.filter(function(e) {
 				return e.title === 'Beef';
 			});
-			return thisCard;
+			return thisCard[0].action;
 		},
 		doThisThing: function() {
 			let resulty = 4;
