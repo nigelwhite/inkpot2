@@ -31,8 +31,7 @@
 							auto-grow
 							required
 						></v-textarea>
-
-						<div class="mt-6">
+						<div class="mt-8">
 							<v-btn
 								:disabled="!valid"
 								class="secondary mr-4"
@@ -46,6 +45,7 @@
 							</v-btn>
 						</div>
 					</v-form>
+
 					<p class="mt-12">
 						If your query is urgent please feel free to text Hannah on 07801 814
 						086
@@ -68,6 +68,7 @@ export default {
 	},
 
 	data: () => ({
+		dialog: false,
 		valid: true,
 		name: '',
 		nameRules: [
