@@ -6,7 +6,7 @@
   image: cow-mother-child-250x150.jpg
   badge: url
   order: 2
-  action: order now
+  action: Order now
 - title: Hogget
   content: great flavour and fantastic quality
   link: hogget
@@ -14,7 +14,7 @@
   image: sheep-250x150.jpg
   badge: url
   order: 3
-  action: order now
+  action: Order now
 - title: Eggs
   content: hopeful
   link: eggs
@@ -22,7 +22,7 @@
   image: hen-250x150.jpg
   badge: url
   order: 4
-  action: order now
+  action: Order now
 - title: Wool
   content: hopeful
   link: wool
@@ -30,7 +30,7 @@
   image: wool-250x150.png
   badge: url
   order: 5
-  action: order now
+  action: Enquire
 - title: Turkey
   content: hopeful
   link: turkey
@@ -38,7 +38,7 @@
   image: pic-needed-250x150.png
   badge: url
   order: 1
-  action: order now for 2020
+  action: Order now for 2020
 - title: Fleeces
   content: hopeful
   link: fleeces
@@ -46,7 +46,7 @@
   image: fleece-250x150.png
   badge: url
   order: 6
-  action: occasionally available
+  action: Enquire
 - title: Honey
   content: hopeful
   link: honey
@@ -54,4 +54,4 @@
   image: pic-needed-250x150.png
   badge: url
   order: 7
-  action: sold out
+  action: Enquire
