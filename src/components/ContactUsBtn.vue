@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<g-link to="/contact/">
-			<v-btn x-large class="secondary"> Contact us</v-btn>
+			<v-btn x-large class="secondary"> Contact Hannah</v-btn>
 		</g-link>
 	</div>
 </template>

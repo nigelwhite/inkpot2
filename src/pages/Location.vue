@@ -11,16 +11,16 @@
 						Drove<br />Scredington<br />Sleaford<br />NG34 0AH
 					</p>
 					<p>
-						To send a message
 						<g-link to="/contact/">
-							<v-btn small class="secondary"> Contact us</v-btn>
+							<v-btn small class="secondary"> Contact Hannah</v-btn>
 						</g-link>
+						to send a message
 					</p>
 					<p>
-						If you query is urgent please feel free to text Hannah on 07801
+						If your query is urgent please feel free to text Hannah on 07801
 						814086
 					</p>
-					<p>Travel directions</p>
+					<p>Travel directions......</p>
 				</div>
 			</v-col>
 

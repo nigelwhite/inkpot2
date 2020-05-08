@@ -6,13 +6,8 @@
 		<v-row>
 			<v-col>
 				<h2>Please contact Hannah by sending a message</h2>
-				<div>
-					<v-form
-						ref="form"
-						v-model="valid"
-						lazy-validation
-						class="mt-8 mx-lg-12"
-					>
+				<div class="mt-8 mx-lg-12">
+					<v-form ref="form" v-model="valid" lazy-validation>
 						<v-text-field
 							v-model="name"
 							:counter="20"
@@ -44,11 +39,15 @@
 							Clear
 						</v-btn>
 					</v-form>
+					<p class="mt-12">
+						If your query is urgent please feel free to text Hannah on 07801
+						814086
+					</p>
 				</div>
 			</v-col>
-			<v-col class="text-center mt-lg-12">
+			<v-col class=" mt-lg-12 pt-lg-12">
 				<g-link to="/location/">
-					<v-btn class="secondary"> Map and address</v-btn>
+					<v-btn class="secondary"> Inkpot map and address</v-btn>
 				</g-link>
 			</v-col>
 		</v-row>
