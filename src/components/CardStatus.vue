@@ -1,35 +1,33 @@
 <template>
 	<div>
-		<h2>{{ doThisThing }}</h2>
-
-		<h2>{{ pageTitle }}</h2>
+		<!-- the value of action in cards.yaml -->
 		<h2>{{ currentCard }}</h2>
+
 		<!-- <h2>{{ currentCard.status }}</h2> -->
 	</div>
 </template>
 
-//
 <script>
 import cards from '@/data/cards.yaml';
 export default {
 	data() {
 		return {
 			cards,
-			// currentCard: 'Beef',
 		};
 	},
-	props: ['pageTitle'],
+	props: {
+		pageTitle: {
+			type: String,
+		},
+	},
 	computed: {
+		// use the prop 'pageTitle' in the filter of cards. Return that card' action
 		currentCard: function() {
+			let thisTitle = this.pageTitle;
 			let thisCard = cards.filter(function(e) {
-				return e.title === 'Beef';
+				return e.title === thisTitle;
 			});
 			return thisCard[0].action;
-		},
-		doThisThing: function() {
-			let resulty = 4;
-			resulty + 6;
-			return resulty;
 		},
 	},
 };
