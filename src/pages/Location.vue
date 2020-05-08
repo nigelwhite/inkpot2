@@ -10,17 +10,14 @@
 						Hannah Thorogood<br />The Inkpot<br />Highgate Farm<br />Gorse
 						Drove<br />Scredington<br />Sleaford<br />NG34 0AH
 					</p>
-					<p>
+					<p class="mt-8">
 						<g-link to="/contact/">
 							<v-btn small class="secondary"> Contact Hannah</v-btn>
 						</g-link>
 						to send a message
 					</p>
-					<p>
-						If your query is urgent please feel free to text Hannah on 07801
-						814086
-					</p>
-					<p>Travel directions......</p>
+
+					<p class="mt-8">Travel directions......</p>
 				</div>
 			</v-col>
 

@@ -10,7 +10,7 @@
 					<v-form ref="form" v-model="valid" lazy-validation>
 						<v-text-field
 							v-model="name"
-							:counter="20"
+							:counter="40"
 							:rules="nameRules"
 							label="Name"
 							required
@@ -24,30 +24,37 @@
 						></v-text-field>
 
 						<v-textarea
-							name="message"
-							filled
+							v-model="message"
+							:rules="messageRules"
+							counter
 							label="Message"
 							auto-grow
 							required
 						></v-textarea>
 
-						<v-btn :disabled="!valid" class="secondary mr-4" @click="validate">
-							Send
-						</v-btn>
+						<div class="mt-6">
+							<v-btn
+								:disabled="!valid"
+								class="secondary mr-4"
+								@click="validate"
+							>
+								Send
+							</v-btn>
 
-						<v-btn class="secondary mr-4" @click="reset">
-							Clear
-						</v-btn>
+							<v-btn class="secondary mr-4" @click="reset">
+								Clear
+							</v-btn>
+						</div>
 					</v-form>
 					<p class="mt-12">
-						If your query is urgent please feel free to text Hannah on 07801
-						814086
+						If your query is urgent please feel free to text Hannah on 07801 814
+						086
 					</p>
 				</div>
 			</v-col>
 			<v-col class=" mt-lg-12 pt-lg-12">
 				<g-link to="/location/">
-					<v-btn class="secondary"> Inkpot map and address</v-btn>
+					<v-btn large class="secondary"> Map and address</v-btn>
 				</g-link>
 			</v-col>
 		</v-row>
@@ -65,12 +72,18 @@ export default {
 		name: '',
 		nameRules: [
 			(v) => !!v || 'Name is required',
-			(v) => (v && v.length <= 20) || 'Name must be less than 20 characters',
+			(v) => (v && v.length <= 40) || 'Name must be less than 40 characters',
+			(v) => (v && v.length >= 3) || 'Name must be more than 2 characters',
 		],
 		email: '',
 		emailRules: [
 			(v) => !!v || 'E-mail is required',
 			(v) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+		],
+		message: '',
+		messageRules: [
+			(v) => !!v || 'Message is required',
+			(v) => (v && v.length >= 40) || 'Message must be more than 40 characters',
 		],
 	}),
 
