@@ -6,7 +6,7 @@
 		<v-row>
 			<v-col>
 				<h2>Please contact Hannah by sending a message</h2>
-				<div class="message-form">
+				<div>
 					<v-form
 						ref="form"
 						v-model="valid"
@@ -28,18 +28,19 @@
 							required
 						></v-text-field>
 
-						<v-text-field label="Message"></v-text-field>
+						<v-textarea
+							name="message"
+							filled
+							label="Message"
+							auto-grow
+							required
+						></v-textarea>
 
-						<v-btn
-							:disabled="!valid"
-							color="success"
-							class="mr-4"
-							@click="validate"
-						>
+						<v-btn :disabled="!valid" class="secondary mr-4" @click="validate">
 							Send
 						</v-btn>
 
-						<v-btn color="error" class="mr-4" @click="reset">
+						<v-btn class="secondary mr-4" @click="reset">
 							Clear
 						</v-btn>
 					</v-form>
@@ -65,7 +66,7 @@ export default {
 		name: '',
 		nameRules: [
 			(v) => !!v || 'Name is required',
-			(v) => (v && v.length <= 10) || 'Name must be less than 10 characters',
+			(v) => (v && v.length <= 20) || 'Name must be less than 20 characters',
 		],
 		email: '',
 		emailRules: [
@@ -88,7 +89,4 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-.message-form
-	max-width: 900px
-</style>
+<style lang="sass" scoped></style>
