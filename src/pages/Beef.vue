@@ -21,9 +21,8 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div class="text-center">
-					<CardStatus :pageTitle="title"></CardStatus>
-				</div>
+				<CardStatus :pageTitle="title"></CardStatus>
+
 				<div v-if="linkedDoc" class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>

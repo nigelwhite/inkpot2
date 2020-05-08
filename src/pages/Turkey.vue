@@ -21,6 +21,8 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
+				<CardStatus :pageTitle="title"></CardStatus>
+
 				<!-- <div v-if="linkedDoc" class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
@@ -56,13 +58,22 @@
 							and
 							<a href="http://paypal.me/TheInkpot/25" target="_blank"
 								><v-btn small class="secondary">pay the £25 deposit</v-btn></a
-							><br />When you have received confirmation from Hannah that all is
-							well with your order
+							>
+						</p>
+						<p>
+							When you have received confirmation from Hannah that all is well
+							with your order
 							<a href="https://www.paypal.me/TheInkpot" target="_blank"
 								><v-btn small class="secondary"
 									>pay the balance via paypal</v-btn
 								></a
 							>
+						</p>
+						<p>
+							Any questions
+							<g-link to="/contact/">
+								<v-btn small class="secondary"> Contact us</v-btn>
+							</g-link>
 						</p>
 
 						<p>
@@ -164,6 +175,7 @@ import DownloadBtn from '@/components/DownloadBtn.vue';
 import Portraits3Wide from '@/components/Portraits3Wide.vue';
 import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
 import ContactUsBtn from '@/components/ContactUsBtn.vue';
+import CardStatus from '@/components/CardStatus.vue';
 
 export default {
 	data() {
@@ -180,6 +192,7 @@ export default {
 		Portraits3Wide,
 		Portraits3Narrow,
 		ContactUsBtn,
+		CardStatus,
 	},
 };
 </script>

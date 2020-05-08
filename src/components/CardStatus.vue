@@ -1,9 +1,9 @@
+// gets the 'action' of each product from cards.yaml and puts the right one in
+each product page
 <template>
-	<div>
+	<div class="mb-4 text-center">
 		<!-- the value of action in cards.yaml -->
 		<h2>{{ currentCard }}</h2>
-
-		<!-- <h2>{{ currentCard.status }}</h2> -->
 	</div>
 </template>
 

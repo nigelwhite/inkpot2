@@ -21,6 +21,8 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
+				<CardStatus :pageTitle="title"></CardStatus>
+
 				<div v-if="linkedDoc" class="ordering text-center mb-10">
 					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 				</div>
@@ -60,6 +62,7 @@ import DownloadBtn from '@/components/DownloadBtn.vue';
 import Portraits3Wide from '@/components/Portraits3Wide.vue';
 import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
 import ContactUsBtn from '@/components/ContactUsBtn.vue';
+import CardStatus from '@/components/CardStatus.vue';
 
 export default {
 	data() {
@@ -76,6 +79,7 @@ export default {
 		Portraits3Wide,
 		Portraits3Narrow,
 		ContactUsBtn,
+		CardStatus,
 	},
 };
 </script>
