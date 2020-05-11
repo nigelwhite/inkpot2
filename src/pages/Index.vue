@@ -52,8 +52,7 @@
 				</div>
 			</v-col>
 			<v-col>
-				<div v-for="edge in $page.allInstagramPhoto.edges" :key="edge.node.id">
-					<p>{{ edge.node.id }}</p>
+				<div v-for="edge in $page.allInstagramPhoto.edges" key="edge.node.id">
 					<p>{{ edge.node.id }}</p>
 				</div>
 			</v-col>
