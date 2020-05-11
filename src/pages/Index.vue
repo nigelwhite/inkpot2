@@ -52,13 +52,12 @@
 				</div>
 			</v-col>
 			<v-col>
-				<ul>
-					<ul v-for="edge in $page.allInstagramPhoto.edges" :key="edge.node.id">
-						<li>
-							{{ edge.node.id }}
-						</li>
-					</ul>
-				</ul>
+				<div
+					v-for="(edge, index) in $page.allInstagramPhoto.edges"
+					:key="edge.node.id"
+				>
+					{{ edge.node.id }}
+				</div>
 			</v-col>
 		</v-row>
 	</Layout>
@@ -66,7 +65,7 @@
 
 <page-query>
 	query {
-    allInstagramPhoto (limit: 1) {
+    allInstagramPhoto {
     edges {
       node {
 				id
