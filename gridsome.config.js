@@ -25,5 +25,13 @@ module.exports = {
 			addStyleResource(config.module.rule('sass').oneOf(type));
 		});
 	},
-	plugins: [],
+	plugins: [
+		{
+			use: '@zefman/gridsome-source-instagram',
+			options: {
+				username: 'inkpotfarm', // Instagram username
+				typeName: 'InstagramPhoto', // The GraphQL type you want the photos to be added under. Defaults to InstagramPhoto
+			},
+		},
+	],
 };
