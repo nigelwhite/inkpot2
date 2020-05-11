@@ -211,6 +211,25 @@
 	</Layout>
 </template>
 
+<page-query>
+	query {
+    allInstagramPhoto (limit: 1) {
+    edges {
+      node {
+        display_url
+        edge_media_to_caption {
+          edges {
+            node {
+              text
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 import cards from '@/data/cards.yaml';
 
