@@ -19,6 +19,11 @@
 		<template slot="title">{{ title }}</template>
 
 		<v-row class="mt-lg-6">
+			<v-col 
+				<div v-for="edge in $page.allInstagramPhoto.edges" key="edge.node.id">
+					<p>{{ edge.node[0].id }}</p>
+				</div>
+			</v-col>
 			<v-col class="col-12 col-md-8 col-lg-9">
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in sortedCards" :key="index">
@@ -49,11 +54,6 @@
 							</v-hover>
 						</g-link>
 					</div>
-				</div>
-			</v-col>
-			<v-col>
-				<div v-for="edge in $page.allInstagramPhoto.edges" key="edge.node.id">
-					<p>{{ edge.node.id }}</p>
 				</div>
 			</v-col>
 		</v-row>
