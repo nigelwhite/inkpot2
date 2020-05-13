@@ -19,13 +19,17 @@
 		<template slot="title">{{ title }}</template>
 
 		<v-row class="mt-lg-6">
-			<v-col 
-				<div v-for="edge in $page.allInstagramPhoto.edges" key="edge.node.id">
-					<img :src="edge.node.display_url" alt="Latest Instagram image">
+			<v-col class="col-12">
+				<div
+					v-for="edge in $page.allInstagramPhoto.edges"
+					key="edge.node.id"
+					class="instagram-post"
+				>
+					<img :src="edge.node.display_url" alt="Latest Instagram image" />
 					<p>{{ edge.node.edge_media_to_caption.edges[0].node.text }}</p>
 				</div>
 			</v-col>
-			<v-col class="col-12 col-md-8 col-lg-9">
+			<v-col>
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in sortedCards" :key="index">
 						<g-link :to="'produce/' + card.link">
@@ -88,10 +92,10 @@ export default {
 	metaInfo: {
 		title: 'Home',
 		meta: [
-			{charset: "utf-8"},
-			{name: "description", content: "The Inkpot farm homepage"},
-			{name: "keywords", content: "homepage"}
-		]
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot farm homepage' },
+			{ name: 'keywords', content: 'homepage' },
+		],
 	},
 	data() {
 		return {
@@ -122,4 +126,8 @@ export default {
 .ink-grow
 	-webkit-transition: all .2s ease-in-out
   transition: all .2s ease-in-out
+
+.instagram-post img
+	max-width: 100%
+	height: auto
 </style>
