@@ -85,7 +85,12 @@ import cards from '@/data/cards.yaml';
 
 export default {
 	metaInfo: {
-		title: 'Inkpot | home',
+		title: 'Home',
+		meta: [
+			{charset: "utf-8"},
+			{name: "description", content: "The Inkpot farm homepage"},
+			{name: "keywords", content: "homepage"}
+		]
 	},
 	data() {
 		return {

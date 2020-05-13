@@ -62,7 +62,12 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Inkpot | About',
+		title: 'About',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'About The Inkpot permaculture farm' },
+			{ name: 'keywords', content: 'about, site, Hannah Thorogood' },
+		],
 	},
 	data() {
 		return {

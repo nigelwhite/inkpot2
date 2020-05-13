@@ -4,8 +4,8 @@
 			<div class="my-4 mb-lg-8">{{ title }}</div>
 		</template>
 		<v-row>
-			<v-col>
-				<h2>Please contact Hannah by sending a message</h2>
+			<v-col class="col-12 px-sm-12 col-lg-9 col-xl-6">
+				<h2>Please contact The Inkpot by sending a message</h2>
 				<div class="mt-8 mx-lg-12">
 					<v-form ref="form" v-model="valid" lazy-validation>
 						<v-text-field
@@ -52,7 +52,7 @@
 					</p>
 				</div>
 			</v-col>
-			<v-col class=" mt-lg-12 pt-lg-12">
+			<v-col class="text-center mt-md-12 pt-lg-12">
 				<g-link to="/location/">
 					<v-btn large class="secondary"> Map and address</v-btn>
 				</g-link>
@@ -64,7 +64,12 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Inkpot | Contact',
+		title: 'Contact',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'Contact The Inkpot' },
+			{ name: 'keywords', content: 'contact The Inkpot' },
+		],
 	},
 
 	data: () => ({

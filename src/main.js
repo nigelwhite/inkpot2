@@ -21,6 +21,14 @@ export default function(Vue, { appOptions, head }) {
 			'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
 	});
 
+	head.htmlAttrs = { lang: 'en' };
+
+	head.meta.push({
+		name: 'keywords',
+		content:
+			'permaculture, farm, organic, farm produce, livestock, demonstration',
+	});
+
 	const opts = {
 		icons: {
 			iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
