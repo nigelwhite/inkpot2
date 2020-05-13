@@ -32,6 +32,7 @@
 							<p class="pa-2">
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
+							<p>{{ edge.node.taken_at_timestamp }}</p>
 						</div>
 					</div>
 				</div>
@@ -80,6 +81,7 @@
       node {
 				id
         display_url
+				taken_at_timestamp
         edge_media_to_caption {
           edges {
             node {
