@@ -62,7 +62,7 @@
 
 <page-query>
 	query {
-    allInstagramPhoto (limit: 1) {
+  allInstagramPhoto(limit: 1) {
     edges {
       node {
 				id
