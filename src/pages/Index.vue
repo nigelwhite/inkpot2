@@ -22,6 +22,7 @@
 			<v-col 
 				<div v-for="edge in $page.allInstagramPhoto.edges" key="edge.node.id">
 					<p>{{ edge.node.id }}</p>
+					<img :src="edge.node.display_url" alt="Latest Instagram image">
 				</div>
 			</v-col>
 			<v-col class="col-12 col-md-8 col-lg-9">
