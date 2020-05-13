@@ -20,13 +20,17 @@
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12">
-				<div
-					v-for="edge in $page.allInstagramPhoto.edges"
-					key="edge.node.id"
-					class="instagram-post"
-				>
-					<img :src="edge.node.display_url" alt="Latest Instagram image" />
-					<p>{{ edge.node.edge_media_to_caption.edges[0].node.text }}</p>
+				<div class="instagram-container">
+					<div
+						v-for="edge in $page.allInstagramPhoto.edges"
+						key="edge.node.id"
+						class="instagram-post"
+					>
+						<img :src="edge.node.display_url" alt="Latest Instagram image" />
+						<p class="pa-2">
+							{{ edge.node.edge_media_to_caption.edges[0].node.text }}
+						</p>
+					</div>
 				</div>
 			</v-col>
 			<v-col>
@@ -126,6 +130,10 @@ export default {
 .ink-grow
 	-webkit-transition: all .2s ease-in-out
   transition: all .2s ease-in-out
+
+.instagram-container
+	border: 1px solid black
+	max-width: 500px
 
 .instagram-post img
 	max-width: 100%
