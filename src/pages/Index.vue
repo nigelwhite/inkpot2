@@ -19,21 +19,25 @@
 		<template slot="title">{{ title }}</template>
 
 		<v-row class="mt-lg-6">
-			<v-col class="col-12">
-				<div class="instagram-container">
-					<div
-						v-for="edge in $page.allInstagramPhoto.edges"
-						key="edge.node.id"
-						class="instagram-post"
-					>
-						<img :src="edge.node.display_url" alt="Latest Instagram image" />
-						<p class="pa-2">
-							{{ edge.node.edge_media_to_caption.edges[0].node.text }}
-						</p>
+			<v-col class="col-12 col-md-6">
+				<h2 class="text-center mb-2">Instagram</h2>
+				<div class="d-flex justify-center">
+					<div class="instagram-container">
+						<div
+							v-for="edge in $page.allInstagramPhoto.edges"
+							key="edge.node.id"
+							class="instagram-post"
+						>
+							<img :src="edge.node.display_url" alt="Latest Instagram image" />
+							<p class="pa-2">
+								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
+							</p>
+						</div>
 					</div>
 				</div>
 			</v-col>
 			<v-col>
+				<h2 class="text-center">Buy our produce</h2>
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in sortedCards" :key="index">
 						<g-link :to="'produce/' + card.link">
@@ -132,10 +136,15 @@ export default {
   transition: all .2s ease-in-out
 
 .instagram-container
+	overflow: scroll
 	border: 1px solid black
-	max-width: 500px
+	border-radius: 10px
+	max-width: 400px
+	max-height: 600px
 
 .instagram-post img
 	max-width: 100%
 	height: auto
+	border-top-right-radius: 10px
+	border-top-left-radius: 10px
 </style>
