@@ -60,6 +60,14 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Fleeces',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot fleeces' },
+			{ name: 'keywords', content: 'fleeces, wool, pasture fed, sheep, order' },
+		],
+	},
 	data() {
 		return {
 			title: 'Fleeces',

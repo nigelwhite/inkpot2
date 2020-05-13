@@ -84,6 +84,17 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Hogget',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot hogget' },
+			{
+				name: 'keywords',
+				content: 'hogget, sheep, lamb, pasture fed, free range, order',
+			},
+		],
+	},
 	data() {
 		return {
 			title: 'Hogget',

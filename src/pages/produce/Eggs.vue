@@ -65,6 +65,14 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Eggs',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot eggs' },
+			{ name: 'keywords', content: 'eggs, hens, free range, fresh, order' },
+		],
+	},
 	data() {
 		return {
 			title: 'Eggs',

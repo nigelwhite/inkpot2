@@ -73,6 +73,17 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Beef',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot beef' },
+			{
+				name: 'keywords',
+				content: 'beef, organic, Lincoln Red, pasture fed, order',
+			},
+		],
+	},
 	data() {
 		return {
 			title: 'Beef',

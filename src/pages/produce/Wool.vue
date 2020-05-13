@@ -68,6 +68,17 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Wool',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot wool' },
+			{
+				name: 'keywords',
+				content: 'wool, sheep, organic, pasture fed, order',
+			},
+		],
+	},
 	data() {
 		return {
 			title: 'Wool',

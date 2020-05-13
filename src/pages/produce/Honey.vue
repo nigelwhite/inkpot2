@@ -46,6 +46,17 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Honey',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot honey' },
+			{
+				name: 'keywords',
+				content: 'honey, bees, organic, order',
+			},
+		],
+	},
 	data() {
 		return {
 			title: 'Honey',

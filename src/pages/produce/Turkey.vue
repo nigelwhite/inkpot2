@@ -178,6 +178,17 @@ import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
 
 export default {
+	metaInfo: {
+		title: 'Turkey',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'The Inkpot turkey' },
+			{
+				name: 'keywords',
+				content: 'turkey, Christmas, organic, order',
+			},
+		],
+	},
 	data() {
 		return {
 			title: 'Turkey',
