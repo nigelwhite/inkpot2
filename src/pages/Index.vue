@@ -27,7 +27,7 @@
 			<v-col class="col-12 col-md-8 col-lg-9">
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in sortedCards" :key="index">
-						<g-link :to="card.link">
+						<g-link :to="'produce/' + card.link">
 							<v-hover v-slot:default="{ hover }" class="ink-grow">
 								<v-card
 									:class="{ 'on-hover': hover }"
