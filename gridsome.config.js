@@ -17,6 +17,17 @@ function addStyleResource(rule) {
 
 module.exports = {
 	siteName: 'The Inkpot',
+	siteDescription: 'A permaculture livestock farm in Lincolnshire',
+	meta: [
+		{ charset: 'utf-8' },
+		{ lang: 'en' },
+		{
+			name: 'keywords',
+			content:
+				'Permaculture, organic, farm, Lincolnshire, demonstration, livestock',
+		},
+	],
+
 	chainWebpack(config) {
 		// Load variables for all vue-files
 		const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
