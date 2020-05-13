@@ -158,6 +158,7 @@ export default {
 			],
 		};
 	},
+	// tried to filter for produce - failed
 	// computed: {
 	// 	produceList: function() {
 	// 		// create a new empty array
