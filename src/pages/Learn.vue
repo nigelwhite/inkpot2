@@ -29,7 +29,15 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Inkpot | Learn',
+		title: 'Learn',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'description', content: 'Learn Permaculture at The Inkpot' },
+			{
+				name: 'keywords',
+				content: 'learn, courses, workshops, volunteer, work, working',
+			},
+		],
 	},
 	data() {
 		return {
