@@ -34,7 +34,10 @@
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
 							<!-- <p :value="formatDate(edge.node.taken_at_timestamp)"></p> -->
-							<p>formatDate({{ edge.node.taken_at_timestamp }})</p>
+							<!-- <p :value="formattedDate(edge.node.taken_at_timestamp)"></p> -->
+							<!-- <p
+								:value="format(edge.node.taken_at_timestamp, 'DD.MM.YYYY')"
+							></p> -->
 						</div>
 					</div>
 				</div>
@@ -114,6 +117,7 @@ export default {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
 			cards,
+			due: null,
 		};
 	},
 	computed: {
@@ -127,9 +131,10 @@ export default {
 			);
 			return orderedCards;
 		},
-		formatDate: function(picDate) {
-			var betterDate = fromUnixTime(picDate, 'DD/MM/YYYY');
-			return betterDate;
+		formattedDate: function(due) {
+			// turnery says if the first thing is true, do the stuff on the left of the colon, if not do the stuff on the right
+			var newDate = due ? format(new Date(due)) : '';
+			return newDate;
 		},
 	},
 };
