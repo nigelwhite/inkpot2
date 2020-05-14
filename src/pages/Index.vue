@@ -33,6 +33,8 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
+							<!-- <p :value="formatDate(edge.node.taken_at_timestamp)"></p> -->
+							<p>formatDate({{ edge.node.taken_at_timestamp }})</p>
 						</div>
 					</div>
 				</div>
@@ -97,6 +99,7 @@
 
 <script>
 import cards from '@/data/cards.yaml';
+import format from 'date-fns/fromUnixTime';
 
 export default {
 	metaInfo: {
@@ -123,6 +126,10 @@ export default {
 				a.order > b.order ? 1 : -1
 			);
 			return orderedCards;
+		},
+		formatDate: function(picDate) {
+			var betterDate = fromUnixTime(picDate, 'DD/MM/YYYY');
+			return betterDate;
 		},
 	},
 };
