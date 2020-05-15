@@ -33,6 +33,9 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
+							<p
+								format(edge.node.taken_at_timestamp, 'eeee d LLL')
+							></p>
 
 							<p>{{ testDate2 }}</p>
 						</div>
@@ -99,7 +102,6 @@
 
 <script>
 import cards from '@/data/cards.yaml';
-import fromUnixTime from 'date-fns/fromUnixTime';
 import format from 'date-fns/format';
 
 export default {
@@ -129,7 +131,7 @@ export default {
 			return orderedCards;
 		},
 		testDate2: function() {
-			var secondDate = format(1330515905, 'eee d LLL yyyy');
+			var secondDate = format(1588491974, 'eeee d LLL');
 			return secondDate;
 		},
 	},
