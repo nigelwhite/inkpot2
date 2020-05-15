@@ -38,6 +38,7 @@
 							<!-- <p
 								:value="format(edge.node.taken_at_timestamp, 'DD.MM.YYYY')"
 							></p> -->
+							<p>{{ testDate }}</p>
 						</div>
 					</div>
 				</div>
@@ -102,7 +103,7 @@
 
 <script>
 import cards from '@/data/cards.yaml';
-import format from 'date-fns/fromUnixTime';
+import fromUnixTime from 'date-fns/fromUnixTime';
 
 export default {
 	metaInfo: {
@@ -117,7 +118,7 @@ export default {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
 			cards,
-			due: null,
+			fromUnixTime,
 		};
 	},
 	computed: {
@@ -135,6 +136,9 @@ export default {
 			// turnery says if the first thing is true, do the stuff on the left of the colon, if not do the stuff on the right
 			var newDate = due ? format(new Date(due)) : '';
 			return newDate;
+		},
+		testDate: function() {
+			return fromUnixTime('1588491974', 'DD/MM/YYYY');
 		},
 	},
 };

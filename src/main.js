@@ -26,7 +26,7 @@ export default function(Vue, { appOptions, head }) {
 	head.meta.push({
 		name: 'keywords',
 		content:
-			'permaculture, farm, organic, farm produce, livestock, demonstration',
+			'permaculture, farm, organic, farm produce, livestock, demonstration, forest garden, small holding, pasture fed, LAND network',
 	});
 
 	const opts = {
