@@ -33,12 +33,7 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
-							<!-- <p :value="formatDate(edge.node.taken_at_timestamp)"></p> -->
-							<!-- <p :value="formattedDate(edge.node.taken_at_timestamp)"></p> -->
-							<!-- <p
-								:value="format(edge.node.taken_at_timestamp, 'DD.MM.YYYY')"
-							></p> -->
-							<p>{{ testDate }}</p>
+
 							<p>{{ testDate2 }}</p>
 						</div>
 					</div>
@@ -133,17 +128,8 @@ export default {
 			);
 			return orderedCards;
 		},
-		formattedDate: function(due) {
-			// turnery says if the first thing is true, do the stuff on the left of the colon, if not do the stuff on the right
-			var newDate = due ? format(new Date(due)) : '';
-			return newDate;
-		},
-		testDate: function() {
-			return fromUnixTime('1588491974', 'dd');
-		},
 		testDate2: function() {
-			var thisDate = fromUnixTime(1330515905);
-			var secondDate = format(thisDate, 'eee d LLL yyyy');
+			var secondDate = format(1330515905, 'eee d LLL yyyy');
 			return secondDate;
 		},
 	},
