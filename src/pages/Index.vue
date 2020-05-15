@@ -39,6 +39,7 @@
 								:value="format(edge.node.taken_at_timestamp, 'DD.MM.YYYY')"
 							></p> -->
 							<p>{{ testDate }}</p>
+							<p>{{ testDate2 }}</p>
 						</div>
 					</div>
 				</div>
@@ -104,6 +105,7 @@
 <script>
 import cards from '@/data/cards.yaml';
 import fromUnixTime from 'date-fns/fromUnixTime';
+import format from 'date-fns/format';
 
 export default {
 	metaInfo: {
@@ -118,7 +120,6 @@ export default {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
 			cards,
-			fromUnixTime,
 		};
 	},
 	computed: {
@@ -138,7 +139,12 @@ export default {
 			return newDate;
 		},
 		testDate: function() {
-			return fromUnixTime('1588491974', 'DD/MM/YYYY');
+			return fromUnixTime('1588491974', 'dd');
+		},
+		testDate2: function() {
+			var thisDate = fromUnixTime(1330515905);
+			var secondDate = format(thisDate, 'eee d LLL yyyy');
+			return secondDate;
 		},
 	},
 };
