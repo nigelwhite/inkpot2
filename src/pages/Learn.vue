@@ -24,6 +24,7 @@
 								allowfullscreen
 							></iframe>
 						</div>
+						<p class="text-right">Aerial Tour of the Inkpot</p>
 					</div>
 				</div>
 			</v-col>

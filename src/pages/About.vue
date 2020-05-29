@@ -40,6 +40,7 @@
 					max-width="250"
 					class="mx-auto"
 				></v-img>
+				<p>Hannah</p>
 				<div text-center class="outer-video-container">
 					<div class="video-container mt-12">
 						<div class="youtube-responsive-container">
@@ -52,6 +53,7 @@
 								allowfullscreen
 							></iframe>
 						</div>
+						<p class="text-right">Inkpot Open Farm Sunday 2019</p>
 					</div>
 				</div>
 			</v-col>
