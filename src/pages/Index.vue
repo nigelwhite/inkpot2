@@ -28,17 +28,14 @@
 							key="edge.node.id"
 							class="instagram-post"
 						>
-							<img
-								:src="edge.node.display_url"
-								alt="Latest Instagram image"
-								class="instagram-img"
-							/>
-
+							<img :src="edge.node.display_url" alt="Latest Instagram image" />
+							<p class="text-center mt-3">{{ edge.node.taken_at_timestamp }}</p>
+							<p class="text-center">
+								newDate({{ edge.node.taken_at_timestamp }})
+							</p>
 							<p class="pa-2">
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
-							<p>{{ edge.node.taken_at_timestamp }}</p>
-							<p>newDate({{ edge.node.taken_at_timestamp }})</p>
 						</div>
 					</div>
 				</div>
@@ -159,10 +156,5 @@ export default {
 .instagram-post img
 	max-width: 100%
 	height: auto
-	border-top-right-radius: 10px
 	border-top-left-radius: 10px
-
-.instagram-img
-	max-width: 100%
-	height: auto
 </style>
