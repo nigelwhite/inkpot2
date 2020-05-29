@@ -16,7 +16,10 @@
 				/>
 			</div>
 		</template>
-		<template slot="title">{{ title }}</template>
+
+		<template slot="title">
+			{{ title }}</template
+		>
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-6">
@@ -37,7 +40,7 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 						</div>
-						<g-link to="/gallery" class="text-center"><h3>more...</h3></g-link>
+						<g-link to="/diary" class="text-center"><h3>more...</h3></g-link>
 					</div>
 				</div>
 			</v-col>
