@@ -12,14 +12,19 @@
 				<p>Working Wednesday, etc</p>
 			</v-col>
 			<v-col>
-				<div>
-					<v-img :src="img1"></v-img>
-					<!-- <g-image
-						src="~/assets/images/veg.png"
-						width="900"
-						class="gimage"
-					></g-image> -->
-					<p class="text-right caption">Film: Carla Moss</p>
+				<div text-center class="outer-video-container">
+					<div class="video-container mt-12">
+						<div class="youtube-responsive-container">
+							<iframe
+								width="444"
+								height="250"
+								src="https://www.youtube.com/embed/viGvddHenA8"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
 				</div>
 			</v-col>
 		</v-row>
@@ -53,4 +58,24 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.outer-video-container
+	padding: 5%
+
+.video-container
+// min-width: 250px
+//   max-width: 444px
+
+.youtube-responsive-container
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  overflow: hidden
+
+.youtube-responsive-container iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+</style>
