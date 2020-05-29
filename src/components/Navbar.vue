@@ -39,7 +39,7 @@
 							</v-list>
 						</v-menu>
 						<v-btn text rounded>
-							<g-link to="/gallery/" class="title">Gallery</g-link>
+							<g-link to="/diary/" class="title">Diary</g-link>
 						</v-btn>
 						<v-btn text rounded>
 							<g-link to="/learn/" class="title">Learn</g-link>
@@ -127,6 +127,7 @@ export default {
 					text: 'Honey',
 					url: '/produce/honey',
 				},
+				{ type: 'main', icon: 'backup', text: 'Diary', url: '/diary/' },
 				{ type: 'main', icon: 'backup', text: 'Learn', url: '/learn/' },
 				{ type: 'main', icon: 'backup', text: 'Contact', url: '/contact/' },
 			],

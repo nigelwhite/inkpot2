@@ -71,16 +71,16 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Gallery',
+		title: 'Diary',
 		meta: [
 			{ charset: 'utf-8' },
-			{ name: 'description', content: 'The Inkpot farm photo gallery' },
-			{ name: 'keywords', content: 'gallery' },
+			{ name: 'description', content: 'The Inkpot farm photo diary' },
+			{ name: 'keywords', content: 'gallery, diary' },
 		],
 	},
 	data() {
 		return {
-			title: 'Photo Gallery',
+			title: 'Photo Diary',
 		};
 	},
 };

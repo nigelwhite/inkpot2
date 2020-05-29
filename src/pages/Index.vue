@@ -37,7 +37,7 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 						</div>
-						<g-link to="/gallery" class="text-center"><h3>More...</h3></g-link>
+						<g-link to="/gallery" class="text-center"><h3>more...</h3></g-link>
 					</div>
 				</div>
 			</v-col>
