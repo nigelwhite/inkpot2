@@ -130,8 +130,8 @@ export default {
 		},
 	},
 	filters: {
-		moment: function(date) {
-			return moment(date).format('ddd D MMM');
+		moment: function(myDate) {
+			return moment.unix(myDate).format('ddd D MMM');
 		},
 	},
 };
