@@ -6,14 +6,29 @@
 			<slot name="hero-img" />
 			<v-container class="my-2 my-md-4">
 				<div class="hidden-md-and-down">
-					<h1 class="primary--text mt-4">
-						<slot name="title" />
-					</h1>
+					<div class="d-flex">
+						<g-image
+							src="~/assets/images/InkpotLogo_transparent.png"
+							alt="Inkpot Logo"
+							width="100"
+							class="mr-4"
+						/>
+						<h1 class="primary--text align-self-center">
+							<slot name="title" />
+						</h1>
+					</div>
 				</div>
 				<div class="hidden-lg-and-up">
-					<h2 class="primary--text">
-						<slot name="title" />
-					</h2>
+					<div class="d-flex">
+						<g-image
+							src="~/assets/images/InkpotLogo_transparent.png"
+							alt="Inkpot Logo"
+							width="100"
+						/>
+						<h2 class="primary--text align-self-center">
+							<slot name="title" />
+						</h2>
+					</div>
 				</div>
 				<slot />
 			</v-container>
