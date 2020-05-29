@@ -29,10 +29,10 @@
 							class="instagram-post"
 						>
 							<img :src="edge.node.display_url" alt="Latest Instagram image" />
-							<p class="text-center mt-3">{{ edge.node.taken_at_timestamp }}</p>
-							<p class="text-center">
-								newDate({{ edge.node.taken_at_timestamp }})
+							<p class="text-center mt-3">
+								{{ edge.node.taken_at_timestamp | moment }}
 							</p>
+
 							<p class="pa-2">
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
@@ -100,6 +100,7 @@
 
 <script>
 import cards from '@/data/cards.yaml';
+import moment from 'moment';
 
 export default {
 	metaInfo: {
@@ -127,11 +128,10 @@ export default {
 			);
 			return orderedCards;
 		},
-		newDate: function(d) {
-			var NowMoment = moment();
-			var myDate = d;
-			myDate = NowMoment.format('YYYY-M-D');
-			return myDate;
+	},
+	filters: {
+		moment: function(date) {
+			return moment(date).format('ddd D MMM');
 		},
 	},
 };
