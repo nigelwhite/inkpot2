@@ -37,6 +37,7 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 						</div>
+						<g-link to="/gallery" class="text-center"><h3>More...</h3></g-link>
 					</div>
 				</div>
 			</v-col>
@@ -79,7 +80,7 @@
 
 <page-query>
 	query {
-  allInstagramPhoto(sortBy: "taken_at_timestamp", limit: 2) {
+  allInstagramPhoto(sortBy: "taken_at_timestamp", limit: 1) {
     edges {
       node {
 				id

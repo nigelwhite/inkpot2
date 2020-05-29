@@ -39,6 +39,9 @@
 							</v-list>
 						</v-menu>
 						<v-btn text rounded>
+							<g-link to="/gallery/" class="title">Gallery</g-link>
+						</v-btn>
+						<v-btn text rounded>
 							<g-link to="/learn/" class="title">Learn</g-link>
 						</v-btn>
 						<v-btn text rounded>
