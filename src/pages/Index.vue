@@ -28,16 +28,17 @@
 							key="edge.node.id"
 							class="instagram-post"
 						>
-							<img :src="edge.node.display_url" alt="Latest Instagram image" />
+							<img
+								:src="edge.node.display_url"
+								alt="Latest Instagram image"
+								class="instagram-img"
+							/>
+
 							<p class="pa-2">
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
-							<p
-								format(edge.node.taken_at_timestamp, 'eeee d LLL')
-							></p>
-
-							<p>{{ testDate2 }}</p>
+							<p value="newDate()"></p>
 						</div>
 					</div>
 				</div>
@@ -81,7 +82,7 @@
 
 <page-query>
 	query {
-  allInstagramPhoto(limit: 1) {
+  allInstagramPhoto(sortBy: "taken_at_timestamp", limit: 1) {
     edges {
       node {
 				id
@@ -102,7 +103,6 @@
 
 <script>
 import cards from '@/data/cards.yaml';
-import format from 'date-fns/format';
 
 export default {
 	metaInfo: {
@@ -130,9 +130,9 @@ export default {
 			);
 			return orderedCards;
 		},
-		testDate2: function() {
-			var secondDate = format(1588491974, 'eeee d LLL');
-			return secondDate;
+		newDate: function(d) {
+			var dateString = moment(this.taken_at_timestamp).format('L');
+			return dateString;
 		},
 	},
 };
@@ -151,7 +151,7 @@ export default {
 	overflow: scroll
 	border: 1px solid black
 	border-radius: 10px
-	max-width: 400px
+	max-width: 500px
 	max-height: 600px
 
 .instagram-post img
@@ -159,4 +159,8 @@ export default {
 	height: auto
 	border-top-right-radius: 10px
 	border-top-left-radius: 10px
+
+.instagram-img
+	max-width: 100%
+	height: auto
 </style>
