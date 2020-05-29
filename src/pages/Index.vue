@@ -38,7 +38,7 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 							<p>{{ edge.node.taken_at_timestamp }}</p>
-							<p value="newDate()"></p>
+							<p>newDate({{ edge.node.taken_at_timestamp }})</p>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 
 <page-query>
 	query {
-  allInstagramPhoto(sortBy: "taken_at_timestamp", limit: 1) {
+  allInstagramPhoto(sortBy: "taken_at_timestamp", limit: 2) {
     edges {
       node {
 				id
@@ -131,8 +131,10 @@ export default {
 			return orderedCards;
 		},
 		newDate: function(d) {
-			var dateString = moment(this.taken_at_timestamp).format('L');
-			return dateString;
+			var NowMoment = moment();
+			var myDate = d;
+			myDate = NowMoment.format('YYYY-M-D');
+			return myDate;
 		},
 	},
 };
