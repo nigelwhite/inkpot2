@@ -1,6 +1,7 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
+		<CardBadges />
 		<v-row>
 			<v-col class="col-12 col-xl-8">
 				<v-row>
@@ -82,6 +83,7 @@ import Portraits3Wide from '@/components/Portraits3Wide.vue';
 import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
 import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
+import CardBadges from '@/components/CardBadges.vue';
 
 export default {
 	metaInfo: {
@@ -110,6 +112,7 @@ export default {
 		Portraits3Narrow,
 		ContactUsBtn,
 		CardStatus,
+		CardBadges,
 	},
 };
 </script>
