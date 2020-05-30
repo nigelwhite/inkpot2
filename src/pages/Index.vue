@@ -21,7 +21,7 @@
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-6">
-				<h2 class="text-center mb-2">Instagram</h2>
+				<h2 class="text-center mb-2">Diary</h2>
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
 						<div
@@ -153,7 +153,7 @@ export default {
 	border: 1px solid black
 	border-radius: 10px
 	max-width: 500px
-	max-height: 600px
+	max-height: 700px
 
 .instagram-post img
 	max-width: 100%
