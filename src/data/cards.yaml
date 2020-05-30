@@ -4,7 +4,7 @@
   link: beef
   show: On
   image: cow-mother-child-250x150.jpg
-  badge: url
+  badges:
   order: 2
   action: Order now
 - title: Hogget
@@ -12,7 +12,9 @@
   link: hogget
   show: On
   image: sheep-250x150.jpg
-  badge: url
+  badges:
+    - GT18-2-star150x150.png
+    - GT19-1-star150x150.png
   order: 3
   action: Order now
 - title: Eggs
@@ -20,7 +22,7 @@
   link: eggs
   show: On
   image: hen-250x150.jpg
-  badge: url
+  badges:
   order: 4
   action: Order now
 - title: Wool
@@ -28,7 +30,7 @@
   link: wool
   show: On
   image: wool-250x150.png
-  badge: url
+  badges:
   order: 5
   action: Enquire
 - title: Turkey
@@ -36,7 +38,8 @@
   link: turkey
   show: On
   image: pic-needed-250x150.png
-  badge: url
+  badges:
+    - GT19-2-star150x150.png
   order: 1
   action: Order now for 2020
 - title: Fleeces
@@ -44,7 +47,7 @@
   link: fleeces
   show: On
   image: fleece-250x150.png
-  badge: url
+  badges:
   order: 6
   action: Enquire
 - title: Honey
@@ -52,6 +55,6 @@
   link: honey
   show: On
   image: pic-needed-250x150.png
-  badge: url
+  badges:
   order: 7
   action: Enquire
