@@ -8,7 +8,7 @@
 				<div class="hidden-md-and-down">
 					<div class="d-flex">
 						<g-image
-							src="~/assets/images/InkpotLogo_transparent.png"
+							src="~/assets/images/logos/InkpotLogo_transparent.png"
 							alt="Inkpot Logo"
 							width="100"
 							class="mr-4"
@@ -21,7 +21,7 @@
 				<div class="hidden-lg-and-up">
 					<div class="d-flex">
 						<g-image
-							src="~/assets/images/InkpotLogo_transparent.png"
+							src="~/assets/images/logos/InkpotLogo_transparent.png"
 							alt="Inkpot Logo"
 							width="100"
 						/>
