@@ -1,7 +1,7 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
-		<CardBadges />
+
 		<v-row>
 			<v-col class="col-12 col-xl-8">
 				<v-row>

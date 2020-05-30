@@ -17,9 +17,7 @@
 			</div>
 		</template>
 
-		<template slot="title">
-			{{ title }}</template
-		>
+		<template slot="title">{{ title }}</template>
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-6">
