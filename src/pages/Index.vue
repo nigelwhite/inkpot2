@@ -85,18 +85,21 @@
 											}}</v-card-title>
 										</v-img>
 									</v-responsive>
-									<div v-for="badge in card.badges" :key="index">
-										<v-img
-											:src="require('~/assets/images/logos/' + badge)"
-											:aspect-ratio="1"
-											:height="50"
-											:width="50"
-										></v-img>
-									</div>
-									<v-card-actions>
+
+									<v-card-actions class="action">
 										<v-btn class="primary--text" text>
 											{{ card.action }}
 										</v-btn>
+										<div class="d-flex badges">
+											<div v-for="badge in card.badges" :key="index">
+												<v-img
+													:src="require('~/assets/images/logos/' + badge)"
+													:aspect-ratio="1"
+													:height="50"
+													:width="50"
+												></v-img>
+											</div>
+										</div>
 									</v-card-actions>
 								</v-card>
 							</v-hover>
@@ -188,4 +191,12 @@ export default {
 	max-width: 100%
 	height: auto
 	border-top-left-radius: 10px
+
+.action
+	position: relative
+
+.badges
+	position: absolute
+	top: -25px
+	right: 10px
 </style>
