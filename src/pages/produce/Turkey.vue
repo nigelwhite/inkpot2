@@ -21,21 +21,21 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div class="d-flex justify-center">
-					<div class="mr-4">
+				<div class="d-flex justify-center mb-8">
+					<div class="mr-4 align-self-center">
 						<CardStatus :pageTitle="title"></CardStatus>
 
-						<div v-if="linkedDoc" class="ordering mb-10 text-center">
+						<div v-if="linkedDoc" class=" text-center">
 							<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 						</div>
-						<div v-if="!linkedDoc" class="ordering mb-10 text-center">
+						<div v-if="!linkedDoc" class=" text-center">
 							<ContactUsBtn></ContactUsBtn>
 						</div>
 					</div>
 					<a
 						href="https://greattasteawards.co.uk/"
 						target="_blank"
-						class="d-flex flex-column"
+						class="d-flex"
 					>
 						<g-image
 							src="~/assets/images/logos/GT19-2-star250x250.png"

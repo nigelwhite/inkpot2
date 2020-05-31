@@ -29,7 +29,7 @@
 				<div v-if="!linkedDoc" class="ordering text-center mb-10">
 					<ContactUsBtn></ContactUsBtn>
 				</div>
-				<p>
+				<p class="pt-8">
 					The Inkpot fleeces are an ad-hoc that we have if and when we have
 					them!!
 				</p>

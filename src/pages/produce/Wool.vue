@@ -29,7 +29,7 @@
 				<div v-if="!linkedDoc" class="ordering text-center mb-10">
 					<ContactUsBtn></ContactUsBtn>
 				</div>
-				<p>
+				<p class="pt-8">
 					Inkpot home-grown, home shorn, Yorkshire spun, permaculture designed,
 					pasture fed, holistically managed, nonchemical, rare breed, British
 					native, slow grown wool.

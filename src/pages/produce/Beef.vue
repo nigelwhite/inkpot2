@@ -29,7 +29,7 @@
 				<div v-if="!linkedDoc" class="ordering text-center mb-10">
 					<ContactUsBtn></ContactUsBtn>
 				</div>
-				<p>
+				<p class="pt-8">
 					This is the first Inkpot beef, from our pedigree Lincoln Red herd.
 				</p>
 				<p>

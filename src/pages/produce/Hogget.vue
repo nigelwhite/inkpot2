@@ -23,21 +23,21 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<div class="d-flex justify-center">
-					<div class="mr-4">
+				<div class="d-flex justify-center mb-8">
+					<div class="mr-4 align-self-center">
 						<CardStatus :pageTitle="title"></CardStatus>
 
-						<div v-if="linkedDoc" class="ordering mb-10 text-center">
+						<div v-if="linkedDoc" class=" text-center">
 							<DownloadBtn :doc="linkedDoc"></DownloadBtn>
 						</div>
-						<div v-if="!linkedDoc" class="ordering mb-10 text-center">
+						<div v-if="!linkedDoc" class=" text-center">
 							<ContactUsBtn></ContactUsBtn>
 						</div>
 					</div>
 					<a
 						href="https://greattasteawards.co.uk/"
 						target="_blank"
-						class="d-flex flex-column"
+						class="d-flex align-self-center"
 					>
 						<g-image
 							src="~/assets/images/logos/GT19-1-star250x250.png"
@@ -45,12 +45,6 @@
 							width="80"
 							class="align-self-center"
 						/>
-					</a>
-					<a
-						href="https://greattasteawards.co.uk/"
-						target="_blank"
-						class="d-flex flex-column"
-					>
 						<g-image
 							src="~/assets/images/logos/GT18-2-star250x250.png"
 							alt="Great Taste Producer logo"
@@ -59,7 +53,7 @@
 						/>
 					</a>
 				</div>
-				<p>
+				<p class="pt-8">
 					The Inkpot hogget has a great flavour and is of fantastic quality
 					because it is nutrient dense and is as close as possible to meats from
 					the wild as farmed meats can get. The Inkpot hogget is dry aged on the

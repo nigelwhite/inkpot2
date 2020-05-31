@@ -25,7 +25,7 @@
 				<div v-if="!linkedDoc" class="ordering text-center mb-10">
 					<ContactUsBtn></ContactUsBtn>
 				</div>
-				<p>
+				<p class="pt-8">
 					Text all about the bees and the honey
 				</p>
 			</v-col>
