@@ -85,7 +85,14 @@
 											}}</v-card-title>
 										</v-img>
 									</v-responsive>
-
+									<div v-for="badge in card.badges" :key="index">
+										<v-img
+											:src="require('~/assets/images/logos/' + badge)"
+											:aspect-ratio="1"
+											:height="50"
+											:width="50"
+										></v-img>
+									</div>
 									<v-card-actions>
 										<v-btn class="primary--text" text>
 											{{ card.action }}

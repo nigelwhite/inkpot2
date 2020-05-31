@@ -13,8 +13,8 @@
   show: On
   image: sheep-250x150.jpg
   badges:
-    - GT18-2-star150x150.png
-    - GT19-1-star150x150.png
+    - GT18-2-star250x250.png
+    - GT19-1-star250x250.png
   order: 3
   action: Order now
 - title: Eggs
@@ -39,7 +39,7 @@
   show: On
   image: pic-needed-250x150.png
   badges:
-    - GT19-2-star150x150.png
+    - GT19-2-star250x250.png
   order: 1
   action: Order now for 2020
 - title: Fleeces
