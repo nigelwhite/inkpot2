@@ -23,13 +23,41 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<CardStatus :pageTitle="title"></CardStatus>
+				<div class="d-flex justify-center">
+					<div class="mr-4">
+						<CardStatus :pageTitle="title"></CardStatus>
 
-				<div v-if="linkedDoc" class="ordering text-center mb-10">
-					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
-				</div>
-				<div v-if="!linkedDoc" class="ordering text-center mb-10">
-					<ContactUsBtn></ContactUsBtn>
+						<div v-if="linkedDoc" class="ordering mb-10 text-center">
+							<DownloadBtn :doc="linkedDoc"></DownloadBtn>
+						</div>
+						<div v-if="!linkedDoc" class="ordering mb-10 text-center">
+							<ContactUsBtn></ContactUsBtn>
+						</div>
+					</div>
+					<a
+						href="https://greattasteawards.co.uk/"
+						target="_blank"
+						class="d-flex flex-column"
+					>
+						<g-image
+							src="~/assets/images/logos/GT19-1-star250x250.png"
+							alt="Great Taste Producer logo"
+							width="80"
+							class="align-self-center"
+						/>
+					</a>
+					<a
+						href="https://greattasteawards.co.uk/"
+						target="_blank"
+						class="d-flex flex-column"
+					>
+						<g-image
+							src="~/assets/images/logos/GT18-2-star250x250.png"
+							alt="Great Taste Producer logo"
+							width="80"
+							class="align-self-center"
+						/>
+					</a>
 				</div>
 				<p>
 					The Inkpot hogget has a great flavour and is of fantastic quality
@@ -83,7 +111,6 @@ import Portraits3Wide from '@/components/Portraits3Wide.vue';
 import Portraits3Narrow from '@/components/Portraits3Narrow.vue';
 import ContactUsBtn from '@/components/ContactUsBtn.vue';
 import CardStatus from '@/components/CardStatus.vue';
-import CardBadges from '@/components/CardBadges.vue';
 
 export default {
 	metaInfo: {
@@ -112,7 +139,6 @@ export default {
 		Portraits3Narrow,
 		ContactUsBtn,
 		CardStatus,
-		CardBadges,
 	},
 };
 </script>

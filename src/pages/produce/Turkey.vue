@@ -21,14 +21,30 @@
 				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
-				<CardStatus :pageTitle="title"></CardStatus>
+				<div class="d-flex justify-center">
+					<div class="mr-4">
+						<CardStatus :pageTitle="title"></CardStatus>
 
-				<!-- <div v-if="linkedDoc" class="ordering text-center mb-10">
-					<DownloadBtn :doc="linkedDoc"></DownloadBtn>
+						<div v-if="linkedDoc" class="ordering mb-10 text-center">
+							<DownloadBtn :doc="linkedDoc"></DownloadBtn>
+						</div>
+						<div v-if="!linkedDoc" class="ordering mb-10 text-center">
+							<ContactUsBtn></ContactUsBtn>
+						</div>
+					</div>
+					<a
+						href="https://greattasteawards.co.uk/"
+						target="_blank"
+						class="d-flex flex-column"
+					>
+						<g-image
+							src="~/assets/images/logos/GT19-2-star250x250.png"
+							alt="Great Taste Producer logo"
+							width="80"
+							class="align-self-center"
+						/>
+					</a>
 				</div>
-				<div v-if="!linkedDoc" class="ordering text-center mb-10">
-					<ContactUsBtn></ContactUsBtn>
-				</div> -->
 				<v-row>
 					<v-col class="col-sm-7 col-md-8 col-xl-12 pt-8">
 						<p>
