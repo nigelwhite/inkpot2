@@ -18,19 +18,7 @@
 							<slot name="title" />
 						</h1>
 						<v-spacer></v-spacer>
-						<div class="align-self-center">
-							<a
-								href="https://greattasteawards.co.uk/"
-								target="_blank"
-								class="d-flex flex-column"
-							>
-								<g-image
-									src="~/assets/images/logos/GTproducer250x250.png"
-									alt="Great Taste Producer logo"
-									width="80"
-								/>
-							</a>
-						</div>
+						<div class="align-self-center"></div>
 					</div>
 				</div>
 				<div class="hidden-lg-and-up">

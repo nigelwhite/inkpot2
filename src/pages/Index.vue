@@ -21,7 +21,15 @@
 
 		<v-row class="mt-lg-6">
 			<v-col class="col-12 col-md-6">
-				<h2 class="text-center mb-2">Diary</h2>
+				<div class="d-flex justify-center mb-4">
+					<g-image
+						src="~/assets/images/logos/InkpotLogo_transparent.png"
+						alt="Inkpot Logo"
+						width="90"
+						class="mr-4 align-self-center"
+					/>
+					<h2 class="mb-2 align-self-center">Diary</h2>
+				</div>
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
 						<div
@@ -43,7 +51,21 @@
 				</div>
 			</v-col>
 			<v-col>
-				<h2 class="text-center">Buy our produce</h2>
+				<div class="d-flex justify-center mb-4">
+					<a
+						href="https://greattasteawards.co.uk/"
+						target="_blank"
+						class="align-self-center"
+					>
+						<g-image
+							src="~/assets/images/logos/GTproducer250x250.png"
+							alt="Great Taste Producer logo"
+							width="80"
+							class="mr-6"
+						/>
+					</a>
+					<h2 class="align-self-center">Awarded Great Taste Producer</h2>
+				</div>
 				<div class="d-flex flex-wrap justify-center">
 					<div v-for="(card, index) in sortedCards" :key="index">
 						<g-link :to="'produce/' + card.link">
