@@ -19,6 +19,12 @@
 						></Portraits3Wide>
 					</v-col>
 				</v-row>
+				<v-row class="d-none d-xl-flex justify-center mt-6">
+					<g-image
+						src="~/assets/images/placeholder-turkey-vid.png"
+						width="500"
+					></g-image>
+				</v-row>
 			</v-col>
 			<v-col class="px-lg-12">
 				<div class="d-flex justify-center mb-8">
@@ -132,6 +138,12 @@
 					:img2="require('~/assets/images/' + pic2)"
 					:img3="require('~/assets/images/' + pic3)"
 				></Portraits3Narrow>
+				<v-row class="d-flex d-xl-none justify-center mt-6">
+					<g-image
+						src="~/assets/images/placeholder-turkey-vid.png"
+						width="500"
+					></g-image>
+				</v-row>
 				<v-row>
 					<v-col class="col-xl-9">
 						<div class="extra-text">
@@ -224,4 +236,8 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.turkey-vid
+	max-width: 100%
+	height: auto
+</style>
