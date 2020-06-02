@@ -99,7 +99,12 @@ export default {
 			links: [
 				{ type: 'main', icon: 'home', text: 'Home', url: '/' },
 				{ type: 'main', icon: 'perm_identity', text: 'About', url: '/about' },
-				{ type: 'main', icon: 'shopping_basket', text: 'Produce', url: '/' },
+				{
+					type: 'main',
+					icon: 'shopping_basket',
+					text: 'Produce',
+					url: '/',
+				},
 				{
 					type: 'produce',
 					icon: 'backup',

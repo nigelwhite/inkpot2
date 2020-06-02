@@ -1,7 +1,7 @@
 <template>
 	<Layout>
 		<div class="d-flex justify-center align-center text-center announce">
-			<h1>Sorry<br />the page you asked for is not on the site</h1>
+			<h1>Sorry<br />the page you asked for is not on The Inkpot site</h1>
 		</div>
 	</Layout>
 </template>
