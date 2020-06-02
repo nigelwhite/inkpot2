@@ -97,9 +97,15 @@ export default {
 		return {
 			drawer: false,
 			links: [
-				{ type: 'main', icon: 'adb', text: 'Home', url: '/' },
-				{ type: 'main', icon: 'backup', text: 'About', url: '/about' },
-				{ type: 'main', icon: 'backup', text: 'Produce', url: '/' },
+				{ type: 'main', icon: 'home', text: 'Home', url: '/' },
+				{ type: 'main', icon: 'perm_identity', text: 'About', url: '/about' },
+				{ type: 'main', icon: 'shopping_basket', text: 'Produce', url: '/' },
+				{
+					type: 'produce',
+					icon: 'backup',
+					text: 'Turkey',
+					url: '/produce/turkey',
+				},
 				{ type: 'produce', icon: 'backup', text: 'Beef', url: '/produce/beef' },
 				{
 					type: 'produce',
@@ -109,12 +115,7 @@ export default {
 				},
 				{ type: 'produce', icon: 'backup', text: 'Eggs', url: '/produce/eggs' },
 				{ type: 'produce', icon: 'backup', text: 'Wool', url: '/produce/wool' },
-				{
-					type: 'produce',
-					icon: 'backup',
-					text: 'Turkey',
-					url: '/produce/turkey',
-				},
+
 				{
 					type: 'produce',
 					icon: 'backup',
@@ -127,11 +128,22 @@ export default {
 					text: 'Honey',
 					url: '/produce/honey',
 				},
-				{ type: 'main', icon: 'backup', text: 'Diary', url: '/diary/' },
-				{ type: 'main', icon: 'backup', text: 'Learn', url: '/learn/' },
-				{ type: 'main', icon: 'backup', text: 'Contact', url: '/contact/' },
+				{ type: 'main', icon: 'article', text: 'Diary', url: '/diary/' },
+				{ type: 'main', icon: 'grading', text: 'Learn', url: '/learn/' },
+				{
+					type: 'main',
+					icon: 'subject',
+					text: 'Contact',
+					url: '/contact/',
+				},
 			],
 			products: [
+				{
+					type: 'produce',
+					icon: 'backup',
+					text: 'Turkey',
+					url: 'produce/turkey',
+				},
 				{ type: 'produce', icon: 'backup', text: 'Beef', url: 'produce/beef' },
 				{
 					type: 'produce',
@@ -141,12 +153,7 @@ export default {
 				},
 				{ type: 'produce', icon: 'backup', text: 'Eggs', url: 'produce/eggs' },
 				{ type: 'produce', icon: 'backup', text: 'Wool', url: 'produce/wool' },
-				{
-					type: 'produce',
-					icon: 'backup',
-					text: 'Turkey',
-					url: 'produce/turkey',
-				},
+
 				{
 					type: 'produce',
 					icon: 'backup',

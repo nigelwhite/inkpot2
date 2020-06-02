@@ -14,7 +14,7 @@
 							width="200"
 							class="align-self-center"
 						/>
-						<p class="title align-self-center">
+						<p class="title align-self-center text-center">
 							Permaculture Land Demonstration Network
 						</p>
 					</a>
@@ -31,7 +31,7 @@
 							width="80"
 							class="align-self-center"
 						/>
-						<p class="title align-self-center">
+						<p class="title align-self-center text-center">
 							Great Taste Producer
 						</p>
 					</a>
