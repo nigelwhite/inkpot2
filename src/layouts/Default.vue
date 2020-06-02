@@ -14,11 +14,10 @@
 							height="120"
 							class="mr-4 align-self-center"
 						/>
+
 						<h1 class="primary--text align-self-center">
 							<slot name="title" />
 						</h1>
-						<v-spacer></v-spacer>
-						<div class="align-self-center"></div>
 					</div>
 				</div>
 				<div class="hidden-lg-and-up">
@@ -28,6 +27,7 @@
 							alt="Inkpot Logo"
 							width="100"
 						/>
+
 						<h2 class="primary--text align-self-center">
 							<slot name="title" />
 						</h2>
