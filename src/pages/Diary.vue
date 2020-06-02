@@ -4,7 +4,7 @@
 			<div class="my-4 mb-lg-8">{{ title }}</div>
 		</template>
 
-		<v-row>
+		<v-row class="mb-10">
 			<v-col cols="12" sm="6" offset-sm="3">
 				<v-card>
 					<v-container fluid>
@@ -41,6 +41,11 @@
 						</v-row>
 					</v-container>
 				</v-card>
+				<div class="text-center">
+					<a href="https://www.instagram.com/inkpotfarm/" target="_blank"
+						>The Inkpot Instagram</a
+					>
+				</div>
 			</v-col>
 		</v-row>
 	</Layout>
