@@ -134,7 +134,7 @@ export default {
 					type: 'main',
 					icon: 'shopping_basket',
 					text: 'Produce',
-					url: '/',
+					url: '/produce',
 				},
 				{
 					type: 'produce',
