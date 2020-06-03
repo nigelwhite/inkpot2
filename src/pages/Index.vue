@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout :hideLogo="true">
 		<template slot="hero-img">
 			<div class="hidden-md-and-down">
 				<g-image

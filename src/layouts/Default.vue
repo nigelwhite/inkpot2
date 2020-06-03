@@ -7,13 +7,7 @@
 			<v-container class="my-2 my-md-4">
 				<div class="hidden-md-and-down">
 					<div class="d-flex">
-						<g-image
-							src="~/assets/images/logos/InkpotLogo_transparent.png"
-							alt="Inkpot Logo"
-							width="100"
-							height="120"
-							class="mr-4 align-self-center"
-						/>
+						<InkpotLogo v-if="!hideLogo"></InkpotLogo>
 
 						<h1 class="primary--text align-self-center">
 							<slot name="title" />
@@ -43,12 +37,15 @@
 <script>
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
+import InkpotLogo from '@/components/InkpotLogo.vue';
 
 export default {
 	components: {
 		Navbar,
 		Footer,
+		InkpotLogo,
 	},
+	props: ['hideLogo'],
 	computed: {
 		theme() {
 			return this.$vuetify.theme.dark ? 'dark' : 'light';
