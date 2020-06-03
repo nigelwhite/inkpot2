@@ -50,7 +50,7 @@
 					</div>
 				</div>
 			</v-col>
-			<a name="produce"></a>
+
 			<v-col>
 				<div class="d-flex justify-center mb-4">
 					<a
