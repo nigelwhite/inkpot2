@@ -16,11 +16,7 @@
 				</div>
 				<div class="hidden-lg-and-up">
 					<div class="d-flex">
-						<g-image
-							src="~/assets/images/logos/InkpotLogo_transparent.png"
-							alt="Inkpot Logo"
-							width="100"
-						/>
+						<InkpotLogo v-if="!hideLogo"></InkpotLogo>
 
 						<h2 class="primary--text align-self-center">
 							<slot name="title" />
