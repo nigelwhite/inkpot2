@@ -230,7 +230,7 @@ export default {
 
 <style scoped lang="sass">
 .produce
-	margin-left: 70px
+	margin-left: 100px
 
 .myActive
 	background-color: #dedcdb
