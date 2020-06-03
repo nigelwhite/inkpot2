@@ -236,10 +236,6 @@ export default {
 	margin-left: 70px
 
 .myActive
-	background-color: #f66
+	background-color: #dedcdb
 	border-radius: 28px
-
-// .active
-// 	background-color: green
-// 	border-radius: 28px
 </style>
