@@ -1,7 +1,9 @@
 <template>
 	<Layout>
 		<template slot="title">{{ title }}</template>
-		<Products></Products>
+		<v-row>
+			<Products></Products>
+		</v-row>
 	</Layout>
 </template>
 

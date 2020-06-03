@@ -51,7 +51,9 @@
 				</div>
 			</v-col>
 
-			<v-col>
+			<Products></Products>
+
+			<!-- <v-col>
 				<div class="d-flex justify-center mb-4">
 					<a
 						href="https://greattasteawards.co.uk/"
@@ -107,7 +109,7 @@
 						</g-link>
 					</div>
 				</div>
-			</v-col>
+			</v-col> -->
 		</v-row>
 	</Layout>
 </template>
@@ -135,6 +137,7 @@
 
 <script>
 import cards from '@/data/cards.yaml';
+import Products from '@/components/Products';
 import moment from 'moment';
 
 export default {
@@ -152,18 +155,21 @@ export default {
 			cards,
 		};
 	},
-	computed: {
-		sortedCards: function() {
-			// ordering works, filtering does not. Removed Open Farm Sunday from cards.yaml
-			let filteredCards = cards.filter((card) => {
-				return card.show;
-			});
-			let orderedCards = filteredCards.sort((a, b) =>
-				a.order > b.order ? 1 : -1
-			);
-			return orderedCards;
-		},
+	components: {
+		Products,
 	},
+	// computed: {
+	// 	sortedCards: function() {
+	// 		// ordering works, filtering does not. Removed Open Farm Sunday from cards.yaml
+	// 		let filteredCards = cards.filter((card) => {
+	// 			return card.show;
+	// 		});
+	// 		let orderedCards = filteredCards.sort((a, b) =>
+	// 			a.order > b.order ? 1 : -1
+	// 		);
+	// 		return orderedCards;
+	// 	},
+	// },
 	filters: {
 		moment: function(myDate) {
 			return moment.unix(myDate).format('ddd D MMM');
@@ -174,12 +180,12 @@ export default {
 
 <style scoped lang="sass">
 
-.on-hover
-  -webkit-transform: scale(1.05)
-          transform: scale(1.05)
-.ink-grow
-	-webkit-transition: all .2s ease-in-out
-  transition: all .2s ease-in-out
+// .on-hover
+//   -webkit-transform: scale(1.05)
+//           transform: scale(1.05)
+// .ink-grow
+// 	-webkit-transition: all .2s ease-in-out
+//   transition: all .2s ease-in-out
 
 .instagram-container
 	overflow: scroll
@@ -193,11 +199,11 @@ export default {
 	height: auto
 	border-top-left-radius: 10px
 
-.action
-	position: relative
+// .action
+// 	position: relative
 
-.badges
-	position: absolute
-	top: -25px
-	right: 10px
+// .badges
+// 	position: absolute
+// 	top: -25px
+// 	right: 10px
 </style>
