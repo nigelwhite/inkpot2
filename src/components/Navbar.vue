@@ -14,10 +14,18 @@
 						<!-- <v-btn v-for="link in links" :key="link.text" text rounded>
 							<g-link :to="link.url">{{ link.text }}</g-link>
 						</v-btn> -->
-						<v-btn text rounded>
+						<v-btn
+							text
+							rounded
+							:class="[currentPage === '/' ? activeClass : '', 'title']"
+						>
 							<g-link exact to="/" class="title">Home</g-link>
 						</v-btn>
-						<v-btn text rounded>
+						<v-btn
+							text
+							rounded
+							:class="[currentPage === '/about/' ? activeClass : '', 'title']"
+						>
 							<g-link to="/about/" class="title">About</g-link>
 						</v-btn>
 						<v-menu bottom origin="center center" transition="scale-transition">
@@ -46,13 +54,25 @@
 								</v-list-item>
 							</v-list>
 						</v-menu>
-						<v-btn text rounded>
+						<v-btn
+							text
+							rounded
+							:class="[currentPage === '/diary/' ? activeClass : '', 'title']"
+						>
 							<g-link to="/diary/" class="title">Diary</g-link>
 						</v-btn>
-						<v-btn text rounded>
+						<v-btn
+							text
+							rounded
+							:class="[currentPage === '/learn/' ? activeClass : '', 'title']"
+						>
 							<g-link to="/learn/" class="title">Learn</g-link>
 						</v-btn>
-						<v-btn text rounded>
+						<v-btn
+							text
+							rounded
+							:class="[currentPage === '/contact/' ? activeClass : '', 'title']"
+						>
 							<g-link to="/contact/" class="title">Contact</g-link>
 						</v-btn>
 					</div>
@@ -104,7 +124,7 @@ export default {
 	data() {
 		return {
 			drawer: false,
-			activeClass: 'active',
+			activeClass: 'myActive',
 			links: [
 				{ type: 'main', icon: 'home', text: 'Home', url: '/' },
 				{ type: 'main', icon: 'perm_identity', text: 'About', url: '/about' },
@@ -210,7 +230,11 @@ export default {
 .produce
 	margin-left: 70px
 
-.active
+.myActive
 	background-color: #f66
 	border-radius: 28px
+
+// .active
+// 	background-color: green
+// 	border-radius: 28px
 </style>
