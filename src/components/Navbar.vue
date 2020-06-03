@@ -3,7 +3,7 @@
 		<v-card color="grey lighten-4" text tile>
 			<v-toolbar>
 				<v-toolbar-title class="primary--text headline font-weight-bold">
-					<g-link to="/">
+					<g-link exact to="/">
 						The Inkpot
 					</g-link>
 				</v-toolbar-title>
@@ -15,14 +15,22 @@
 							<g-link :to="link.url">{{ link.text }}</g-link>
 						</v-btn> -->
 						<v-btn text rounded>
-							<g-link to="/" class="title">Home</g-link>
+							<g-link exact to="/" class="title">Home</g-link>
 						</v-btn>
 						<v-btn text rounded>
 							<g-link to="/about/" class="title">About</g-link>
 						</v-btn>
 						<v-menu bottom origin="center center" transition="scale-transition">
 							<template v-slot:activator="{ on }">
-								<v-btn v-on="on" text rounded class="title">
+								<v-btn
+									v-on="on"
+									text
+									rounded
+									:class="[
+										currentPage.includes('produce') ? activeClass : '',
+										'title',
+									]"
+								>
 									Produce
 								</v-btn>
 							</template>
@@ -96,6 +104,7 @@ export default {
 	data() {
 		return {
 			drawer: false,
+			activeClass: 'active',
 			links: [
 				{ type: 'main', icon: 'home', text: 'Home', url: '/' },
 				{ type: 'main', icon: 'perm_identity', text: 'About', url: '/about' },
@@ -174,6 +183,11 @@ export default {
 			],
 		};
 	},
+	computed: {
+		currentPage() {
+			return this.$route.path;
+		},
+	},
 	// tried to filter for produce - failed
 	// computed: {
 	// 	produceList: function() {
@@ -195,4 +209,7 @@ export default {
 <style scoped lang="sass">
 .produce
 	margin-left: 70px
+
+.active
+	background-color: #f66
 </style>
