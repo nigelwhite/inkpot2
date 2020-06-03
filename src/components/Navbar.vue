@@ -212,4 +212,5 @@ export default {
 
 .active
 	background-color: #f66
+	border-radius: 28px
 </style>
