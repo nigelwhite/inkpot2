@@ -71,7 +71,12 @@
 						<v-btn
 							text
 							rounded
-							:class="[currentPage === '/contact/' ? activeClass : '', 'title']"
+							:class="[
+								currentPage === '/contact/' || currentPage === '/location/'
+									? activeClass
+									: '',
+								'title',
+							]"
 						>
 							<g-link to="/contact/" class="title">Contact</g-link>
 						</v-btn>
