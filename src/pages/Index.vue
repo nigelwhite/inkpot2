@@ -33,8 +33,8 @@
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
 						<div
-							v-for="edge in $page.allInstagramPhoto.edges"
-							key="edge.node.id"
+							v-for="(edge, index) in $page.allInstagramPhoto.edges"
+							:key="edge.node.id"
 							class="instagram-post"
 						>
 							<img :src="edge.node.display_url" alt="Latest Instagram image" />
@@ -68,7 +68,7 @@
 					<h2 class="align-self-center">Awarded Great Taste Producer</h2>
 				</div>
 				<div class="d-flex flex-wrap justify-center">
-					<div v-for="(card, index) in sortedCards" :key="index">
+					<div v-for="(card, index) in sortedCards" :key="card.title">
 						<g-link :to="'produce/' + card.link">
 							<v-hover v-slot:default="{ hover }" class="ink-grow">
 								<v-card
@@ -92,7 +92,7 @@
 											{{ card.action }}
 										</v-btn>
 										<div class="d-flex badges">
-											<div v-for="badge in card.badges" :key="index">
+											<div v-for="(badge, index) in card.badges" :key="badge">
 												<v-img
 													:src="require('~/assets/images/logos/' + badge)"
 													:aspect-ratio="1"

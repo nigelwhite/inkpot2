@@ -11,9 +11,6 @@
 
 				<div class="hidden-sm-and-down">
 					<div>
-						<!-- <v-btn v-for="link in links" :key="link.text" text rounded>
-							<g-link :to="link.url">{{ link.text }}</g-link>
-						</v-btn> -->
 						<v-btn
 							text
 							rounded
@@ -45,7 +42,7 @@
 							<v-list>
 								<v-list-item
 									v-for="(product, index) in products"
-									:key="index"
+									:key="product.text"
 									@click=""
 								>
 									<v-list-item-title>
@@ -104,7 +101,7 @@
 			<v-divider class="white"></v-divider>
 
 			<v-list dense nav>
-				<v-list-item v-for="link in links" :key="link.text" link>
+				<v-list-item v-for="(link, index) in links" :key="link.text" link>
 					<v-list-item-icon :class="[link.type === 'produce' ? 'd-none' : '']">
 						<v-icon class="white--text">{{ link.icon }}</v-icon>
 					</v-list-item-icon>
