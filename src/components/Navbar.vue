@@ -51,13 +51,7 @@
 								</v-list-item>
 							</v-list>
 						</v-menu>
-						<v-btn
-							text
-							rounded
-							:class="[currentPage === '/diary/' ? activeClass : '', 'title']"
-						>
-							<g-link to="/diary/" class="title">Diary</g-link>
-						</v-btn>
+
 						<v-btn
 							text
 							rounded
@@ -164,7 +158,7 @@ export default {
 					text: 'Honey',
 					url: '/produce/honey',
 				},
-				{ type: 'main', icon: 'article', text: 'Diary', url: '/diary/' },
+
 				{ type: 'main', icon: 'grading', text: 'Learn', url: '/learn/' },
 				{
 					type: 'main',

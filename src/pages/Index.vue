@@ -46,7 +46,11 @@
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
 						</div>
-						<g-link to="/diary" class="text-center"><h3>more...</h3></g-link>
+						<div class="text-center">
+							<a href="https://www.instagram.com/inkpotfarm/" target="_blank"
+								>The Inkpot Instagram</a
+							>
+						</div>
 					</div>
 				</div>
 			</v-col>
