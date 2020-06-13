@@ -31,8 +31,8 @@
 					<h2 class="mb-2 align-self-center">Diary</h2>
 				</div>
 				<div class="d-flex justify-center">
-					<div class="instagram-container">
-						<div
+					<div class="instagram-container-temp">
+						<!-- <div
 							v-for="(edge, index) in $page.allInstagramPhoto.edges"
 							:key="edge.node.id"
 							class="instagram-post"
@@ -45,7 +45,7 @@
 							<p class="pa-2">
 								{{ edge.node.edge_media_to_caption.edges[0].node.text }}
 							</p>
-						</div>
+						</div> -->
 						<div class="text-center">
 							<a href="https://www.instagram.com/inkpotfarm/" target="_blank"
 								>The Inkpot Instagram</a
@@ -121,6 +121,13 @@ export default {
 	border-radius: 10px
 	max-width: 500px
 	max-height: 700px
+
+.instagram-container-temp
+	overflow: scroll
+	border: 1px solid black
+	border-radius: 10px
+	width: 500px
+	height: 700px
 
 .instagram-post img
 	max-width: 100%
