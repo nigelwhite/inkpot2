@@ -18,5 +18,5 @@ Sub pages
 ## Branch notes
 
 Master contains a version that builds on Netlify, without trying to pull Instagram feed
-Instagram contains original attempt as per https://github.com/zefman/gridsome-source-instagram in index.vue
-Axios contains axios version as per #11 at https://github.com/zefman/gridsome-source-instagram/issues/11
+Instagram contains original attempt as per https://github.com/zefman/gridsome-source-instagram in index.vue. Works on local but not Netlify.
+Axios contains axios version as per #11 at https://github.com/zefman/gridsome-source-instagram/issues/11. Error [Vue warn]: Property or method "photos" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property.
