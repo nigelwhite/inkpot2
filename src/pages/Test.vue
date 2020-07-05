@@ -1,3 +1,5 @@
+// trying to implement instagram solution
+
 <template>
 	<Layout>
 		<div v-if="photos">
