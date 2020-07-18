@@ -52,7 +52,7 @@ export default function (Vue, { appOptions, head }) {
 			},
 		},
 	};
-	Vue.use(Vuetify, axios);
+	Vue.use(Vuetify);
 
 	appOptions.vuetify = new Vuetify(opts);
 

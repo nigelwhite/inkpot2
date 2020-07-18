@@ -31,14 +31,20 @@
 					<h2 class="mb-2 align-self-center">Diary</h2>
 				</div>
 				<div class="d-flex justify-center">
-					<div class="instagram-container-temp">
-						<div class="text-center">
-							<a
-								href="https://www.instagram.com/inkpotfarm/"
-								target="_blank"
-								>The Inkpot Instagram</a
-							>
+					<div class="instagram-container">
+						<div v-for="(post, index) in photos.data" :key="index">
+							<img :src="post.media_url" />
+							<p class="text-center mt-3">
+								{{ post.timestamp | moment }}
+							</p>
+
+							<p class="pa-2">
+								{{ post.caption }}
+							</p>
 						</div>
+						<g-link to="/diary" class="text-center"
+							><h3>more...</h3></g-link
+						>
 					</div>
 				</div>
 			</v-col>
@@ -52,6 +58,7 @@
 import moment from 'moment';
 import cards from '@/data/cards.yaml';
 import Products from '@/components/Products';
+import axios from 'axios';
 
 export default {
 	metaInfo: {
@@ -108,7 +115,4 @@ export default {
 	max-width: 100%
 	height: auto
 	border-top-left-radius: 10px
-
-.miracle
-	width: 200px
 </style>
