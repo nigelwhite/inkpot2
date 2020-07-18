@@ -74,8 +74,16 @@ export default {
 	data() {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
+			photos: null,
 			cards,
 		};
+	},
+	mounted: function () {
+		axios
+			.get(process.env.GRIDSOME_FULL)
+			.then((response) => (this.photos = response.data))
+			.catch((error) => (this.photos = [{ title: 'No posts found' }]))
+			.finally(() => console.log('Data loading complete'));
 	},
 };
 </script>
@@ -100,4 +108,7 @@ export default {
 	max-width: 100%
 	height: auto
 	border-top-left-radius: 10px
+
+.miracle
+	width: 200px
 </style>
