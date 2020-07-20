@@ -15,12 +15,7 @@
 								class="instagram-post d-flex child-flex"
 								cols="4"
 							>
-								<a
-									:href="
-										'https://www.instagram.com/p/' + post.id
-									"
-									target="_blank"
-								>
+								
 									<v-card flat tile class="d-flex">
 										<div v-show="post.media_type === 'IMAGE'">
 											<img
@@ -48,7 +43,7 @@
 											</template>
 										</v-img>
 									</v-card>
-								</a>
+								
 							</v-col>
 						</v-row>
 					</v-container>
@@ -85,13 +80,7 @@ export default {
 			}
 		};
 	},
-	// mounted: function () {
-	// 	axios
-	// 		.get(process.env.GRIDSOME_FULL)
-	// 		.then((response) => (this.photos = response.data))
-	// 		.catch((error) => (this.photos = [{ title: 'No posts found' }]))
-	// 		.finally(() => console.log('Data loading complete'));
-	// },
+
 	async mounted() {
 		try {
 			const response = await axios.get(process.env.GRIDSOME_FULL);
