@@ -80,7 +80,9 @@ export default {
 	data() {
 		return {
 			title: 'Photo Diary',
-			photos: [],
+			photos: {
+				data: [],
+			}
 		};
 	},
 	// mounted: function () {

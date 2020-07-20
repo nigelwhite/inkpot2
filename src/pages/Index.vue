@@ -101,7 +101,9 @@ export default {
 	data() {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
-			photos: [],
+			photos: {
+				data: [],
+			},
 			cards,
 		};
 	},
