@@ -122,7 +122,7 @@ export default {
 <style scoped lang="sass">
 
 .instagram-container
-	overflow: scroll
+	overflow-y: auto
 	border: 1px solid black
 	border-radius: 10px
 	max-width: 500px
