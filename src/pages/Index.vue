@@ -29,10 +29,14 @@
 						class="mr-4 align-self-center"
 					/>
 					<h2 class="mb-2 align-self-center">Diary</h2>
+					<!-- <p>{{ onePhoto }}</p> -->
 				</div>
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
-						<div v-for="(post, index) in photos.data" :key="index">
+						<div
+							v-for="(post, index) in photos.data.slice(0, 1)"
+							:key="index"
+						>
 							<img :src="post.media_url" />
 							<p class="text-center mt-3">
 								{{ post.timestamp | moment }}
@@ -92,6 +96,11 @@ export default {
 			.catch((error) => (this.photos = [{ title: 'No posts found' }]))
 			.finally(() => console.log('Data loading complete'));
 	},
+	// computed: {
+	// 	onePhoto() {
+	// 		return this.photos[0];
+	// 	},
+	// },
 };
 </script>
 
