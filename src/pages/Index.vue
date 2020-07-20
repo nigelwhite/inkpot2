@@ -54,7 +54,10 @@
 									/>
 								</video>
 								<p class="text-center mt-3">
-									{{ post.timestamp }}
+									{{
+										post.timestamp
+											| date('ddd D MMMM h:ma ')
+									}}
 								</p>
 
 								<p class="pa-2">
@@ -78,6 +81,7 @@
 import cards from '@/data/cards.yaml';
 import Products from '@/components/Products';
 import axios from 'axios';
+import { dateFilter } from 'vue-date-fns';
 
 export default {
 	metaInfo: {
@@ -91,7 +95,9 @@ export default {
 	components: {
 		Products,
 	},
-
+	filters: {
+		date: dateFilter,
+	},
 	data() {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
