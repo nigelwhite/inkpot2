@@ -39,7 +39,7 @@
 							<div v-show="post.media_type === 'IMAGE'">
 								<img :src="post.media_url" />
 								<p class="text-center mt-3">
-									{{ post.timestamp | moment }}
+									<!-- {{ post.timestamp | moment }} -->
 								</p>
 
 								<p class="pa-2">
@@ -92,12 +92,11 @@ export default {
 	components: {
 		Products,
 	},
-
-	filters: {
-		moment(myDate) {
-			return moment.unix(myDate).format('ddd D MMM');
-		},
-	},
+	// filters: {
+	// 	moment(myDate) {
+	// 		return moment.unix(myDate).format('ddd D MMM');
+	// 	},
+	// },
 	data() {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
