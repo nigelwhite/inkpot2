@@ -107,13 +107,7 @@ export default {
 			cards,
 		};
 	},
-	// mounted: function () {
-	// 	axios
-	// 		.get(process.env.GRIDSOME_FULL)
-	// 		.then((response) => (this.photos = response.data))
-	// 		.catch((error) => (this.photos = [{ title: 'No posts found' }]))
-	// 		.finally(() => console.log('Data loading complete'));
-	// },
+
 	async mounted() {
 		try {
 			const response = await axios.get(process.env.GRIDSOME_FULL);
@@ -133,13 +127,6 @@ export default {
 	border-radius: 10px
 	max-width: 500px
 	max-height: 700px
-
-.instagram-container-temp
-	overflow: scroll
-	border: 1px solid black
-	border-radius: 10px
-	width: 500px
-	height: 700px
 
 .instagram-post img,
 video
