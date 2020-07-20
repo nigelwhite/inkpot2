@@ -10,7 +10,7 @@
 					<v-container fluid>
 						<v-row>
 							<v-col
-								v-for="(post, index) in photos.data"
+								v-for="(post, index) in photos.data.slice(0,9)"
 								:key="index"
 								class="instagram-post d-flex child-flex"
 								cols="4"
@@ -80,15 +80,23 @@ export default {
 	data() {
 		return {
 			title: 'Photo Diary',
-			photos: null,
+			photos: [],
 		};
 	},
-	mounted: function () {
-		axios
-			.get(process.env.GRIDSOME_FULL)
-			.then((response) => (this.photos = response.data))
-			.catch((error) => (this.photos = [{ title: 'No posts found' }]))
-			.finally(() => console.log('Data loading complete'));
+	// mounted: function () {
+	// 	axios
+	// 		.get(process.env.GRIDSOME_FULL)
+	// 		.then((response) => (this.photos = response.data))
+	// 		.catch((error) => (this.photos = [{ title: 'No posts found' }]))
+	// 		.finally(() => console.log('Data loading complete'));
+	// },
+	async mounted() {
+		try {
+			const response = await axios.get(process.env.GRIDSOME_FULL);
+			this.photos = response.data;
+		} catch (error) {
+			console.log(error);
+		}
 	},
 };
 </script>

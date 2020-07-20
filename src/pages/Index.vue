@@ -105,12 +105,20 @@ export default {
 			cards,
 		};
 	},
-	mounted: function () {
-		axios
-			.get(process.env.GRIDSOME_FULL)
-			.then((response) => (this.photos = response.data))
-			.catch((error) => (this.photos = [{ title: 'No posts found' }]))
-			.finally(() => console.log('Data loading complete'));
+	// mounted: function () {
+	// 	axios
+	// 		.get(process.env.GRIDSOME_FULL)
+	// 		.then((response) => (this.photos = response.data))
+	// 		.catch((error) => (this.photos = [{ title: 'No posts found' }]))
+	// 		.finally(() => console.log('Data loading complete'));
+	// },
+	async mounted() {
+		try {
+			const response = await axios.get(process.env.GRIDSOME_FULL);
+			this.photos = response.data;
+		} catch (error) {
+			console.log(error);
+		}
 	},
 };
 </script>
