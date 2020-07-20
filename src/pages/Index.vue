@@ -39,7 +39,7 @@
 							<div v-show="post.media_type === 'IMAGE'">
 								<img :src="post.media_url" />
 								<p class="text-center mt-3">
-									<!-- {{ post.timestamp | moment }} -->
+									{{ post.timestamp }}
 								</p>
 
 								<p class="pa-2">
@@ -54,7 +54,7 @@
 									/>
 								</video>
 								<p class="text-center mt-3">
-									{{ post.timestamp | moment }}
+									{{ post.timestamp }}
 								</p>
 
 								<p class="pa-2">
@@ -75,7 +75,6 @@
 </template>
 
 <script>
-import moment from 'moment';
 import cards from '@/data/cards.yaml';
 import Products from '@/components/Products';
 import axios from 'axios';
@@ -92,11 +91,7 @@ export default {
 	components: {
 		Products,
 	},
-	// filters: {
-	// 	moment(myDate) {
-	// 		return moment.unix(myDate).format('ddd D MMM');
-	// 	},
-	// },
+
 	data() {
 		return {
 			title: 'A Permaculture farm in Lincolnshire',
