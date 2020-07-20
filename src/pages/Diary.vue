@@ -23,17 +23,17 @@
 								>
 									<v-card flat tile class="d-flex">
 										<div v-show="post.media_type === 'IMAGE'">
-					<img
-						aspect-ratio="1"
-						:src="post.media_url"
-					/>
-				</div>
-				<div v-show="post.media_type === 'VIDEO'">
-					
-					<video controls>
-						<source :src="post.media_url" type="video/mp4" />
-					</video>
-				</div>
+											<img
+												aspect-ratio="1"
+												:src="post.media_url"
+											/>
+										</div>
+										<div v-show="post.media_type === 'VIDEO'">
+											
+											<video controls>
+												<source :src="post.media_url" type="video/mp4" />
+											</video>
+										</div>
 											<template v-slot:placeholder>
 												<v-row
 													class="fill-height ma-0"

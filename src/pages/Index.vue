@@ -37,14 +37,31 @@
 							v-for="(post, index) in photos.data.slice(0, 1)"
 							:key="index"
 						>
-							<img :src="post.media_url" />
-							<p class="text-center mt-3">
-								{{ post.timestamp | moment }}
-							</p>
+							<div v-show="post.media_type === 'IMAGE'">
+								<img :src="post.media_url" />
+								<p class="text-center mt-3">
+									{{ post.timestamp | moment }}
+								</p>
 
-							<p class="pa-2">
-								{{ post.caption }}
-							</p>
+								<p class="pa-2">
+									{{ post.caption }}
+								</p>
+							</div>
+							<div v-show="post.media_type === 'VIDEO'">
+								<video controls>
+									<source
+										:src="post.media_url"
+										type="video/mp4"
+									/>
+								</video>
+								<p class="text-center mt-3">
+									{{ post.timestamp | moment }}
+								</p>
+
+								<p class="pa-2">
+									{{ post.caption }}
+								</p>
+							</div>
 						</div>
 						<g-link to="/diary" class="text-center"
 							><h3>more...</h3></g-link
@@ -120,7 +137,8 @@ export default {
 	width: 500px
 	height: 700px
 
-.instagram-post img
+.instagram-post img,
+video
 	max-width: 100%
 	height: auto
 	border-top-left-radius: 10px
