@@ -29,7 +29,6 @@
 						class="mr-4 align-self-center"
 					/>
 					<h2 class="mb-2 align-self-center">Diary</h2>
-					<!-- <p>{{ onePhoto }}</p> -->
 				</div>
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
@@ -113,11 +112,6 @@ export default {
 			.catch((error) => (this.photos = [{ title: 'No posts found' }]))
 			.finally(() => console.log('Data loading complete'));
 	},
-	// computed: {
-	// 	onePhoto() {
-	// 		return this.photos[0];
-	// 	},
-	// },
 };
 </script>
 
