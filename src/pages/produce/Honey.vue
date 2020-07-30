@@ -32,6 +32,7 @@
 				<p class="pt-8">
 					Text all about the bees and the honey
 				</p>
+				<p>Honey honey honey</p>
 			</v-col>
 		</v-row>
 		<v-row>
