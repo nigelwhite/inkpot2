@@ -56,7 +56,7 @@
 								<p class="text-center mt-3">
 									{{
 										post.timestamp
-											| date('ddd D MMMM h:ma ')
+											| date('ddd D MMMM h:ma')
 									}}
 								</p>
 
