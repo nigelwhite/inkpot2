@@ -37,7 +37,10 @@
 							:key="index"
 						>
 							<div v-show="post.media_type === 'IMAGE'">
-								<img :src="post.media_url" />
+								<img
+									:src="post.media_url"
+									class="insta-image"
+								/>
 								<p class="text-center mt-3">
 									{{ post.timestamp }}
 								</p>
@@ -128,9 +131,11 @@ export default {
 	max-width: 500px
 	max-height: 700px
 
-.instagram-post img,
-video
-	max-width: 100%
+.instagram-post video
+	width: 100%
 	height: auto
 	border-top-left-radius: 10px
+
+.insta-image
+	width: 100%
 </style>
