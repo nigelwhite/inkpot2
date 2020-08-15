@@ -54,13 +54,11 @@
 									<source
 										:src="post.media_url"
 										type="video/mp4"
+										class="insta-vid"
 									/>
 								</video>
 								<p class="text-center mt-3">
-									{{
-										post.timestamp
-											| date('ddd D MMMM h:ma ')
-									}}
+									{{ post.timestamp }}
 								</p>
 
 								<p class="pa-2">
@@ -84,7 +82,6 @@
 import cards from '@/data/cards.yaml';
 import Products from '@/components/Products';
 import axios from 'axios';
-import { dateFilter } from 'vue-date-fns';
 
 export default {
 	metaInfo: {
@@ -97,9 +94,6 @@ export default {
 	},
 	components: {
 		Products,
-	},
-	filters: {
-		date: dateFilter,
 	},
 	data() {
 		return {
@@ -131,11 +125,8 @@ export default {
 	max-width: 500px
 	max-height: 700px
 
-.instagram-post video
+.insta-vid, .insta-image
 	width: 100%
 	height: auto
 	border-top-left-radius: 10px
-
-.insta-image
-	width: 100%
 </style>

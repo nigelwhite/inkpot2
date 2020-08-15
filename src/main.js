@@ -9,8 +9,6 @@ import '~/sass/styles.sass';
 
 import colors from 'vuetify/lib/util/colors';
 
-import axios from 'axios';
-
 export default function (Vue, { appOptions, head }) {
 	head.link.push({
 		rel: 'stylesheet',
