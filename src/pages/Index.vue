@@ -42,7 +42,7 @@
 									class="insta-image"
 								/>
 								<p class="text-center mt-3">
-									{{ post.timestamp }}
+									{{ post.timestamp | readableDate }}
 								</p>
 
 								<p class="pa-2">
@@ -58,7 +58,7 @@
 									/>
 								</video>
 								<p class="text-center mt-3">
-									{{ post.timestamp }}
+									{{ post.timestamp | readableDate }}
 								</p>
 
 								<p class="pa-2">
@@ -82,6 +82,8 @@
 import cards from '@/data/cards.yaml';
 import Products from '@/components/Products';
 import axios from 'axios';
+import dateFormat from 'dateformat';
+// docs at http://blog.stevenlevithan.com/archives/date-time-format
 
 export default {
 	metaInfo: {
@@ -104,7 +106,6 @@ export default {
 			cards,
 		};
 	},
-
 	async mounted() {
 		try {
 			const response = await axios.get(process.env.GRIDSOME_FULL);
@@ -112,6 +113,11 @@ export default {
 		} catch (error) {
 			console.log(error);
 		}
+	},
+	filters: {
+		readableDate: function (value) {
+			return dateFormat(value, 'ddd d mmm, h:MM tt');
+		},
 	},
 };
 </script>
