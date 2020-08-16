@@ -17,11 +17,9 @@
 							>
 								<v-dialog v-modal="dialog" max-width="600px">
 									<template v-slot:activator="{ on, attrs }">
-										<v-card flat tile class="d-flex" v-bind="attrs" v-on="on">
+										<v-card flat tile v-bind="attrs" v-on="on">
 											
-											<p class="text-center mt-3">
-									{{ post.timestamp | readableDate2 }}
-								</p>
+											
 											<div v-show="post.media_type === 'IMAGE'">
 												<img
 													aspect-ratio="1"
@@ -47,7 +45,9 @@
 													</v-row>
 												</template>
 											</v-img>
-											
+											<p class="text-center mt-1">
+												{{ post.timestamp | readableDate2 }}
+											</p>
 										</v-card>
 									</template>
 								
