@@ -25,10 +25,9 @@
 					<g-image
 						src="~/assets/images/logos/InkpotLogo_transparent.png"
 						alt="Inkpot Logo"
-						width="90"
+						width="110"
 						class="mr-4 align-self-center"
 					/>
-					<h2 class="mb-2 align-self-center">Diary</h2>
 				</div>
 				<div class="d-flex justify-center">
 					<div class="instagram-container">
