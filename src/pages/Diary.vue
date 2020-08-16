@@ -12,7 +12,7 @@
 							<v-col
 								v-for="(post, index) in photos.data.slice(0,9)"
 								:key="index"
-								class="instagram-post d-flex child-flex"
+								class="instagram-post d-flex justify-center"
 								cols="4"
 							>
 								<v-dialog v-modal="dialog" max-width="600px">
@@ -88,7 +88,7 @@
 										<v-btn
 											color="blue darken-1"
 											text
-											@click="dialog = false"
+											@click="this.dialog = false"
 										>Close</v-btn>
 										
 										</v-card-actions>
@@ -156,14 +156,7 @@ export default {
 
 <style scoped lang="sass">
 
-
-
-.instagram-container
-	overflow: scroll
-	border: 1px solid black
-	border-radius: 10px
-	max-width: 500px
-	max-height: 600px
+// instagram teaser
 
 .instagram-post img,
 video
@@ -171,12 +164,7 @@ video
 	height: auto
 	border-top-right-radius: 10px
 
-// .instagram-container
-// 	overflow-y: auto
-// 	border: 1px solid black
-// 	border-radius: 10px
-// 	max-width: 500px
-// 	max-height: 700px
+// instagram modal
 
 .insta-vid, .insta-image
 	width: 100%
