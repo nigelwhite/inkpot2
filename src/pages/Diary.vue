@@ -48,11 +48,11 @@
 						</v-row>
 					</v-container>
 				</v-card>
-				<div class="text-center">
+				<div class="text-center mt-4">
 					<a
 						href="https://www.instagram.com/inkpotfarm/"
 						target="_blank"
-						>The Inkpot Instagram</a
+						>The Inkpot on Instagram</a
 					>
 				</div>
 			</v-col>

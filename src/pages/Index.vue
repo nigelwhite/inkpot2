@@ -66,7 +66,7 @@
 							</div>
 						</div>
 						<g-link to="/diary" class="text-center"
-							><h3>more...</h3></g-link
+							><h3 class="mb-4">more diary entries...</h3></g-link
 						>
 					</div>
 				</div>
