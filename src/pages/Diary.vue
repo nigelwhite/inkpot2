@@ -15,35 +15,43 @@
 								class="instagram-post d-flex child-flex"
 								cols="4"
 							>
+								<v-dialog v-modal="dialog" max-width="600px">
+									<template v-slot:activator="{ on, attrs }">
+										<v-card flat tile class="d-flex" v-bind="attrs" v-on="on">
+											<div v-show="post.media_type === 'IMAGE'">
+												<img
+													aspect-ratio="1"
+													:src="post.media_url"
+												/>
+											</div>
+											<div v-show="post.media_type === 'VIDEO'">
+												
+												<video controls>
+													<source :src="post.media_url" type="video/mp4" />
+												</video>
+											</div>
+												<template v-slot:placeholder>
+													<v-row
+														class="fill-height ma-0"
+														align="center"
+														justify="center"
+													>
+														<v-progress-circular
+															indeterminate
+															color="grey lighten-5"
+														></v-progress-circular>
+													</v-row>
+												</template>
+											</v-img>
+										</v-card>
+									</template>
 								
-									<v-card flat tile class="d-flex">
-										<div v-show="post.media_type === 'IMAGE'">
-											<img
-												aspect-ratio="1"
-												:src="post.media_url"
-											/>
-										</div>
-										<div v-show="post.media_type === 'VIDEO'">
-											
-											<video controls>
-												<source :src="post.media_url" type="video/mp4" />
-											</video>
-										</div>
-											<template v-slot:placeholder>
-												<v-row
-													class="fill-height ma-0"
-													align="center"
-													justify="center"
-												>
-													<v-progress-circular
-														indeterminate
-														color="grey lighten-5"
-													></v-progress-circular>
-												</v-row>
-											</template>
-										</v-img>
+									<v-card>
+										<v-card-title>
+											<h2>popup</h2>
+										</v-card-title>
 									</v-card>
-								
+								</v-dialog>
 							</v-col>
 						</v-row>
 					</v-container>
