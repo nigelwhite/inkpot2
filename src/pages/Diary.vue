@@ -18,6 +18,10 @@
 								<v-dialog v-modal="dialog" max-width="600px">
 									<template v-slot:activator="{ on, attrs }">
 										<v-card flat tile class="d-flex" v-bind="attrs" v-on="on">
+											
+											<p class="text-center mt-3">
+									{{ post.timestamp | readableDate2 }}
+								</p>
 											<div v-show="post.media_type === 'IMAGE'">
 												<img
 													aspect-ratio="1"
@@ -43,13 +47,51 @@
 													</v-row>
 												</template>
 											</v-img>
+											
 										</v-card>
 									</template>
 								
 									<v-card>
 										<v-card-title>
-											<h2>popup</h2>
+											<h4>{{ post.timestamp | readableDate }}</h4>
 										</v-card-title>
+										<v-card-text class="text-center mt-3">
+									
+									<div v-show="post.media_type === 'IMAGE'">
+								<img
+									:src="post.media_url"
+									class="insta-image"
+								/>
+								
+
+								<p class="pa-2">
+									{{ post.caption }}
+								</p>
+							</div>
+							<div v-show="post.media_type === 'VIDEO'">
+								<video controls>
+									<source
+										:src="post.media_url"
+										type="video/mp4"
+										class="insta-vid"
+									/>
+								</video>
+								
+
+								<p class="pa-2">
+									{{ post.caption }}
+								</p>
+							</div>
+										</v-card-text>
+										<v-card-actions>
+										<v-spacer></v-spacer>
+										<v-btn
+											color="blue darken-1"
+											text
+											@click="dialog = false"
+										>Close</v-btn>
+										
+										</v-card-actions>
 									</v-card>
 								</v-dialog>
 							</v-col>
@@ -70,6 +112,8 @@
 
 <script>
 import axios from 'axios';
+import dateFormat from 'dateformat';
+// docs at http://blog.stevenlevithan.com/archives/date-time-format
 
 export default {
 	metaInfo: {
@@ -85,9 +129,19 @@ export default {
 			title: 'Photo Diary',
 			photos: {
 				data: [],
-			}
-		};
+			},
+			dialog: false,
+		}
 	},
+	filters: {
+		readableDate: function (value) {
+			return dateFormat(value, 'dddd d mmm, h:MM tt');
+		},
+		readableDate2: function (value) {
+			return dateFormat(value, 'd mmm');
+		}
+	},
+	
 
 	async mounted() {
 		try {
@@ -116,4 +170,16 @@ video
 	max-width: 100%
 	height: auto
 	border-top-right-radius: 10px
+
+// .instagram-container
+// 	overflow-y: auto
+// 	border: 1px solid black
+// 	border-radius: 10px
+// 	max-width: 500px
+// 	max-height: 700px
+
+.insta-vid, .insta-image
+	width: 100%
+	height: auto
+	border-top-left-radius: 10px
 </style>
